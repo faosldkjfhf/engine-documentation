@@ -1,0 +1,21 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$classComponent.html" title=" " alt="" coords="5,203,103,228"/>
+<area shape="rect" id="Node000001" href="$classAnimatedTexture.html" title=" " alt="" coords="157,5,291,31"/>
+<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="60,188,73,155,91,115,117,75,149,40,168,28,171,33,152,44,121,78,96,117,78,157,65,190"/>
+<area shape="rect" id="Node000002" href="$classCollectible.html" title=" " alt="" coords="179,55,269,80"/>
+<area shape="poly" id="edge2_Node000000_Node000002" title=" " alt="" coords="66,189,99,139,123,112,149,89,177,75,180,80,152,94,126,116,104,142,71,192"/>
+<area shape="rect" id="Node000003" href="$classCollider.html" title=" " alt="" coords="188,104,260,129"/>
+<area shape="poly" id="edge3_Node000000_Node000003" title=" " alt="" coords="77,191,110,164,149,138,187,123,189,128,152,143,113,168,80,195"/>
+<area shape="rect" id="Node000004" href="$classKeyboardController.html" title=" " alt="" coords="151,153,297,179"/>
+<area shape="poly" id="edge4_Node000000_Node000004" title=" " alt="" coords="111,196,178,176,180,181,112,201"/>
+<area shape="rect" id="Node000005" href="$classSceneTransition.html" title=" " alt="" coords="162,203,286,228"/>
+<area shape="poly" id="edge5_Node000000_Node000005" title=" " alt="" coords="117,213,162,213,162,218,117,218"/>
+<area shape="rect" id="Node000006" href="$classScript.html" title=" " alt="" coords="195,252,253,277"/>
+<area shape="poly" id="edge6_Node000000_Node000006" title=" " alt="" coords="112,229,195,254,194,259,111,234"/>
+<area shape="rect" id="Node000007" href="$structTexture.html" title=" " alt="" coords="189,301,259,327"/>
+<area shape="poly" id="edge7_Node000000_Node000007" title=" " alt="" coords="81,235,114,262,152,286,189,302,187,307,149,291,111,266,78,240"/>
+<area shape="rect" id="Node000008" href="$classTileTexture.html" title=" " alt="" coords="177,351,271,376"/>
+<area shape="poly" id="edge8_Node000000_Node000008" title=" " alt="" coords="71,238,104,288,127,313,152,336,178,349,175,354,149,340,123,317,100,291,66,241"/>
+<area shape="rect" id="Node000009" href="$classTransform.html" title=" " alt="" coords="181,400,267,425"/>
+<area shape="poly" id="edge9_Node000000_Node000009" title=" " alt="" coords="66,240,78,273,96,312,121,351,152,385,182,401,179,406,149,389,117,355,92,315,73,275,61,242"/>
+</map>

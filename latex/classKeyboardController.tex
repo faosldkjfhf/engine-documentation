@@ -1,0 +1,350 @@
+\doxysection{Keyboard\+Controller Class Reference}
+\hypertarget{classKeyboardController}{}\label{classKeyboardController}\index{KeyboardController@{KeyboardController}}
+
+
+{\ttfamily \#include $<$keyboard\+\_\+controller.\+hpp$>$}
+
+
+
+Inheritance diagram for Keyboard\+Controller\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=211pt]{classKeyboardController__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Keyboard\+Controller\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=211pt]{classKeyboardController__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classKeyboardController_abb80b5bae04a1c3cf904924cbacb235c}{Keyboard\+Controller}} ()
+\item 
+virtual \mbox{\hyperlink{classKeyboardController_a872ecfa209373bd0c9fc68a1009fc69d}{\texorpdfstring{$\sim$}{\string~}\+Keyboard\+Controller}} () override
+\item 
+virtual void \mbox{\hyperlink{classKeyboardController_ab78c4c8c83d57e4050cbe0409f61dee1}{Input}} (float delta\+Time) override
+\item 
+virtual void \mbox{\hyperlink{classKeyboardController_a777c6a761655fd489dd8609223eb3adc}{Update}} (float delta\+Time) override
+\item 
+virtual void \mbox{\hyperlink{classKeyboardController_ab56158b97c745691e456e847674e1f7c}{Render}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer) override
+\item 
+virtual void \mbox{\hyperlink{classKeyboardController_a12e718330c07750d5cc1340f06f200f6}{Render\+Gui}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer) override
+\item 
+virtual void \mbox{\hyperlink{classKeyboardController_a786c9398e1d87a1cd9b14827005c7b2d}{Reset}} () override
+\item 
+virtual std\+::string \mbox{\hyperlink{classKeyboardController_a026f3df478a4317f83932fc46b4c3d8d}{String}} () override
+\item 
+virtual Component\+Type \mbox{\hyperlink{classKeyboardController_acc948cc82fcbf7c042f03052fc80a94c}{Get\+Type}} () override
+\item 
+void \mbox{\hyperlink{classKeyboardController_a66fdc3249e6d875745193e0dfe0ef81f}{Set\+Speed}} (float speed)
+\item 
+float \mbox{\hyperlink{classKeyboardController_a6c95c9401c880b9a6bb9dc276057c58a}{Get\+Speed}} ()
+\item 
+void \mbox{\hyperlink{classKeyboardController_a7c6791632947acd0e13b999d4e3911fd}{Set\+Gravity}} (float gravity)
+\item 
+float \mbox{\hyperlink{classKeyboardController_ac20945d88687ed4638f87eeead5f5ac9}{Get\+Gravity}} ()
+\item 
+void \mbox{\hyperlink{classKeyboardController_acb04762e529e9b316f4131bdbd563857}{Set\+Jump}} (float jump)
+\item 
+float \mbox{\hyperlink{classKeyboardController_a950fc8ac278cb7217a2fcda0cf55add5}{Get\+Jump}} ()
+\item 
+\mbox{\hyperlink{structVelocity}{Velocity}} \mbox{\hyperlink{classKeyboardController_a31b87c3c44374066bf7b6fb8915feed9}{Get\+Velocity}} () const
+\item 
+void \mbox{\hyperlink{classKeyboardController_aa234cafeb70d4b0693cbc519c9a7e9da}{Set\+Velocity}} (\mbox{\hyperlink{structVelocity}{Velocity}} v)
+\item 
+void \mbox{\hyperlink{classKeyboardController_a4a209dda323bbb869752156c03189534}{Left}} (float left)
+\item 
+void \mbox{\hyperlink{classKeyboardController_aba3831feb8edabe09948eb5ca69d2672}{Right}} (float right)
+\item 
+void \mbox{\hyperlink{classKeyboardController_a328038a19d020ad457ab75fb1282fc10}{Up}} (float up)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classComponent}{Component}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classComponent_a8775db6d1a2c1afc2e77cd3c8f39da6f}{Component}} ()
+\item 
+virtual \mbox{\hyperlink{classComponent_ab8378fa275af98e568a7e91d33d867af}{\texorpdfstring{$\sim$}{\string~}\+Component}} ()
+\item 
+void \mbox{\hyperlink{classComponent_a9522326d4cf71de20786cb5c068ab3b9}{Set\+Game\+Object}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGameObject}{Game\+Object}} $>$ g)
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGameObject}{Game\+Object}} $>$ \mbox{\hyperlink{classComponent_affa7e45459d9ac50b0db8b5c4e3e9af8}{Get\+Game\+Object}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A keyboard controller (rigidbody) component to add to a \doxylink{classGameObject}{Game\+Object} 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classKeyboardController_abb80b5bae04a1c3cf904924cbacb235c}\label{classKeyboardController_abb80b5bae04a1c3cf904924cbacb235c} 
+\index{KeyboardController@{KeyboardController}!KeyboardController@{KeyboardController}}
+\index{KeyboardController@{KeyboardController}!KeyboardController@{KeyboardController}}
+\doxysubsubsection{\texorpdfstring{KeyboardController()}{KeyboardController()}}
+{\footnotesize\ttfamily Keyboard\+Controller\+::\+Keyboard\+Controller (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Default constructor \Hypertarget{classKeyboardController_a872ecfa209373bd0c9fc68a1009fc69d}\label{classKeyboardController_a872ecfa209373bd0c9fc68a1009fc69d} 
+\index{KeyboardController@{KeyboardController}!````~KeyboardController@{\texorpdfstring{$\sim$}{\string~}KeyboardController}}
+\index{````~KeyboardController@{\texorpdfstring{$\sim$}{\string~}KeyboardController}!KeyboardController@{KeyboardController}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}KeyboardController()}{\string~KeyboardController()}}
+{\footnotesize\ttfamily Keyboard\+Controller\+::\texorpdfstring{$\sim$}{\string~}\+Keyboard\+Controller (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Default destructor 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classKeyboardController_ac20945d88687ed4638f87eeead5f5ac9}\label{classKeyboardController_ac20945d88687ed4638f87eeead5f5ac9} 
+\index{KeyboardController@{KeyboardController}!GetGravity@{GetGravity}}
+\index{GetGravity@{GetGravity}!KeyboardController@{KeyboardController}}
+\doxysubsubsection{\texorpdfstring{GetGravity()}{GetGravity()}}
+{\footnotesize\ttfamily float Keyboard\+Controller\+::\+Get\+Gravity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the gravity of this component
+
+\begin{DoxyReturn}{Returns}
+The gravity 
+\end{DoxyReturn}
+\Hypertarget{classKeyboardController_a950fc8ac278cb7217a2fcda0cf55add5}\label{classKeyboardController_a950fc8ac278cb7217a2fcda0cf55add5} 
+\index{KeyboardController@{KeyboardController}!GetJump@{GetJump}}
+\index{GetJump@{GetJump}!KeyboardController@{KeyboardController}}
+\doxysubsubsection{\texorpdfstring{GetJump()}{GetJump()}}
+{\footnotesize\ttfamily float Keyboard\+Controller\+::\+Get\+Jump (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the jump height of this component
+
+\begin{DoxyReturn}{Returns}
+The jump height 
+\end{DoxyReturn}
+\Hypertarget{classKeyboardController_a6c95c9401c880b9a6bb9dc276057c58a}\label{classKeyboardController_a6c95c9401c880b9a6bb9dc276057c58a} 
+\index{KeyboardController@{KeyboardController}!GetSpeed@{GetSpeed}}
+\index{GetSpeed@{GetSpeed}!KeyboardController@{KeyboardController}}
+\doxysubsubsection{\texorpdfstring{GetSpeed()}{GetSpeed()}}
+{\footnotesize\ttfamily float Keyboard\+Controller\+::\+Get\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the speed of this component
+
+\begin{DoxyReturn}{Returns}
+The speed 
+\end{DoxyReturn}
+\Hypertarget{classKeyboardController_acc948cc82fcbf7c042f03052fc80a94c}\label{classKeyboardController_acc948cc82fcbf7c042f03052fc80a94c} 
+\index{KeyboardController@{KeyboardController}!GetType@{GetType}}
+\index{GetType@{GetType}!KeyboardController@{KeyboardController}}
+\doxysubsubsection{\texorpdfstring{GetType()}{GetType()}}
+{\footnotesize\ttfamily virtual Component\+Type Keyboard\+Controller\+::\+Get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Gets the corresponding Component\+Type of this component
+
+\begin{DoxyReturn}{Returns}
+The Component\+Type 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classComponent_a2e87d60cd7150786e51bfcda7129ed90}{Component}}.
+
+\Hypertarget{classKeyboardController_a31b87c3c44374066bf7b6fb8915feed9}\label{classKeyboardController_a31b87c3c44374066bf7b6fb8915feed9} 
+\index{KeyboardController@{KeyboardController}!GetVelocity@{GetVelocity}}
+\index{GetVelocity@{GetVelocity}!KeyboardController@{KeyboardController}}
+\doxysubsubsection{\texorpdfstring{GetVelocity()}{GetVelocity()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structVelocity}{Velocity}} Keyboard\+Controller\+::\+Get\+Velocity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the velocity of this component
+
+\begin{DoxyReturn}{Returns}
+The velocity 
+\end{DoxyReturn}
+\Hypertarget{classKeyboardController_ab78c4c8c83d57e4050cbe0409f61dee1}\label{classKeyboardController_ab78c4c8c83d57e4050cbe0409f61dee1} 
+\index{KeyboardController@{KeyboardController}!Input@{Input}}
+\index{Input@{Input}!KeyboardController@{KeyboardController}}
+\doxysubsubsection{\texorpdfstring{Input()}{Input()}}
+{\footnotesize\ttfamily void Keyboard\+Controller\+::\+Input (\begin{DoxyParamCaption}\item[{float}]{delta\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Handles inputs for this component
+
+
+\begin{DoxyParams}{Parameters}
+{\em delta\+Time} & The change in time since the last frame \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classComponent_acc7790bf2ac32e5821bf22280c8261b0}{Component}}.
+
+\Hypertarget{classKeyboardController_a4a209dda323bbb869752156c03189534}\label{classKeyboardController_a4a209dda323bbb869752156c03189534} 
+\index{KeyboardController@{KeyboardController}!Left@{Left}}
+\index{Left@{Left}!KeyboardController@{KeyboardController}}
+\doxysubsubsection{\texorpdfstring{Left()}{Left()}}
+{\footnotesize\ttfamily void Keyboard\+Controller\+::\+Left (\begin{DoxyParamCaption}\item[{float}]{left }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the left value
+
+
+\begin{DoxyParams}{Parameters}
+{\em The} & value to set left to \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classKeyboardController_ab56158b97c745691e456e847674e1f7c}\label{classKeyboardController_ab56158b97c745691e456e847674e1f7c} 
+\index{KeyboardController@{KeyboardController}!Render@{Render}}
+\index{Render@{Render}!KeyboardController@{KeyboardController}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void Keyboard\+Controller\+::\+Render (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{renderer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Handles rendering this component
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & The renderer to render with \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classComponent_af6a2cca21e381bc248a36259c0faaf21}{Component}}.
+
+\Hypertarget{classKeyboardController_a12e718330c07750d5cc1340f06f200f6}\label{classKeyboardController_a12e718330c07750d5cc1340f06f200f6} 
+\index{KeyboardController@{KeyboardController}!RenderGui@{RenderGui}}
+\index{RenderGui@{RenderGui}!KeyboardController@{KeyboardController}}
+\doxysubsubsection{\texorpdfstring{RenderGui()}{RenderGui()}}
+{\footnotesize\ttfamily void Keyboard\+Controller\+::\+Render\+Gui (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{renderer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Handles rendering the GUI portion of this component
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & The renderer to render with \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classComponent_a53f77ef035b671d6b71e60c6386c8e85}{Component}}.
+
+\Hypertarget{classKeyboardController_a786c9398e1d87a1cd9b14827005c7b2d}\label{classKeyboardController_a786c9398e1d87a1cd9b14827005c7b2d} 
+\index{KeyboardController@{KeyboardController}!Reset@{Reset}}
+\index{Reset@{Reset}!KeyboardController@{KeyboardController}}
+\doxysubsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily void Keyboard\+Controller\+::\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Resets this component to its default state 
+
+Reimplemented from \mbox{\hyperlink{classComponent_a542f72dc58169fc8ee87ff5326d6b292}{Component}}.
+
+\Hypertarget{classKeyboardController_aba3831feb8edabe09948eb5ca69d2672}\label{classKeyboardController_aba3831feb8edabe09948eb5ca69d2672} 
+\index{KeyboardController@{KeyboardController}!Right@{Right}}
+\index{Right@{Right}!KeyboardController@{KeyboardController}}
+\doxysubsubsection{\texorpdfstring{Right()}{Right()}}
+{\footnotesize\ttfamily void Keyboard\+Controller\+::\+Right (\begin{DoxyParamCaption}\item[{float}]{right }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the right value
+
+
+\begin{DoxyParams}{Parameters}
+{\em The} & value to set right to \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classKeyboardController_a7c6791632947acd0e13b999d4e3911fd}\label{classKeyboardController_a7c6791632947acd0e13b999d4e3911fd} 
+\index{KeyboardController@{KeyboardController}!SetGravity@{SetGravity}}
+\index{SetGravity@{SetGravity}!KeyboardController@{KeyboardController}}
+\doxysubsubsection{\texorpdfstring{SetGravity()}{SetGravity()}}
+{\footnotesize\ttfamily void Keyboard\+Controller\+::\+Set\+Gravity (\begin{DoxyParamCaption}\item[{float}]{gravity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the gravity of this component
+
+
+\begin{DoxyParams}{Parameters}
+{\em gravity} & The gravity to set \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classKeyboardController_acb04762e529e9b316f4131bdbd563857}\label{classKeyboardController_acb04762e529e9b316f4131bdbd563857} 
+\index{KeyboardController@{KeyboardController}!SetJump@{SetJump}}
+\index{SetJump@{SetJump}!KeyboardController@{KeyboardController}}
+\doxysubsubsection{\texorpdfstring{SetJump()}{SetJump()}}
+{\footnotesize\ttfamily void Keyboard\+Controller\+::\+Set\+Jump (\begin{DoxyParamCaption}\item[{float}]{jump }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the jump height of this component
+
+
+\begin{DoxyParams}{Parameters}
+{\em jump} & The jump height to set \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classKeyboardController_a66fdc3249e6d875745193e0dfe0ef81f}\label{classKeyboardController_a66fdc3249e6d875745193e0dfe0ef81f} 
+\index{KeyboardController@{KeyboardController}!SetSpeed@{SetSpeed}}
+\index{SetSpeed@{SetSpeed}!KeyboardController@{KeyboardController}}
+\doxysubsubsection{\texorpdfstring{SetSpeed()}{SetSpeed()}}
+{\footnotesize\ttfamily void Keyboard\+Controller\+::\+Set\+Speed (\begin{DoxyParamCaption}\item[{float}]{speed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the speed of this component
+
+
+\begin{DoxyParams}{Parameters}
+{\em speed} & The speed to set \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classKeyboardController_aa234cafeb70d4b0693cbc519c9a7e9da}\label{classKeyboardController_aa234cafeb70d4b0693cbc519c9a7e9da} 
+\index{KeyboardController@{KeyboardController}!SetVelocity@{SetVelocity}}
+\index{SetVelocity@{SetVelocity}!KeyboardController@{KeyboardController}}
+\doxysubsubsection{\texorpdfstring{SetVelocity()}{SetVelocity()}}
+{\footnotesize\ttfamily void Keyboard\+Controller\+::\+Set\+Velocity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structVelocity}{Velocity}}}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the velocity of this component
+
+
+\begin{DoxyParams}{Parameters}
+{\em The} & velocity to set \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classKeyboardController_a026f3df478a4317f83932fc46b4c3d8d}\label{classKeyboardController_a026f3df478a4317f83932fc46b4c3d8d} 
+\index{KeyboardController@{KeyboardController}!String@{String}}
+\index{String@{String}!KeyboardController@{KeyboardController}}
+\doxysubsubsection{\texorpdfstring{String()}{String()}}
+{\footnotesize\ttfamily std\+::string Keyboard\+Controller\+::\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Returns a string representation of this component for saving
+
+\begin{DoxyReturn}{Returns}
+The string representation 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classComponent_a3adeeda735af9eb804f7f4bc111fea54}{Component}}.
+
+\Hypertarget{classKeyboardController_a328038a19d020ad457ab75fb1282fc10}\label{classKeyboardController_a328038a19d020ad457ab75fb1282fc10} 
+\index{KeyboardController@{KeyboardController}!Up@{Up}}
+\index{Up@{Up}!KeyboardController@{KeyboardController}}
+\doxysubsubsection{\texorpdfstring{Up()}{Up()}}
+{\footnotesize\ttfamily void Keyboard\+Controller\+::\+Up (\begin{DoxyParamCaption}\item[{float}]{up }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the up value
+
+
+\begin{DoxyParams}{Parameters}
+{\em The} & value to set up to \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classKeyboardController_a777c6a761655fd489dd8609223eb3adc}\label{classKeyboardController_a777c6a761655fd489dd8609223eb3adc} 
+\index{KeyboardController@{KeyboardController}!Update@{Update}}
+\index{Update@{Update}!KeyboardController@{KeyboardController}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Keyboard\+Controller\+::\+Update (\begin{DoxyParamCaption}\item[{float}]{delta\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Handles updates for this component
+
+
+\begin{DoxyParams}{Parameters}
+{\em delta\+Time} & The change in time since the last frame \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classComponent_a149d3c9b7d668eb4817dd84dc35bcfcc}{Component}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/keyboard\+\_\+controller.\+hpp\item 
+src/keyboard\+\_\+controller.\+cpp\end{DoxyCompactItemize}

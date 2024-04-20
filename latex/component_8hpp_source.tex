@@ -1,0 +1,53 @@
+\doxysection{component.\+hpp}
+\hypertarget{component_8hpp_source}{}\label{component_8hpp_source}\index{include/component.hpp@{include/component.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <SDL3/SDL.h>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{classGameObject}{GameObject}};}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{enum\ class}\ ComponentType\ \{}
+\DoxyCodeLine{00012\ \ \ \mbox{\hyperlink{structTexture}{Texture}},}
+\DoxyCodeLine{00013\ \ \ \mbox{\hyperlink{classCollider}{Collider}},}
+\DoxyCodeLine{00014\ \ \ \mbox{\hyperlink{classTransform}{Transform}},}
+\DoxyCodeLine{00015\ \ \ \mbox{\hyperlink{classKeyboardController}{KeyboardController}},}
+\DoxyCodeLine{00016\ \ \ \mbox{\hyperlink{classTileTexture}{TileTexture}},}
+\DoxyCodeLine{00017\ \ \ \mbox{\hyperlink{classAnimatedTexture}{AnimatedTexture}},}
+\DoxyCodeLine{00018\ \ \ \mbox{\hyperlink{classScript}{Script}},}
+\DoxyCodeLine{00019\ \ \ \mbox{\hyperlink{classCollectible}{Collectible}},}
+\DoxyCodeLine{00020\ \ \ \mbox{\hyperlink{classSceneTransition}{SceneTransition}},}
+\DoxyCodeLine{00021\ \};}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00026\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classComponent}{Component}}\ \{}
+\DoxyCodeLine{00027\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00031\ \ \ \mbox{\hyperlink{classComponent_a8775db6d1a2c1afc2e77cd3c8f39da6f}{Component}}();}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00036\ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classComponent_ab8378fa275af98e568a7e91d33d867af}{\string~Component}}();}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00043\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classComponent_a149d3c9b7d668eb4817dd84dc35bcfcc}{Update}}(\textcolor{keywordtype}{float}\ deltaTime);}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00050\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classComponent_acc7790bf2ac32e5821bf22280c8261b0}{Input}}(\textcolor{keywordtype}{float}\ deltaTime);}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00057\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classComponent_af6a2cca21e381bc248a36259c0faaf21}{Render}}(SDL\_Renderer\ *renderer);}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00064\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classComponent_a53f77ef035b671d6b71e60c6386c8e85}{RenderGui}}(SDL\_Renderer\ *renderer);}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00069\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classComponent_a542f72dc58169fc8ee87ff5326d6b292}{Reset}}();}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00074\ \ \ \textcolor{keyword}{virtual}\ ComponentType\ \mbox{\hyperlink{classComponent_a2e87d60cd7150786e51bfcda7129ed90}{GetType}}()\ =\ 0;}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00079\ \ \ \textcolor{keyword}{virtual}\ std::string\ \mbox{\hyperlink{classComponent_a3adeeda735af9eb804f7f4bc111fea54}{String}}()\ =\ 0;}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00086\ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classComponent_a9522326d4cf71de20786cb5c068ab3b9}{SetGameObject}}(std::shared\_ptr<GameObject>\ g)\ \{\ \_gameObject\ =\ g;\ \}}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00093\ \ \ \textcolor{keyword}{inline}\ std::shared\_ptr<GameObject>\ \mbox{\hyperlink{classComponent_affa7e45459d9ac50b0db8b5c4e3e9af8}{GetGameObject}}()\ \{\ \textcolor{keywordflow}{return}\ \_gameObject;\ \}}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00095\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00096\ \ \ std::shared\_ptr<GameObject>}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \_gameObject;\ }
+\DoxyCodeLine{00099\ \};}
+
+\end{DoxyCode}

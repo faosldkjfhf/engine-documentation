@@ -1,0 +1,48 @@
+\doxysection{engine.\+hpp}
+\hypertarget{engine_8hpp_source}{}\label{engine_8hpp_source}\index{include/engine.hpp@{include/engine.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{comment}{//\ TODO:\ Add\ some\ sort\ of\ tilemapper?}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}scene.hpp"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <SDL3/SDL.h>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classEngine}{Engine}}\ \{}
+\DoxyCodeLine{00013\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00017\ \ \ \mbox{\hyperlink{classEngine_a8c98683b0a3aa28d8ab72a8bcd0d52f2}{Engine}}();}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00022\ \ \ \mbox{\hyperlink{classEngine_a8ef7030a089ecb30bbfcb9e43094717a}{\string~Engine}}();}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00027\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEngine_a1fbe9f5cb4abc3572e432cae1f154817}{Start}}();}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00032\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEngine_ac09716a3fa9f31ecf4175a249375979c}{Input}}();}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00037\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEngine_ac84eefe06226f430a2448306e6fd2579}{Update}}();}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00042\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEngine_acde70aed0043e2e2091d0bb6cce8e3c1}{Render}}();}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00049\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEngine_aa72c57e946c3d0449662100049e72518}{Run}}(\textcolor{keywordtype}{float}\ fps);}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00056\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEngine_a9f430a57012557fb7ef6d7336bb6c811}{LoadScene}}(std::string\ filepath);}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00063\ \ \ std::shared\_ptr<GameObject>\ \mbox{\hyperlink{classEngine_a8e9bae4b2a8acc715f7c1c6c17d02efd}{GetPlayer}}();}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00070\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classEngine_a97fd3709ee2fb388212d25a3e8c1ccd4}{IsRunning}}();}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ \ \ \textcolor{keyword}{static}\ SDL\_Event\ \mbox{\hyperlink{classEngine_ad7ff6822662970af26d185377a63911c}{event}};\ }
+\DoxyCodeLine{00074\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00075\ \ \ \textcolor{keywordtype}{int}\ \_width;\ \ }
+\DoxyCodeLine{00076\ \ \ \textcolor{keywordtype}{int}\ \_height;\ }
+\DoxyCodeLine{00078\ \ \ std::string\ \_lastLoaded;\ }
+\DoxyCodeLine{00080\ \ \ SDL\_Window\ *\_window;\ \ \ \ \ \ \ }
+\DoxyCodeLine{00081\ \ \ SDL\_Renderer\ *\_renderer;\ \ \ }
+\DoxyCodeLine{00082\ \ \ SDL\_Texture\ *\_gameTexture;\ }
+\DoxyCodeLine{00084\ \ \ ImVec2\ \_mousePos;\ }
+\DoxyCodeLine{00086\ \ \ std::shared\_ptr<Scene>\ \_scene;\ }
+\DoxyCodeLine{00088\ \ \ \textcolor{keywordtype}{float}\ \_deltaTime;\ }
+\DoxyCodeLine{00089\ \};}
+
+\end{DoxyCode}

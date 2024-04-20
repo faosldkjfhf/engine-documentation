@@ -1,0 +1,297 @@
+\doxysection{Animated\+Texture Class Reference}
+\hypertarget{classAnimatedTexture}{}\label{classAnimatedTexture}\index{AnimatedTexture@{AnimatedTexture}}
+
+
+{\ttfamily \#include $<$animated\+\_\+texture.\+hpp$>$}
+
+
+
+Inheritance diagram for Animated\+Texture\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classAnimatedTexture__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Animated\+Texture\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classAnimatedTexture__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classAnimatedTexture_aea75d69283ec118ddd9fd261888ac345}{Animated\+Texture}} ()
+\item 
+void \mbox{\hyperlink{classAnimatedTexture_ad7ba01dde2b59d374e9771fbc716f04e}{Set\+Texture}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer, std\+::string filepath)
+\item 
+virtual \mbox{\hyperlink{classAnimatedTexture_a92e49d9d3495c3b8a42a09f6948f5251}{\texorpdfstring{$\sim$}{\string~}\+Animated\+Texture}} () override
+\item 
+virtual void \mbox{\hyperlink{classAnimatedTexture_a931d4645ce44d24ae8961f241a02babb}{Update}} (float delta\+Time) override
+\item 
+virtual void \mbox{\hyperlink{classAnimatedTexture_afce7bf8b3bf237fa98e756883211bae3}{Input}} (float delta\+Time) override
+\item 
+virtual void \mbox{\hyperlink{classAnimatedTexture_a5ce306cac747e034ed45c7da49e92db2}{Render}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer) override
+\item 
+virtual void \mbox{\hyperlink{classAnimatedTexture_a3946a9fa5ea32a67f3cbd9e755382cb7}{Render\+Gui}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer) override
+\item 
+virtual void \mbox{\hyperlink{classAnimatedTexture_af54ddb4a7448752a35447436aaf00f8c}{Reset}} () override
+\item 
+virtual std\+::string \mbox{\hyperlink{classAnimatedTexture_a77daee987b0a3d0b315becef56edb82d}{String}} () override
+\item 
+virtual Component\+Type \mbox{\hyperlink{classAnimatedTexture_ab11f534c7e65a7f9e5764e4911bab9b0}{Get\+Type}} () override
+\item 
+void \mbox{\hyperlink{classAnimatedTexture_a2e3dc1d5bf03a13fb0d57e962d13ce97}{Draw}} (int x, int y, int w, int h)
+\item 
+void \mbox{\hyperlink{classAnimatedTexture_acb88fa932e7a1c768fe8ef94982b7d71}{Play\+Frame}} (int x, int y, int w, int h, int frame)
+\item 
+std\+::string \mbox{\hyperlink{classAnimatedTexture_a8d3c0ded537b05079a09171ed465f2b2}{Get\+File}} () const
+\item 
+void \mbox{\hyperlink{classAnimatedTexture_a438acd9a61739f6ed90d6021ee135fa8}{Set\+Dimensions}} (int w, int h)
+\item 
+std\+::pair$<$ int, int $>$ \mbox{\hyperlink{classAnimatedTexture_a2e22d6f973327962fadeabbedf1e9e39}{Get\+Dimensions}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classComponent}{Component}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classComponent_a8775db6d1a2c1afc2e77cd3c8f39da6f}{Component}} ()
+\item 
+virtual \mbox{\hyperlink{classComponent_ab8378fa275af98e568a7e91d33d867af}{\texorpdfstring{$\sim$}{\string~}\+Component}} ()
+\item 
+void \mbox{\hyperlink{classComponent_a9522326d4cf71de20786cb5c068ab3b9}{Set\+Game\+Object}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGameObject}{Game\+Object}} $>$ g)
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGameObject}{Game\+Object}} $>$ \mbox{\hyperlink{classComponent_affa7e45459d9ac50b0db8b5c4e3e9af8}{Get\+Game\+Object}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An Animated \doxylink{structTexture}{Texture} component to add onto game objects 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classAnimatedTexture_aea75d69283ec118ddd9fd261888ac345}\label{classAnimatedTexture_aea75d69283ec118ddd9fd261888ac345} 
+\index{AnimatedTexture@{AnimatedTexture}!AnimatedTexture@{AnimatedTexture}}
+\index{AnimatedTexture@{AnimatedTexture}!AnimatedTexture@{AnimatedTexture}}
+\doxysubsubsection{\texorpdfstring{AnimatedTexture()}{AnimatedTexture()}}
+{\footnotesize\ttfamily Animated\+Texture\+::\+Animated\+Texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Instantiates a new Animated \doxylink{structTexture}{Texture} \Hypertarget{classAnimatedTexture_a92e49d9d3495c3b8a42a09f6948f5251}\label{classAnimatedTexture_a92e49d9d3495c3b8a42a09f6948f5251} 
+\index{AnimatedTexture@{AnimatedTexture}!````~AnimatedTexture@{\texorpdfstring{$\sim$}{\string~}AnimatedTexture}}
+\index{````~AnimatedTexture@{\texorpdfstring{$\sim$}{\string~}AnimatedTexture}!AnimatedTexture@{AnimatedTexture}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}AnimatedTexture()}{\string~AnimatedTexture()}}
+{\footnotesize\ttfamily Animated\+Texture\+::\texorpdfstring{$\sim$}{\string~}\+Animated\+Texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Default destructor 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classAnimatedTexture_a2e3dc1d5bf03a13fb0d57e962d13ce97}\label{classAnimatedTexture_a2e3dc1d5bf03a13fb0d57e962d13ce97} 
+\index{AnimatedTexture@{AnimatedTexture}!Draw@{Draw}}
+\index{Draw@{Draw}!AnimatedTexture@{AnimatedTexture}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void Animated\+Texture\+::\+Draw (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{w,  }\item[{int}]{h }\end{DoxyParamCaption})}
+
+Draws the animated texture at a spot on the screen
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x position \\
+\hline
+{\em y} & The y position \\
+\hline
+{\em w} & The width \\
+\hline
+{\em h} & The height \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classAnimatedTexture_a2e22d6f973327962fadeabbedf1e9e39}\label{classAnimatedTexture_a2e22d6f973327962fadeabbedf1e9e39} 
+\index{AnimatedTexture@{AnimatedTexture}!GetDimensions@{GetDimensions}}
+\index{GetDimensions@{GetDimensions}!AnimatedTexture@{AnimatedTexture}}
+\doxysubsubsection{\texorpdfstring{GetDimensions()}{GetDimensions()}}
+{\footnotesize\ttfamily std\+::pair$<$ int, int $>$ Animated\+Texture\+::\+Get\+Dimensions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the dimensions of each frame as an std\+::pair$<$int, int$>$
+
+\begin{DoxyReturn}{Returns}
+The frame dimensions 
+\end{DoxyReturn}
+\Hypertarget{classAnimatedTexture_a8d3c0ded537b05079a09171ed465f2b2}\label{classAnimatedTexture_a8d3c0ded537b05079a09171ed465f2b2} 
+\index{AnimatedTexture@{AnimatedTexture}!GetFile@{GetFile}}
+\index{GetFile@{GetFile}!AnimatedTexture@{AnimatedTexture}}
+\doxysubsubsection{\texorpdfstring{GetFile()}{GetFile()}}
+{\footnotesize\ttfamily std\+::string Animated\+Texture\+::\+Get\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the filepath of the animation
+
+\begin{DoxyReturn}{Returns}
+The filepath 
+\end{DoxyReturn}
+\Hypertarget{classAnimatedTexture_ab11f534c7e65a7f9e5764e4911bab9b0}\label{classAnimatedTexture_ab11f534c7e65a7f9e5764e4911bab9b0} 
+\index{AnimatedTexture@{AnimatedTexture}!GetType@{GetType}}
+\index{GetType@{GetType}!AnimatedTexture@{AnimatedTexture}}
+\doxysubsubsection{\texorpdfstring{GetType()}{GetType()}}
+{\footnotesize\ttfamily Component\+Type Animated\+Texture\+::\+Get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Returns the type of Component\+Type that this component is
+
+\begin{DoxyReturn}{Returns}
+The corresponding Component\+Type 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classComponent_a2e87d60cd7150786e51bfcda7129ed90}{Component}}.
+
+\Hypertarget{classAnimatedTexture_afce7bf8b3bf237fa98e756883211bae3}\label{classAnimatedTexture_afce7bf8b3bf237fa98e756883211bae3} 
+\index{AnimatedTexture@{AnimatedTexture}!Input@{Input}}
+\index{Input@{Input}!AnimatedTexture@{AnimatedTexture}}
+\doxysubsubsection{\texorpdfstring{Input()}{Input()}}
+{\footnotesize\ttfamily void Animated\+Texture\+::\+Input (\begin{DoxyParamCaption}\item[{float}]{delta\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Handles input for this component
+
+
+\begin{DoxyParams}{Parameters}
+{\em delta\+Time} & The change in time since the last frame \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classComponent_acc7790bf2ac32e5821bf22280c8261b0}{Component}}.
+
+\Hypertarget{classAnimatedTexture_acb88fa932e7a1c768fe8ef94982b7d71}\label{classAnimatedTexture_acb88fa932e7a1c768fe8ef94982b7d71} 
+\index{AnimatedTexture@{AnimatedTexture}!PlayFrame@{PlayFrame}}
+\index{PlayFrame@{PlayFrame}!AnimatedTexture@{AnimatedTexture}}
+\doxysubsubsection{\texorpdfstring{PlayFrame()}{PlayFrame()}}
+{\footnotesize\ttfamily void Animated\+Texture\+::\+Play\+Frame (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{w,  }\item[{int}]{h,  }\item[{int}]{frame }\end{DoxyParamCaption})}
+
+Plays the frame of the animation
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x position of the frame \\
+\hline
+{\em y} & The y position of the frame \\
+\hline
+{\em w} & The width of the frame \\
+\hline
+{\em h} & The height of the frame \\
+\hline
+{\em frame} & The frame to play \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classAnimatedTexture_a5ce306cac747e034ed45c7da49e92db2}\label{classAnimatedTexture_a5ce306cac747e034ed45c7da49e92db2} 
+\index{AnimatedTexture@{AnimatedTexture}!Render@{Render}}
+\index{Render@{Render}!AnimatedTexture@{AnimatedTexture}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void Animated\+Texture\+::\+Render (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{renderer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Handles rendering this component
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & The renderer to render with \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classComponent_af6a2cca21e381bc248a36259c0faaf21}{Component}}.
+
+\Hypertarget{classAnimatedTexture_a3946a9fa5ea32a67f3cbd9e755382cb7}\label{classAnimatedTexture_a3946a9fa5ea32a67f3cbd9e755382cb7} 
+\index{AnimatedTexture@{AnimatedTexture}!RenderGui@{RenderGui}}
+\index{RenderGui@{RenderGui}!AnimatedTexture@{AnimatedTexture}}
+\doxysubsubsection{\texorpdfstring{RenderGui()}{RenderGui()}}
+{\footnotesize\ttfamily void Animated\+Texture\+::\+Render\+Gui (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{renderer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Handles rendering the GUI portion for this component
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & The renderer to render with \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classComponent_a53f77ef035b671d6b71e60c6386c8e85}{Component}}.
+
+\Hypertarget{classAnimatedTexture_af54ddb4a7448752a35447436aaf00f8c}\label{classAnimatedTexture_af54ddb4a7448752a35447436aaf00f8c} 
+\index{AnimatedTexture@{AnimatedTexture}!Reset@{Reset}}
+\index{Reset@{Reset}!AnimatedTexture@{AnimatedTexture}}
+\doxysubsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily void Animated\+Texture\+::\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Resets this component to its default values 
+
+Reimplemented from \mbox{\hyperlink{classComponent_a542f72dc58169fc8ee87ff5326d6b292}{Component}}.
+
+\Hypertarget{classAnimatedTexture_a438acd9a61739f6ed90d6021ee135fa8}\label{classAnimatedTexture_a438acd9a61739f6ed90d6021ee135fa8} 
+\index{AnimatedTexture@{AnimatedTexture}!SetDimensions@{SetDimensions}}
+\index{SetDimensions@{SetDimensions}!AnimatedTexture@{AnimatedTexture}}
+\doxysubsubsection{\texorpdfstring{SetDimensions()}{SetDimensions()}}
+{\footnotesize\ttfamily void Animated\+Texture\+::\+Set\+Dimensions (\begin{DoxyParamCaption}\item[{int}]{w,  }\item[{int}]{h }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the dimensions of each frame to the given width and height
+
+
+\begin{DoxyParams}{Parameters}
+{\em w} & The width to set \\
+\hline
+{\em h} & The height to set \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classAnimatedTexture_ad7ba01dde2b59d374e9771fbc716f04e}\label{classAnimatedTexture_ad7ba01dde2b59d374e9771fbc716f04e} 
+\index{AnimatedTexture@{AnimatedTexture}!SetTexture@{SetTexture}}
+\index{SetTexture@{SetTexture}!AnimatedTexture@{AnimatedTexture}}
+\doxysubsubsection{\texorpdfstring{SetTexture()}{SetTexture()}}
+{\footnotesize\ttfamily void Animated\+Texture\+::\+Set\+Texture (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{renderer,  }\item[{std\+::string}]{filepath }\end{DoxyParamCaption})}
+
+Sets the texture to the given image filepath
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & The renderer to render to \\
+\hline
+{\em filepath} & The file to set the texture to \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classAnimatedTexture_a77daee987b0a3d0b315becef56edb82d}\label{classAnimatedTexture_a77daee987b0a3d0b315becef56edb82d} 
+\index{AnimatedTexture@{AnimatedTexture}!String@{String}}
+\index{String@{String}!AnimatedTexture@{AnimatedTexture}}
+\doxysubsubsection{\texorpdfstring{String()}{String()}}
+{\footnotesize\ttfamily std\+::string Animated\+Texture\+::\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Returns a string representation of this component for saving
+
+\begin{DoxyReturn}{Returns}
+The string represention 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classComponent_a3adeeda735af9eb804f7f4bc111fea54}{Component}}.
+
+\Hypertarget{classAnimatedTexture_a931d4645ce44d24ae8961f241a02babb}\label{classAnimatedTexture_a931d4645ce44d24ae8961f241a02babb} 
+\index{AnimatedTexture@{AnimatedTexture}!Update@{Update}}
+\index{Update@{Update}!AnimatedTexture@{AnimatedTexture}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Animated\+Texture\+::\+Update (\begin{DoxyParamCaption}\item[{float}]{delta\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Handles updates for this component
+
+
+\begin{DoxyParams}{Parameters}
+{\em delta\+Time} & The change in time since the last frame \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classComponent_a149d3c9b7d668eb4817dd84dc35bcfcc}{Component}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/animated\+\_\+texture.\+hpp\item 
+src/animated\+\_\+texture.\+cpp\end{DoxyCompactItemize}

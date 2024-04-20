@@ -1,0 +1,22 @@
+\doxysection{helpers.\+hpp}
+\hypertarget{helpers_8hpp_source}{}\label{helpers_8hpp_source}\index{include/helpers.hpp@{include/helpers.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}imgui.h"{}}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structHelpers}{Helpers}}\ \{}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00014\ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structHelpers_ae2c3afe299a6623d2efabc5c51f54cdc}{ResizeCallback}}(ImGuiInputTextCallbackData\ *data)\ \{}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordflow}{if}\ (data-\/>EventFlag\ ==\ ImGuiInputTextFlags\_CallbackResize)\ \{}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ ImVector<char>\ *my\_str\ =\ (ImVector<char>\ *)data-\/>UserData;}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ IM\_ASSERT(my\_str-\/>begin()\ ==\ data-\/>Buf);}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ my\_str-\/>resize(data-\/>BufSize);\ \textcolor{comment}{//\ NB:\ On\ resizing\ calls,\ generally}}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ data-\/>BufSize\ ==\ data-\/>BufTextLen\ +\ 1}}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ data-\/>Buf\ =\ my\_str-\/>begin();}
+\DoxyCodeLine{00021\ \ \ \ \ \}}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{00023\ \ \ \}}
+\DoxyCodeLine{00024\ \};}
+
+\end{DoxyCode}

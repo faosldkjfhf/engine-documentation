@@ -1,0 +1,57 @@
+\doxysection{animated\+\_\+texture.\+hpp}
+\hypertarget{animated__texture_8hpp_source}{}\label{animated__texture_8hpp_source}\index{include/animated\_texture.hpp@{include/animated\_texture.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}component.hpp"{}}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classAnimatedTexture}{AnimatedTexture}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classComponent}{Component}}\ \{}
+\DoxyCodeLine{00009\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00013\ \ \ \mbox{\hyperlink{classAnimatedTexture_aea75d69283ec118ddd9fd261888ac345}{AnimatedTexture}}();}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00021\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classAnimatedTexture_ad7ba01dde2b59d374e9771fbc716f04e}{SetTexture}}(SDL\_Renderer\ *renderer,\ std::string\ filepath);}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00026\ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classAnimatedTexture_a92e49d9d3495c3b8a42a09f6948f5251}{\string~AnimatedTexture}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00033\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classAnimatedTexture_a931d4645ce44d24ae8961f241a02babb}{Update}}(\textcolor{keywordtype}{float}\ deltaTime)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00040\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classAnimatedTexture_afce7bf8b3bf237fa98e756883211bae3}{Input}}(\textcolor{keywordtype}{float}\ deltaTime)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00047\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classAnimatedTexture_a5ce306cac747e034ed45c7da49e92db2}{Render}}(SDL\_Renderer\ *renderer)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00054\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classAnimatedTexture_a3946a9fa5ea32a67f3cbd9e755382cb7}{RenderGui}}(SDL\_Renderer\ *renderer)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00059\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classAnimatedTexture_af54ddb4a7448752a35447436aaf00f8c}{Reset}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00066\ \ \ \textcolor{keyword}{virtual}\ std::string\ \mbox{\hyperlink{classAnimatedTexture_a77daee987b0a3d0b315becef56edb82d}{String}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00073\ \ \ \textcolor{keyword}{virtual}\ ComponentType\ \mbox{\hyperlink{classAnimatedTexture_ab11f534c7e65a7f9e5764e4911bab9b0}{GetType}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00083\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classAnimatedTexture_a2e3dc1d5bf03a13fb0d57e962d13ce97}{Draw}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ \textcolor{keywordtype}{int}\ w,\ \textcolor{keywordtype}{int}\ h);}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00094\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classAnimatedTexture_acb88fa932e7a1c768fe8ef94982b7d71}{PlayFrame}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ \textcolor{keywordtype}{int}\ w,\ \textcolor{keywordtype}{int}\ h,\ \textcolor{keywordtype}{int}\ frame);}
+\DoxyCodeLine{00095\ }
+\DoxyCodeLine{00101\ \ \ \textcolor{keyword}{inline}\ std::string\ \mbox{\hyperlink{classAnimatedTexture_a8d3c0ded537b05079a09171ed465f2b2}{GetFile}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \_filepath;\ \}}
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00109\ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classAnimatedTexture_a438acd9a61739f6ed90d6021ee135fa8}{SetDimensions}}(\textcolor{keywordtype}{int}\ w,\ \textcolor{keywordtype}{int}\ h)\ \{}
+\DoxyCodeLine{00110\ \ \ \ \ \_frameW\ =\ w;}
+\DoxyCodeLine{00111\ \ \ \ \ \_frameH\ =\ h;}
+\DoxyCodeLine{00112\ \ \ \}}
+\DoxyCodeLine{00113\ }
+\DoxyCodeLine{00119\ \ \ \textcolor{keyword}{inline}\ std::pair<int,\ int>\ \mbox{\hyperlink{classAnimatedTexture_a2e22d6f973327962fadeabbedf1e9e39}{GetDimensions}}()\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00120\ \ \ \ \ \textcolor{keywordflow}{return}\ std::pair<int,\ int>(\_frameW,\ \_frameH);}
+\DoxyCodeLine{00121\ \ \ \}}
+\DoxyCodeLine{00122\ }
+\DoxyCodeLine{00123\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00124\ \ \ SDL\_FRect\ \_src;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00125\ \ \ SDL\_FRect\ \_dest;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00126\ \ \ std::shared\_ptr<SDL\_Texture>\ \_texture;\ }
+\DoxyCodeLine{00127\ \ \ \textcolor{keywordtype}{int}\ \_frame;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00128\ \ \ \textcolor{keywordtype}{int}\ \_maxFrames;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00129\ \ \ \textcolor{keywordtype}{int}\ \_frameW;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00130\ \ \ \textcolor{keywordtype}{int}\ \_frameH;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00131\ \ \ std::string\ \_filepath;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00132\ \};}
+
+\end{DoxyCode}

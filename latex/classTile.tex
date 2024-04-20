@@ -1,0 +1,100 @@
+\doxysection{Tile Class Reference}
+\hypertarget{classTile}{}\label{classTile}\index{Tile@{Tile}}
+
+
+{\ttfamily \#include $<$tile.\+hpp$>$}
+
+
+
+Collaboration diagram for Tile\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=171pt]{classTile__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTile_a0f04158865bdad82dcd6876246c2556f}{Tile}} (SDL\+\_\+\+FRect rect, std\+::string filename, SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer)
+\item 
+\mbox{\hyperlink{classTile_a98634abbd93fa13d0578d7103202d03d}{\texorpdfstring{$\sim$}{\string~}\+Tile}} ()
+\item 
+SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classTile_af8230987b03dc61c31581dfacbf2c246}{Get\+Texture}} () const
+\item 
+SDL\+\_\+\+FRect \mbox{\hyperlink{classTile_ac036c41d17c6e77272e0373cdf740856}{Get\+Rect}} () const
+\item 
+std\+::string \mbox{\hyperlink{classTile_ae94e21ab6556d58bbf7a8779287c7f93}{Get\+Filename}} () const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A single \doxylink{classTile}{Tile} of a \doxylink{classTilemap}{Tilemap} 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classTile_a0f04158865bdad82dcd6876246c2556f}\label{classTile_a0f04158865bdad82dcd6876246c2556f} 
+\index{Tile@{Tile}!Tile@{Tile}}
+\index{Tile@{Tile}!Tile@{Tile}}
+\doxysubsubsection{\texorpdfstring{Tile()}{Tile()}}
+{\footnotesize\ttfamily Tile\+::\+Tile (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+FRect}]{rect,  }\item[{std\+::string}]{filename,  }\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{renderer }\end{DoxyParamCaption})}
+
+Creates a new tile with the starting coordinates of the given texture
+
+
+\begin{DoxyParams}{Parameters}
+{\em rect} & The starting coordinates of the tile \\
+\hline
+{\em filename} & The texture to load \\
+\hline
+{\em renderer} & The renderer to render with \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classTile_a98634abbd93fa13d0578d7103202d03d}\label{classTile_a98634abbd93fa13d0578d7103202d03d} 
+\index{Tile@{Tile}!````~Tile@{\texorpdfstring{$\sim$}{\string~}Tile}}
+\index{````~Tile@{\texorpdfstring{$\sim$}{\string~}Tile}!Tile@{Tile}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Tile()}{\string~Tile()}}
+{\footnotesize\ttfamily Tile\+::\texorpdfstring{$\sim$}{\string~}\+Tile (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Default destructor 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classTile_ae94e21ab6556d58bbf7a8779287c7f93}\label{classTile_ae94e21ab6556d58bbf7a8779287c7f93} 
+\index{Tile@{Tile}!GetFilename@{GetFilename}}
+\index{GetFilename@{GetFilename}!Tile@{Tile}}
+\doxysubsubsection{\texorpdfstring{GetFilename()}{GetFilename()}}
+{\footnotesize\ttfamily std\+::string Tile\+::\+Get\+Filename (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the filename of the tile texture
+
+\begin{DoxyReturn}{Returns}
+The filename of the tile 
+\end{DoxyReturn}
+\Hypertarget{classTile_ac036c41d17c6e77272e0373cdf740856}\label{classTile_ac036c41d17c6e77272e0373cdf740856} 
+\index{Tile@{Tile}!GetRect@{GetRect}}
+\index{GetRect@{GetRect}!Tile@{Tile}}
+\doxysubsubsection{\texorpdfstring{GetRect()}{GetRect()}}
+{\footnotesize\ttfamily SDL\+\_\+\+FRect Tile\+::\+Get\+Rect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Gets the SDL\+\_\+\+FRect position of the tile
+
+\begin{DoxyReturn}{Returns}
+The SDL\+\_\+\+FRect position of the tile 
+\end{DoxyReturn}
+\Hypertarget{classTile_af8230987b03dc61c31581dfacbf2c246}\label{classTile_af8230987b03dc61c31581dfacbf2c246} 
+\index{Tile@{Tile}!GetTexture@{GetTexture}}
+\index{GetTexture@{GetTexture}!Tile@{Tile}}
+\doxysubsubsection{\texorpdfstring{GetTexture()}{GetTexture()}}
+{\footnotesize\ttfamily SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*} Tile\+::\+Get\+Texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Gets the texture of the tile
+
+\begin{DoxyReturn}{Returns}
+The texture 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/tile.\+hpp\item 
+src/tile.\+cpp\end{DoxyCompactItemize}

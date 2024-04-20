@@ -1,0 +1,239 @@
+\doxysection{Scene\+Transition Class Reference}
+\hypertarget{classSceneTransition}{}\label{classSceneTransition}\index{SceneTransition@{SceneTransition}}
+
+
+{\ttfamily \#include $<$scene\+\_\+transition.\+hpp$>$}
+
+
+
+Inheritance diagram for Scene\+Transition\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{classSceneTransition__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Scene\+Transition\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{classSceneTransition__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSceneTransition_ad394e3987f1e4c81dea72d6a44d0517b}{Scene\+Transition}} ()
+\item 
+void \mbox{\hyperlink{classSceneTransition_aabdcf3787f0c3d402fa0aa7aef6d1969}{Set\+Next}} (std\+::string file)
+\item 
+std\+::string \mbox{\hyperlink{classSceneTransition_ad7404fdbadd03609a70b06525d456201}{Get\+Next}} () const
+\item 
+void \mbox{\hyperlink{classSceneTransition_aa15553ed06a456ee311918ca7abac333}{Set\+End}} (bool end)
+\item 
+bool \mbox{\hyperlink{classSceneTransition_abbcc8121d8ccd122d060d3a925e8c842}{Get\+End}} () const
+\item 
+virtual \mbox{\hyperlink{classSceneTransition_aafb06fb82165a14ed49bc360a25bbf52}{\texorpdfstring{$\sim$}{\string~}\+Scene\+Transition}} () override
+\item 
+virtual void \mbox{\hyperlink{classSceneTransition_a2752881077baf41983f9f5678fd2bcef}{Input}} (float delta\+Time) override
+\item 
+virtual void \mbox{\hyperlink{classSceneTransition_a41b41af2fcd05daeb70e4c5de97eecdd}{Update}} (float delta\+Time) override
+\item 
+virtual void \mbox{\hyperlink{classSceneTransition_a61fcb8b70b3365dce2e65c273e5970af}{Render}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer) override
+\item 
+virtual void \mbox{\hyperlink{classSceneTransition_a3989be7b64fe615173b964f167881ada}{Render\+Gui}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer) override
+\item 
+virtual std\+::string \mbox{\hyperlink{classSceneTransition_afc93b75bb9fa37830a08fcc1b69d9d3e}{String}} () override
+\item 
+virtual Component\+Type \mbox{\hyperlink{classSceneTransition_a54559fa578de968cb2ca0054fefab7a8}{Get\+Type}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classComponent}{Component}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classComponent_a8775db6d1a2c1afc2e77cd3c8f39da6f}{Component}} ()
+\item 
+virtual \mbox{\hyperlink{classComponent_ab8378fa275af98e568a7e91d33d867af}{\texorpdfstring{$\sim$}{\string~}\+Component}} ()
+\item 
+virtual void \mbox{\hyperlink{classComponent_a542f72dc58169fc8ee87ff5326d6b292}{Reset}} ()
+\item 
+void \mbox{\hyperlink{classComponent_a9522326d4cf71de20786cb5c068ab3b9}{Set\+Game\+Object}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGameObject}{Game\+Object}} $>$ g)
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGameObject}{Game\+Object}} $>$ \mbox{\hyperlink{classComponent_affa7e45459d9ac50b0db8b5c4e3e9af8}{Get\+Game\+Object}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A component that transitions you to the next scene upon collision 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classSceneTransition_ad394e3987f1e4c81dea72d6a44d0517b}\label{classSceneTransition_ad394e3987f1e4c81dea72d6a44d0517b} 
+\index{SceneTransition@{SceneTransition}!SceneTransition@{SceneTransition}}
+\index{SceneTransition@{SceneTransition}!SceneTransition@{SceneTransition}}
+\doxysubsubsection{\texorpdfstring{SceneTransition()}{SceneTransition()}}
+{\footnotesize\ttfamily Scene\+Transition\+::\+Scene\+Transition (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Default constructor \Hypertarget{classSceneTransition_aafb06fb82165a14ed49bc360a25bbf52}\label{classSceneTransition_aafb06fb82165a14ed49bc360a25bbf52} 
+\index{SceneTransition@{SceneTransition}!````~SceneTransition@{\texorpdfstring{$\sim$}{\string~}SceneTransition}}
+\index{````~SceneTransition@{\texorpdfstring{$\sim$}{\string~}SceneTransition}!SceneTransition@{SceneTransition}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}SceneTransition()}{\string~SceneTransition()}}
+{\footnotesize\ttfamily Scene\+Transition\+::\texorpdfstring{$\sim$}{\string~}\+Scene\+Transition (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Default destructor 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classSceneTransition_abbcc8121d8ccd122d060d3a925e8c842}\label{classSceneTransition_abbcc8121d8ccd122d060d3a925e8c842} 
+\index{SceneTransition@{SceneTransition}!GetEnd@{GetEnd}}
+\index{GetEnd@{GetEnd}!SceneTransition@{SceneTransition}}
+\doxysubsubsection{\texorpdfstring{GetEnd()}{GetEnd()}}
+{\footnotesize\ttfamily bool Scene\+Transition\+::\+Get\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Gets whether or not this scene transition ends the game
+
+\begin{DoxyReturn}{Returns}
+Whether or not to end the game upon collision 
+\end{DoxyReturn}
+\Hypertarget{classSceneTransition_ad7404fdbadd03609a70b06525d456201}\label{classSceneTransition_ad7404fdbadd03609a70b06525d456201} 
+\index{SceneTransition@{SceneTransition}!GetNext@{GetNext}}
+\index{GetNext@{GetNext}!SceneTransition@{SceneTransition}}
+\doxysubsubsection{\texorpdfstring{GetNext()}{GetNext()}}
+{\footnotesize\ttfamily std\+::string Scene\+Transition\+::\+Get\+Next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Gets the next scene to load
+
+\begin{DoxyReturn}{Returns}
+The file of the next scene to load 
+\end{DoxyReturn}
+\Hypertarget{classSceneTransition_a54559fa578de968cb2ca0054fefab7a8}\label{classSceneTransition_a54559fa578de968cb2ca0054fefab7a8} 
+\index{SceneTransition@{SceneTransition}!GetType@{GetType}}
+\index{GetType@{GetType}!SceneTransition@{SceneTransition}}
+\doxysubsubsection{\texorpdfstring{GetType()}{GetType()}}
+{\footnotesize\ttfamily Component\+Type Scene\+Transition\+::\+Get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Gets the type of Component\+Type that this component is
+
+\begin{DoxyReturn}{Returns}
+The corresponding Component\+Type for this component 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classComponent_a2e87d60cd7150786e51bfcda7129ed90}{Component}}.
+
+\Hypertarget{classSceneTransition_a2752881077baf41983f9f5678fd2bcef}\label{classSceneTransition_a2752881077baf41983f9f5678fd2bcef} 
+\index{SceneTransition@{SceneTransition}!Input@{Input}}
+\index{Input@{Input}!SceneTransition@{SceneTransition}}
+\doxysubsubsection{\texorpdfstring{Input()}{Input()}}
+{\footnotesize\ttfamily void Scene\+Transition\+::\+Input (\begin{DoxyParamCaption}\item[{float}]{delta\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Handles inputs for this component
+
+
+\begin{DoxyParams}{Parameters}
+{\em delta\+Time} & The change in time since the last frame \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classComponent_acc7790bf2ac32e5821bf22280c8261b0}{Component}}.
+
+\Hypertarget{classSceneTransition_a61fcb8b70b3365dce2e65c273e5970af}\label{classSceneTransition_a61fcb8b70b3365dce2e65c273e5970af} 
+\index{SceneTransition@{SceneTransition}!Render@{Render}}
+\index{Render@{Render}!SceneTransition@{SceneTransition}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void Scene\+Transition\+::\+Render (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{renderer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Handles rendering this component
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & The renderer to render with \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classComponent_af6a2cca21e381bc248a36259c0faaf21}{Component}}.
+
+\Hypertarget{classSceneTransition_a3989be7b64fe615173b964f167881ada}\label{classSceneTransition_a3989be7b64fe615173b964f167881ada} 
+\index{SceneTransition@{SceneTransition}!RenderGui@{RenderGui}}
+\index{RenderGui@{RenderGui}!SceneTransition@{SceneTransition}}
+\doxysubsubsection{\texorpdfstring{RenderGui()}{RenderGui()}}
+{\footnotesize\ttfamily void Scene\+Transition\+::\+Render\+Gui (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{renderer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Handles rendering the GUI portion of this component
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & The renderer to render with \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classComponent_a53f77ef035b671d6b71e60c6386c8e85}{Component}}.
+
+\Hypertarget{classSceneTransition_aa15553ed06a456ee311918ca7abac333}\label{classSceneTransition_aa15553ed06a456ee311918ca7abac333} 
+\index{SceneTransition@{SceneTransition}!SetEnd@{SetEnd}}
+\index{SetEnd@{SetEnd}!SceneTransition@{SceneTransition}}
+\doxysubsubsection{\texorpdfstring{SetEnd()}{SetEnd()}}
+{\footnotesize\ttfamily void Scene\+Transition\+::\+Set\+End (\begin{DoxyParamCaption}\item[{bool}]{end }\end{DoxyParamCaption})}
+
+Sets whether or not this scene transition should end the game
+
+
+\begin{DoxyParams}{Parameters}
+{\em end} & Whether or not this scene transition ends the game \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classSceneTransition_aabdcf3787f0c3d402fa0aa7aef6d1969}\label{classSceneTransition_aabdcf3787f0c3d402fa0aa7aef6d1969} 
+\index{SceneTransition@{SceneTransition}!SetNext@{SetNext}}
+\index{SetNext@{SetNext}!SceneTransition@{SceneTransition}}
+\doxysubsubsection{\texorpdfstring{SetNext()}{SetNext()}}
+{\footnotesize\ttfamily void Scene\+Transition\+::\+Set\+Next (\begin{DoxyParamCaption}\item[{std\+::string}]{file }\end{DoxyParamCaption})}
+
+Sets the next scene to load into
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & The scene file to load up \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classSceneTransition_afc93b75bb9fa37830a08fcc1b69d9d3e}\label{classSceneTransition_afc93b75bb9fa37830a08fcc1b69d9d3e} 
+\index{SceneTransition@{SceneTransition}!String@{String}}
+\index{String@{String}!SceneTransition@{SceneTransition}}
+\doxysubsubsection{\texorpdfstring{String()}{String()}}
+{\footnotesize\ttfamily std\+::string Scene\+Transition\+::\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Returns a string representation of this component for saving
+
+\begin{DoxyReturn}{Returns}
+The string representation 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classComponent_a3adeeda735af9eb804f7f4bc111fea54}{Component}}.
+
+\Hypertarget{classSceneTransition_a41b41af2fcd05daeb70e4c5de97eecdd}\label{classSceneTransition_a41b41af2fcd05daeb70e4c5de97eecdd} 
+\index{SceneTransition@{SceneTransition}!Update@{Update}}
+\index{Update@{Update}!SceneTransition@{SceneTransition}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Scene\+Transition\+::\+Update (\begin{DoxyParamCaption}\item[{float}]{delta\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Handles updates for this component
+
+
+\begin{DoxyParams}{Parameters}
+{\em delta\+Time} & The change in time since the last frame \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classComponent_a149d3c9b7d668eb4817dd84dc35bcfcc}{Component}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/scene\+\_\+transition.\+hpp\item 
+src/scene\+\_\+transition.\+cpp\end{DoxyCompactItemize}

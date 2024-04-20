@@ -1,0 +1,64 @@
+\doxysection{transform.\+hpp}
+\hypertarget{transform_8hpp_source}{}\label{transform_8hpp_source}\index{include/transform.hpp@{include/transform.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}component.hpp"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <SDL3/SDL.h>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classTransform}{Transform}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classComponent}{Component}}\ \{}
+\DoxyCodeLine{00010\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00014\ \ \ \mbox{\hyperlink{classTransform_aa08ca4266efabc768973cdeea51945ab}{Transform}}();}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00019\ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classTransform_ae39edce132ad5a9bdac2edae7457fd14}{\string~Transform}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00026\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTransform_a482773690b796ca75833539cf43067dc}{Input}}(\textcolor{keywordtype}{float}\ deltaTime)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00033\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTransform_a278b139f49742499ce3238dfa3866ae4}{Update}}(\textcolor{keywordtype}{float}\ deltaTime)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00040\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTransform_a853378db78ee89b056092d55d5e93ed4}{Render}}(SDL\_Renderer\ *renderer)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00047\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTransform_ae1240320a1a35d03dd86c87d9ea2d1f1}{RenderGui}}(SDL\_Renderer\ *renderer)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00052\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTransform_a031cc2e2412132a0e707e92b5d4c8d1f}{Reset}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00059\ \ \ \textcolor{keyword}{virtual}\ std::string\ \mbox{\hyperlink{classTransform_a466799e7e9bd809fc40dcf8a8ed7262f}{String}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00067\ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTransform_a1140b7866aab90837050ce46352b102f}{SetWH}}(\textcolor{keywordtype}{float}\ w,\ \textcolor{keywordtype}{float}\ h)\ \{}
+\DoxyCodeLine{00068\ \ \ \ \ \mbox{\hyperlink{classTransform_a150a5d1385a1d2949f660175c6a16542}{SetW}}(w);}
+\DoxyCodeLine{00069\ \ \ \ \ \mbox{\hyperlink{classTransform_a5da7f319a103f2e0ae398f2dab466625}{SetH}}(h);}
+\DoxyCodeLine{00070\ \ \ \}}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00078\ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTransform_a49ccd4032fe6f180b475c5b9c8339671}{SetXY}}(\textcolor{keywordtype}{float}\ x,\ \textcolor{keywordtype}{float}\ y)\ \{}
+\DoxyCodeLine{00079\ \ \ \ \ \mbox{\hyperlink{classTransform_a99dfeae7d8777507b0a6bcd59f4a92b9}{SetX}}(x);}
+\DoxyCodeLine{00080\ \ \ \ \ \mbox{\hyperlink{classTransform_a7f02f38109ea0aba524b5b8e016da877}{SetY}}(y);}
+\DoxyCodeLine{00081\ \ \ \}}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00088\ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTransform_a99dfeae7d8777507b0a6bcd59f4a92b9}{SetX}}(\textcolor{keywordtype}{float}\ x)\ \{\ \_rect.x\ =\ x;\ \}}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00095\ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTransform_a7f02f38109ea0aba524b5b8e016da877}{SetY}}(\textcolor{keywordtype}{float}\ y)\ \{\ \_rect.y\ =\ y;\ \}}
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00102\ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTransform_a150a5d1385a1d2949f660175c6a16542}{SetW}}(\textcolor{keywordtype}{float}\ w)\ \{\ \_rect.w\ =\ w;\ \}}
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00109\ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTransform_a5da7f319a103f2e0ae398f2dab466625}{SetH}}(\textcolor{keywordtype}{float}\ h)\ \{\ \_rect.h\ =\ h;\ \}}
+\DoxyCodeLine{00110\ }
+\DoxyCodeLine{00116\ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{classTransform_aae390a4ab5513af7b8a56543a1ce18cb}{GetX}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \_rect.x;\ \}}
+\DoxyCodeLine{00117\ }
+\DoxyCodeLine{00123\ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{classTransform_ad49cecac08ee386ea754800683a8107c}{GetY}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \_rect.y;\ \}}
+\DoxyCodeLine{00124\ }
+\DoxyCodeLine{00130\ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{classTransform_a8109a647e9a04234f40e2f69a0ef8b3b}{GetW}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \_rect.w;\ \}}
+\DoxyCodeLine{00131\ }
+\DoxyCodeLine{00137\ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{classTransform_a40d578c28811057501284be33de6fa5b}{GetH}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \_rect.h;\ \}}
+\DoxyCodeLine{00138\ }
+\DoxyCodeLine{00144\ \ \ \textcolor{keyword}{inline}\ SDL\_FRect\ \mbox{\hyperlink{classTransform_acff05aa6f29d45875522bd0f0de324b4}{GetRect}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \_rect;\ \}}
+\DoxyCodeLine{00145\ }
+\DoxyCodeLine{00151\ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{virtual}\ ComponentType\ \mbox{\hyperlink{classTransform_afe53d81aa0343323390a1a2395025d01}{GetType}}()\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{00152\ \ \ \ \ \textcolor{keywordflow}{return}\ ComponentType::Transform;}
+\DoxyCodeLine{00153\ \ \ \}}
+\DoxyCodeLine{00154\ }
+\DoxyCodeLine{00155\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00156\ \ \ SDL\_FRect\ \_rect;\ }
+\DoxyCodeLine{00157\ \};}
+
+\end{DoxyCode}

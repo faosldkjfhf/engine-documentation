@@ -1,0 +1,41 @@
+\doxysection{texture.\+hpp}
+\hypertarget{texture_8hpp_source}{}\label{texture_8hpp_source}\index{include/texture.hpp@{include/texture.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}component.hpp"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <SDL3/SDL.h>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structTexture}{Texture}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classComponent}{Component}}\ \{}
+\DoxyCodeLine{00014\ \ \ \mbox{\hyperlink{structTexture_a6c275e3f186675ff6ed73ccf970e552f}{Texture}}();}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00022\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structTexture_a889cdd19e3ac5a8db752e480daaa3a54}{CreateTexture}}(SDL\_Renderer\ *renderer,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *filepath);}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00027\ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{structTexture_ac8942e677bb3b5c06a3be96568d89fa8}{\string~Texture}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00034\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structTexture_a0fdbce4554d945fd858589bcd837c79e}{Update}}(\textcolor{keywordtype}{float}\ deltaTime)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00041\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structTexture_a0f2adb87220044be6fdecfbe11f67f70}{Input}}(\textcolor{keywordtype}{float}\ deltaTime)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00048\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structTexture_a55aabe1782dc614f8b02493729d826f1}{Render}}(SDL\_Renderer\ *renderer)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00055\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structTexture_a20e6e328147ee3dcabd219e4535dab03}{RenderGui}}(SDL\_Renderer\ *renderer)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00060\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{structTexture_a202d91776e89c7e16cc9ae381e147e75}{Reset}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00067\ \ \ \textcolor{keyword}{virtual}\ std::string\ \mbox{\hyperlink{structTexture_a382a85d97ccf0794aa1fe6121a2e8995}{String}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00074\ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{virtual}\ ComponentType\ \mbox{\hyperlink{structTexture_ae03e1038b632e4a1e3752bf54021c238}{GetType}}()\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{keywordflow}{return}\ ComponentType::Texture;}
+\DoxyCodeLine{00076\ \ \ \}}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00083\ \ \ \textcolor{keyword}{inline}\ std::string\ \mbox{\hyperlink{structTexture_a9455966d2a18eabc6c2d918f55a6ed3a}{GetFile}}()\ \{\ \textcolor{keywordflow}{return}\ \_filepath;\ \}}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00085\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00086\ \ \ std::string\ \_filepath;\ }
+\DoxyCodeLine{00087\ \ \ SDL\_Texture\ *\_texture;\ }
+\DoxyCodeLine{00088\ \};}
+
+\end{DoxyCode}

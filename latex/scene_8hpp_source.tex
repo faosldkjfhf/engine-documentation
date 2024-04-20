@@ -1,0 +1,98 @@
+\doxysection{scene.\+hpp}
+\hypertarget{scene_8hpp_source}{}\label{scene_8hpp_source}\index{include/scene.hpp@{include/scene.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}game\_object.hpp"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}imgui.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}tilemap.hpp"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <SDL3/SDL.h>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classScene}{Scene}}\ \{}
+\DoxyCodeLine{00015\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00016\ \ \ \textcolor{comment}{/*}}
+\DoxyCodeLine{00017\ \textcolor{comment}{\ \ \ *\ Creates\ a\ new\ default\ scene}}
+\DoxyCodeLine{00018\ \textcolor{comment}{\ \ \ */}}
+\DoxyCodeLine{00019\ \ \ \mbox{\hyperlink{classScene}{Scene}}();}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00024\ \ \ \mbox{\hyperlink{classScene_a3b8cec2e32546713915f8c6303c951f1}{\string~Scene}}();}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00032\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classScene_afe3148cfc731a8b258866314368208e7}{Start}}(SDL\_Renderer\ *renderer,\ SDL\_Texture\ *renderTarget);}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00039\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classScene_ae0faba71fd397e2bea5849784ee3d2fe}{Input}}(\textcolor{keywordtype}{float}\ deltaTime);}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00046\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classScene_a7e2bf79699b0c05bd353fade7b380ad7}{Update}}(\textcolor{keywordtype}{float}\ deltaTime);}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00051\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classScene_a91913b921d41d374e00eac347358dc14}{Render}}();}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00058\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classScene_aa26fb8f3b636e19433ce1081de7da7a0}{Save}}(std::string\ file);}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00065\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classScene_a0edd1fabca8d13cb5cd63f2f3354750a}{Load}}(std::string\ file);}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00070\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classScene_afa74f810c18b1881a7642defaabea8d7}{DrawGrid}}();}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00077\ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classScene_ab42735e7a4dc40fdf64c84b2e54bd4ed}{SetActive}}(\textcolor{keywordtype}{bool}\ active)\ \{\ \_active\ =\ active;\ \}}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00084\ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classScene_ae56f7c034e11a65921328febfdc538ba}{IsActive}}()\ \{\ \textcolor{keywordflow}{return}\ \_active;\ \}}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00091\ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classScene_a9e9a34dac332188ecf50165dc6f0af11}{SetName}}(std::string\ name)\ \{\ \_name\ =\ name;\ \}}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00098\ \ \ \textcolor{keyword}{inline}\ std::string\ \mbox{\hyperlink{classScene_aa36fd662c6892c992b1b958af21e8763}{GetName}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \_name;\ \}}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00105\ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classScene_a59b284ba235d2a52ce2e2e1f9f68b52d}{SetIsMovingObject}}(\textcolor{keywordtype}{bool}\ isMoving)\ \{\ \_isMovingObject\ =\ isMoving;\ \}}
+\DoxyCodeLine{00106\ }
+\DoxyCodeLine{00112\ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classScene_a430279251c71a20955cd4c4cfd44abf6}{IsMovingObject}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \_isMovingObject;\ \}}
+\DoxyCodeLine{00113\ }
+\DoxyCodeLine{00119\ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classScene_a8e5948623785660d40c5c4b702948840}{SetMousePoint}}(SDL\_FPoint\ point)\ \{\ \_mousePoint\ =\ point;\ \}}
+\DoxyCodeLine{00120\ }
+\DoxyCodeLine{00126\ \ \ \textcolor{keyword}{inline}\ SDL\_FPoint\ \mbox{\hyperlink{classScene_ad004f09151e0766d20ab1f1afb9299a8}{GetMousePoint}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \_mousePoint;\ \}}
+\DoxyCodeLine{00127\ }
+\DoxyCodeLine{00133\ \ \ \textcolor{keyword}{inline}\ std::shared\_ptr<GameObject>\ \mbox{\hyperlink{classScene_af81cb9cfb7c68ede02162caf2ef8a028}{GetPlayer}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \_player;\ \}}
+\DoxyCodeLine{00134\ }
+\DoxyCodeLine{00138\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classScene_af0b083ab402245275a3409fa0371a382}{RenderGui}}();}
+\DoxyCodeLine{00139\ }
+\DoxyCodeLine{00143\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classScene_acdf88a9e1fb865ee81dc98fcadb45ba6}{Reset}}();}
+\DoxyCodeLine{00144\ }
+\DoxyCodeLine{00150\ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classScene_adf0f702bee80c2e767e914399b9b0518}{SetSelectedObject}}(std::shared\_ptr<GameObject>\ selected)\ \{}
+\DoxyCodeLine{00151\ \ \ \ \ \_selected\ =\ selected;}
+\DoxyCodeLine{00152\ \ \ \}}
+\DoxyCodeLine{00153\ }
+\DoxyCodeLine{00159\ \ \ \textcolor{keyword}{inline}\ std::shared\_ptr<GameObject>\ \mbox{\hyperlink{classScene_ae9c907858444f761d05baf985a322a1a}{GetSelectedObject}}()\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00160\ \ \ \ \ \textcolor{keywordflow}{return}\ \_selected;}
+\DoxyCodeLine{00161\ \ \ \}}
+\DoxyCodeLine{00162\ }
+\DoxyCodeLine{00170\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classScene_a2d3d058d43848cff6751ba0fd157940d}{SetTile}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ \textcolor{keywordtype}{int}\ tile);}
+\DoxyCodeLine{00171\ }
+\DoxyCodeLine{00177\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classScene_a9dfaeb81fc8b48b1316f48930976af1d}{SetMode}}(\textcolor{keywordtype}{bool}\ mode);}
+\DoxyCodeLine{00178\ }
+\DoxyCodeLine{00184\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classScene_aa66b46583024fd68756195cd58a62135}{GetMode}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00185\ }
+\DoxyCodeLine{00189\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classScene_ae2a3c3418cebf3516518dd48e71fa7bc}{Respawn}}();}
+\DoxyCodeLine{00190\ }
+\DoxyCodeLine{00191\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00192\ \ \ std::string\ \_name;\ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00193\ \ \ SDL\_Renderer\ *\_renderer;\ \ \ \ }
+\DoxyCodeLine{00194\ \ \ SDL\_Texture\ *\_renderTarget;\ }
+\DoxyCodeLine{00195\ \ \ std::vector<std::shared\_ptr<GameObject>>}
+\DoxyCodeLine{00196\ \ \ \ \ \ \ \_gameObjects;\ }
+\DoxyCodeLine{00197\ \ \ std::shared\_ptr<GameObject>\ \_player;\ }
+\DoxyCodeLine{00198\ \ \ std::shared\_ptr<Tilemap>\ \_tilemap;\ \ \ }
+\DoxyCodeLine{00199\ \ \ \textcolor{keywordtype}{bool}\ \_active;\ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00200\ \ \ \textcolor{keywordtype}{bool}\ \_isMovingObject;\ \ \ }
+\DoxyCodeLine{00201\ \ \ SDL\_FPoint\ \_mousePoint;\ }
+\DoxyCodeLine{00202\ \ \ std::shared\_ptr<GameObject>}
+\DoxyCodeLine{00203\ \ \ \ \ \ \ \_selected;\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00204\ \ \ \textcolor{keywordtype}{bool}\ \_playMode;\ \ \ \ \ \ \ }
+\DoxyCodeLine{00205\ \ \ \textcolor{keywordtype}{int}\ \_numCollectibles;\ }
+\DoxyCodeLine{00206\ \ \ \textcolor{keywordtype}{int}\ \_score;\ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00207\ \ \ std::pair<int,\ int>\ \_spawnPoint;\ }
+\DoxyCodeLine{00208\ \ \ \textcolor{keywordtype}{int}\ \_lives;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00209\ \ \ std::string\ \_lastLoaded;\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00210\ \ \ \textcolor{keywordtype}{int}\ \_object\ =\ -\/1;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00211\ \};}
+
+\end{DoxyCode}

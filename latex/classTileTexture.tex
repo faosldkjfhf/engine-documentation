@@ -1,0 +1,228 @@
+\doxysection{Tile\+Texture Class Reference}
+\hypertarget{classTileTexture}{}\label{classTileTexture}\index{TileTexture@{TileTexture}}
+
+
+{\ttfamily \#include $<$tile\+\_\+texture.\+hpp$>$}
+
+
+
+Inheritance diagram for Tile\+Texture\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=187pt]{classTileTexture__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Tile\+Texture\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=187pt]{classTileTexture__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTileTexture_a0e067d383e85eb1eabcfa4613716cf20}{Tile\+Texture}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classTile}{Tile}} $>$ tile)
+\item 
+virtual \mbox{\hyperlink{classTileTexture_a0fcd04e316e58e084d698512b015e196}{\texorpdfstring{$\sim$}{\string~}\+Tile\+Texture}} () override
+\item 
+virtual void \mbox{\hyperlink{classTileTexture_a79735160ea032808c5a265749ee57439}{Update}} (float delta\+Time) override
+\item 
+virtual void \mbox{\hyperlink{classTileTexture_a01db60cf503cce1828c3ff925e7c73e6}{Input}} (float delta\+Time) override
+\item 
+virtual void \mbox{\hyperlink{classTileTexture_af62519137c7d8289458cc42ad7267290}{Render}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer) override
+\item 
+virtual void \mbox{\hyperlink{classTileTexture_a5ea15b8332e7ac5800bdf646f66df287}{Render\+Gui}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer) override
+\item 
+virtual void \mbox{\hyperlink{classTileTexture_a77ff8473349ea89cfc0acd97384b2360}{Reset}} () override
+\item 
+virtual std\+::string \mbox{\hyperlink{classTileTexture_a6bb8b6f61daf9e10dfabf8d4f221ff8d}{String}} () override
+\item 
+virtual Component\+Type \mbox{\hyperlink{classTileTexture_a087c3743b6889b5b68ce772fb9c7868a}{Get\+Type}} () override
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classTile}{Tile}} $>$ \mbox{\hyperlink{classTileTexture_aa9c965c391091b96482580e808f8040e}{Get\+Tile}} () const
+\item 
+void \mbox{\hyperlink{classTileTexture_aaec29c1f864c56ec52c375db5f1facd2}{Set\+Tile}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classTile}{Tile}} $>$ tile)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classComponent}{Component}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classComponent_a8775db6d1a2c1afc2e77cd3c8f39da6f}{Component}} ()
+\item 
+virtual \mbox{\hyperlink{classComponent_ab8378fa275af98e568a7e91d33d867af}{\texorpdfstring{$\sim$}{\string~}\+Component}} ()
+\item 
+void \mbox{\hyperlink{classComponent_a9522326d4cf71de20786cb5c068ab3b9}{Set\+Game\+Object}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGameObject}{Game\+Object}} $>$ g)
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGameObject}{Game\+Object}} $>$ \mbox{\hyperlink{classComponent_affa7e45459d9ac50b0db8b5c4e3e9af8}{Get\+Game\+Object}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A tile texture component to add to Game\+Objects 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classTileTexture_a0e067d383e85eb1eabcfa4613716cf20}\label{classTileTexture_a0e067d383e85eb1eabcfa4613716cf20} 
+\index{TileTexture@{TileTexture}!TileTexture@{TileTexture}}
+\index{TileTexture@{TileTexture}!TileTexture@{TileTexture}}
+\doxysubsubsection{\texorpdfstring{TileTexture()}{TileTexture()}}
+{\footnotesize\ttfamily Tile\+Texture\+::\+Tile\+Texture (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classTile}{Tile}} $>$}]{tile }\end{DoxyParamCaption})}
+
+Takes in a tile to set this texture to
+
+
+\begin{DoxyParams}{Parameters}
+{\em tile} & A shared pointer to a tile \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classTileTexture_a0fcd04e316e58e084d698512b015e196}\label{classTileTexture_a0fcd04e316e58e084d698512b015e196} 
+\index{TileTexture@{TileTexture}!````~TileTexture@{\texorpdfstring{$\sim$}{\string~}TileTexture}}
+\index{````~TileTexture@{\texorpdfstring{$\sim$}{\string~}TileTexture}!TileTexture@{TileTexture}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}TileTexture()}{\string~TileTexture()}}
+{\footnotesize\ttfamily Tile\+Texture\+::\texorpdfstring{$\sim$}{\string~}\+Tile\+Texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Default destructor 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classTileTexture_aa9c965c391091b96482580e808f8040e}\label{classTileTexture_aa9c965c391091b96482580e808f8040e} 
+\index{TileTexture@{TileTexture}!GetTile@{GetTile}}
+\index{GetTile@{GetTile}!TileTexture@{TileTexture}}
+\doxysubsubsection{\texorpdfstring{GetTile()}{GetTile()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classTile}{Tile}} $>$ Tile\+Texture\+::\+Get\+Tile (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the tile associated with this component
+
+\begin{DoxyReturn}{Returns}
+A shared pointer to the tile 
+\end{DoxyReturn}
+\Hypertarget{classTileTexture_a087c3743b6889b5b68ce772fb9c7868a}\label{classTileTexture_a087c3743b6889b5b68ce772fb9c7868a} 
+\index{TileTexture@{TileTexture}!GetType@{GetType}}
+\index{GetType@{GetType}!TileTexture@{TileTexture}}
+\doxysubsubsection{\texorpdfstring{GetType()}{GetType()}}
+{\footnotesize\ttfamily Component\+Type Tile\+Texture\+::\+Get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Returns the type of Component\+Type that this component is
+
+\begin{DoxyReturn}{Returns}
+The corresponding Component\+Type that this component is 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classComponent_a2e87d60cd7150786e51bfcda7129ed90}{Component}}.
+
+\Hypertarget{classTileTexture_a01db60cf503cce1828c3ff925e7c73e6}\label{classTileTexture_a01db60cf503cce1828c3ff925e7c73e6} 
+\index{TileTexture@{TileTexture}!Input@{Input}}
+\index{Input@{Input}!TileTexture@{TileTexture}}
+\doxysubsubsection{\texorpdfstring{Input()}{Input()}}
+{\footnotesize\ttfamily void Tile\+Texture\+::\+Input (\begin{DoxyParamCaption}\item[{float}]{delta\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Handles inputs for this component
+
+
+\begin{DoxyParams}{Parameters}
+{\em delta\+Time} & The change in time since the last frame \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classComponent_acc7790bf2ac32e5821bf22280c8261b0}{Component}}.
+
+\Hypertarget{classTileTexture_af62519137c7d8289458cc42ad7267290}\label{classTileTexture_af62519137c7d8289458cc42ad7267290} 
+\index{TileTexture@{TileTexture}!Render@{Render}}
+\index{Render@{Render}!TileTexture@{TileTexture}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void Tile\+Texture\+::\+Render (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{renderer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Handles rendering this component
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & The renderer to render with \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classComponent_af6a2cca21e381bc248a36259c0faaf21}{Component}}.
+
+\Hypertarget{classTileTexture_a5ea15b8332e7ac5800bdf646f66df287}\label{classTileTexture_a5ea15b8332e7ac5800bdf646f66df287} 
+\index{TileTexture@{TileTexture}!RenderGui@{RenderGui}}
+\index{RenderGui@{RenderGui}!TileTexture@{TileTexture}}
+\doxysubsubsection{\texorpdfstring{RenderGui()}{RenderGui()}}
+{\footnotesize\ttfamily void Tile\+Texture\+::\+Render\+Gui (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{renderer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Handles rendering the GUI portion of this component
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & The renderer to render with \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classComponent_a53f77ef035b671d6b71e60c6386c8e85}{Component}}.
+
+\Hypertarget{classTileTexture_a77ff8473349ea89cfc0acd97384b2360}\label{classTileTexture_a77ff8473349ea89cfc0acd97384b2360} 
+\index{TileTexture@{TileTexture}!Reset@{Reset}}
+\index{Reset@{Reset}!TileTexture@{TileTexture}}
+\doxysubsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily void Tile\+Texture\+::\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Resets this component to the default state 
+
+Reimplemented from \mbox{\hyperlink{classComponent_a542f72dc58169fc8ee87ff5326d6b292}{Component}}.
+
+\Hypertarget{classTileTexture_aaec29c1f864c56ec52c375db5f1facd2}\label{classTileTexture_aaec29c1f864c56ec52c375db5f1facd2} 
+\index{TileTexture@{TileTexture}!SetTile@{SetTile}}
+\index{SetTile@{SetTile}!TileTexture@{TileTexture}}
+\doxysubsubsection{\texorpdfstring{SetTile()}{SetTile()}}
+{\footnotesize\ttfamily void Tile\+Texture\+::\+Set\+Tile (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classTile}{Tile}} $>$}]{tile }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the tile to the given tile
+
+
+\begin{DoxyParams}{Parameters}
+{\em tile} & The shared pointer to the tile to set to \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classTileTexture_a6bb8b6f61daf9e10dfabf8d4f221ff8d}\label{classTileTexture_a6bb8b6f61daf9e10dfabf8d4f221ff8d} 
+\index{TileTexture@{TileTexture}!String@{String}}
+\index{String@{String}!TileTexture@{TileTexture}}
+\doxysubsubsection{\texorpdfstring{String()}{String()}}
+{\footnotesize\ttfamily std\+::string Tile\+Texture\+::\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Returns a string representation of this component for saving
+
+\begin{DoxyReturn}{Returns}
+The string representation 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classComponent_a3adeeda735af9eb804f7f4bc111fea54}{Component}}.
+
+\Hypertarget{classTileTexture_a79735160ea032808c5a265749ee57439}\label{classTileTexture_a79735160ea032808c5a265749ee57439} 
+\index{TileTexture@{TileTexture}!Update@{Update}}
+\index{Update@{Update}!TileTexture@{TileTexture}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Tile\+Texture\+::\+Update (\begin{DoxyParamCaption}\item[{float}]{delta\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Handles updates for this component
+
+
+\begin{DoxyParams}{Parameters}
+{\em delta\+Time} & The change in time since the last frame \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classComponent_a149d3c9b7d668eb4817dd84dc35bcfcc}{Component}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/tile\+\_\+texture.\+hpp\item 
+src/tile\+\_\+texture.\+cpp\end{DoxyCompactItemize}

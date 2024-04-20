@@ -1,0 +1,40 @@
+\doxysection{scene\+\_\+transition.\+hpp}
+\hypertarget{scene__transition_8hpp_source}{}\label{scene__transition_8hpp_source}\index{include/scene\_transition.hpp@{include/scene\_transition.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}component.hpp"{}}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classSceneTransition}{SceneTransition}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classComponent}{Component}}\ \{}
+\DoxyCodeLine{00009\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00013\ \ \ \mbox{\hyperlink{classSceneTransition_ad394e3987f1e4c81dea72d6a44d0517b}{SceneTransition}}();}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00020\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSceneTransition_aabdcf3787f0c3d402fa0aa7aef6d1969}{SetNext}}(std::string\ file);}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00027\ \ \ std::string\ \mbox{\hyperlink{classSceneTransition_ad7404fdbadd03609a70b06525d456201}{GetNext}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00034\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSceneTransition_aa15553ed06a456ee311918ca7abac333}{SetEnd}}(\textcolor{keywordtype}{bool}\ end);}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00041\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classSceneTransition_abbcc8121d8ccd122d060d3a925e8c842}{GetEnd}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00046\ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classSceneTransition_aafb06fb82165a14ed49bc360a25bbf52}{\string~SceneTransition}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00053\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSceneTransition_a2752881077baf41983f9f5678fd2bcef}{Input}}(\textcolor{keywordtype}{float}\ deltaTime)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00060\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSceneTransition_a41b41af2fcd05daeb70e4c5de97eecdd}{Update}}(\textcolor{keywordtype}{float}\ deltaTime)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00067\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSceneTransition_a61fcb8b70b3365dce2e65c273e5970af}{Render}}(SDL\_Renderer\ *renderer)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00074\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classSceneTransition_a3989be7b64fe615173b964f167881ada}{RenderGui}}(SDL\_Renderer\ *renderer)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00081\ \ \ \textcolor{keyword}{virtual}\ std::string\ \mbox{\hyperlink{classSceneTransition_afc93b75bb9fa37830a08fcc1b69d9d3e}{String}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00088\ \ \ \textcolor{keyword}{virtual}\ ComponentType\ \mbox{\hyperlink{classSceneTransition_a54559fa578de968cb2ca0054fefab7a8}{GetType}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00090\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00091\ \ \ std::string\ \_next;\ }
+\DoxyCodeLine{00092\ \ \ \textcolor{keywordtype}{bool}\ \_end;\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00093\ \};}
+
+\end{DoxyCode}

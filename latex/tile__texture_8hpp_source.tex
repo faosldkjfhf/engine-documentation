@@ -1,0 +1,39 @@
+\doxysection{tile\+\_\+texture.\+hpp}
+\hypertarget{tile__texture_8hpp_source}{}\label{tile__texture_8hpp_source}\index{include/tile\_texture.hpp@{include/tile\_texture.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}component.hpp"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}tile.hpp"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classTileTexture}{TileTexture}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classComponent}{Component}}\ \{}
+\DoxyCodeLine{00011\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00017\ \ \ \mbox{\hyperlink{classTileTexture}{TileTexture}}(std::shared\_ptr<Tile>\ tile);}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00022\ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classTileTexture_a0fcd04e316e58e084d698512b015e196}{\string~TileTexture}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00029\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTileTexture_a79735160ea032808c5a265749ee57439}{Update}}(\textcolor{keywordtype}{float}\ deltaTime)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00036\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTileTexture_a01db60cf503cce1828c3ff925e7c73e6}{Input}}(\textcolor{keywordtype}{float}\ deltaTime)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00043\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTileTexture_af62519137c7d8289458cc42ad7267290}{Render}}(SDL\_Renderer\ *renderer)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00050\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTileTexture_a5ea15b8332e7ac5800bdf646f66df287}{RenderGui}}(SDL\_Renderer\ *renderer)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00055\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTileTexture_a77ff8473349ea89cfc0acd97384b2360}{Reset}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00062\ \ \ \textcolor{keyword}{virtual}\ std::string\ \mbox{\hyperlink{classTileTexture_a6bb8b6f61daf9e10dfabf8d4f221ff8d}{String}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00069\ \ \ \textcolor{keyword}{virtual}\ ComponentType\ \mbox{\hyperlink{classTileTexture_a087c3743b6889b5b68ce772fb9c7868a}{GetType}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00076\ \ \ \textcolor{keyword}{inline}\ std::shared\_ptr<Tile>\ \mbox{\hyperlink{classTileTexture_aa9c965c391091b96482580e808f8040e}{GetTile}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \_tile;\ \}}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00083\ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTileTexture_aaec29c1f864c56ec52c375db5f1facd2}{SetTile}}(std::shared\_ptr<Tile>\ tile)\ \{\ \_tile\ =\ tile;\ \}}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00085\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00086\ \ \ std::shared\_ptr<Tile>\ \_tile;\ }
+\DoxyCodeLine{00087\ \};}
+
+\end{DoxyCode}

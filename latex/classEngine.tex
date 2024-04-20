@@ -1,0 +1,152 @@
+\doxysection{Engine Class Reference}
+\hypertarget{classEngine}{}\label{classEngine}\index{Engine@{Engine}}
+
+
+{\ttfamily \#include $<$engine.\+hpp$>$}
+
+
+
+Collaboration diagram for Engine\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=162pt]{classEngine__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classEngine_a8c98683b0a3aa28d8ab72a8bcd0d52f2}{Engine}} ()
+\item 
+\mbox{\hyperlink{classEngine_a8ef7030a089ecb30bbfcb9e43094717a}{\texorpdfstring{$\sim$}{\string~}\+Engine}} ()
+\item 
+void \mbox{\hyperlink{classEngine_a1fbe9f5cb4abc3572e432cae1f154817}{Start}} ()
+\item 
+void \mbox{\hyperlink{classEngine_ac09716a3fa9f31ecf4175a249375979c}{Input}} ()
+\item 
+void \mbox{\hyperlink{classEngine_ac84eefe06226f430a2448306e6fd2579}{Update}} ()
+\item 
+void \mbox{\hyperlink{classEngine_acde70aed0043e2e2091d0bb6cce8e3c1}{Render}} ()
+\item 
+void \mbox{\hyperlink{classEngine_aa72c57e946c3d0449662100049e72518}{Run}} (float fps)
+\item 
+void \mbox{\hyperlink{classEngine_a9f430a57012557fb7ef6d7336bb6c811}{Load\+Scene}} (std\+::string filepath)
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGameObject}{Game\+Object}} $>$ \mbox{\hyperlink{classEngine_a8e9bae4b2a8acc715f7c1c6c17d02efd}{Get\+Player}} ()
+\item 
+bool \mbox{\hyperlink{classEngine_a97fd3709ee2fb388212d25a3e8c1ccd4}{Is\+Running}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static SDL\+\_\+\+Event \mbox{\hyperlink{classEngine_ad7ff6822662970af26d185377a63911c}{event}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The main Kev\+Engine engine class 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classEngine_a8c98683b0a3aa28d8ab72a8bcd0d52f2}\label{classEngine_a8c98683b0a3aa28d8ab72a8bcd0d52f2} 
+\index{Engine@{Engine}!Engine@{Engine}}
+\index{Engine@{Engine}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{Engine()}{Engine()}}
+{\footnotesize\ttfamily Engine\+::\+Engine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Instantiates a new \doxylink{classEngine}{Engine} \Hypertarget{classEngine_a8ef7030a089ecb30bbfcb9e43094717a}\label{classEngine_a8ef7030a089ecb30bbfcb9e43094717a} 
+\index{Engine@{Engine}!````~Engine@{\texorpdfstring{$\sim$}{\string~}Engine}}
+\index{````~Engine@{\texorpdfstring{$\sim$}{\string~}Engine}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Engine()}{\string~Engine()}}
+{\footnotesize\ttfamily Engine\+::\texorpdfstring{$\sim$}{\string~}\+Engine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Default destructor 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classEngine_a8e9bae4b2a8acc715f7c1c6c17d02efd}\label{classEngine_a8e9bae4b2a8acc715f7c1c6c17d02efd} 
+\index{Engine@{Engine}!GetPlayer@{GetPlayer}}
+\index{GetPlayer@{GetPlayer}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{GetPlayer()}{GetPlayer()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGameObject}{Game\+Object}} $>$ Engine\+::\+Get\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Gets the player from the scene
+
+\begin{DoxyReturn}{Returns}
+The scenes player 
+\end{DoxyReturn}
+\Hypertarget{classEngine_ac09716a3fa9f31ecf4175a249375979c}\label{classEngine_ac09716a3fa9f31ecf4175a249375979c} 
+\index{Engine@{Engine}!Input@{Input}}
+\index{Input@{Input}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{Input()}{Input()}}
+{\footnotesize\ttfamily void Engine\+::\+Input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Processes user input for objects in the scene \Hypertarget{classEngine_a97fd3709ee2fb388212d25a3e8c1ccd4}\label{classEngine_a97fd3709ee2fb388212d25a3e8c1ccd4} 
+\index{Engine@{Engine}!IsRunning@{IsRunning}}
+\index{IsRunning@{IsRunning}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{IsRunning()}{IsRunning()}}
+{\footnotesize\ttfamily bool Engine\+::\+Is\+Running (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns if the current scene is active or not
+
+\begin{DoxyReturn}{Returns}
+If the scene is active 
+\end{DoxyReturn}
+\Hypertarget{classEngine_a9f430a57012557fb7ef6d7336bb6c811}\label{classEngine_a9f430a57012557fb7ef6d7336bb6c811} 
+\index{Engine@{Engine}!LoadScene@{LoadScene}}
+\index{LoadScene@{LoadScene}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{LoadScene()}{LoadScene()}}
+{\footnotesize\ttfamily void Engine\+::\+Load\+Scene (\begin{DoxyParamCaption}\item[{std\+::string}]{filepath }\end{DoxyParamCaption})}
+
+Loads a new scene from the given filepath
+
+
+\begin{DoxyParams}{Parameters}
+{\em filepath} & The scene text file to load (.txt, .scene, etc) \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classEngine_acde70aed0043e2e2091d0bb6cce8e3c1}\label{classEngine_acde70aed0043e2e2091d0bb6cce8e3c1} 
+\index{Engine@{Engine}!Render@{Render}}
+\index{Render@{Render}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void Engine\+::\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Renders objects in the scene \Hypertarget{classEngine_aa72c57e946c3d0449662100049e72518}\label{classEngine_aa72c57e946c3d0449662100049e72518} 
+\index{Engine@{Engine}!Run@{Run}}
+\index{Run@{Run}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{Run()}{Run()}}
+{\footnotesize\ttfamily void Engine\+::\+Run (\begin{DoxyParamCaption}\item[{float}]{fps }\end{DoxyParamCaption})}
+
+Infinite run loop
+
+
+\begin{DoxyParams}{Parameters}
+{\em fps} & The fps to target \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classEngine_a1fbe9f5cb4abc3572e432cae1f154817}\label{classEngine_a1fbe9f5cb4abc3572e432cae1f154817} 
+\index{Engine@{Engine}!Start@{Start}}
+\index{Start@{Start}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Engine\+::\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Initializes SDL, window, and renderer \Hypertarget{classEngine_ac84eefe06226f430a2448306e6fd2579}\label{classEngine_ac84eefe06226f430a2448306e6fd2579} 
+\index{Engine@{Engine}!Update@{Update}}
+\index{Update@{Update}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Engine\+::\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Processes updates for objects in the scene 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classEngine_ad7ff6822662970af26d185377a63911c}\label{classEngine_ad7ff6822662970af26d185377a63911c} 
+\index{Engine@{Engine}!event@{event}}
+\index{event@{event}!Engine@{Engine}}
+\doxysubsubsection{\texorpdfstring{event}{event}}
+{\footnotesize\ttfamily SDL\+\_\+\+Event Engine\+::event\hspace{0.3cm}{\ttfamily [static]}}
+
+SDL\+\_\+\+Event to parse 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/engine.\+hpp\item 
+src/engine.\+cpp\end{DoxyCompactItemize}

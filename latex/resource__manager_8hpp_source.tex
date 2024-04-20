@@ -1,0 +1,43 @@
+\doxysection{resource\+\_\+manager.\+hpp}
+\hypertarget{resource__manager_8hpp_source}{}\label{resource__manager_8hpp_source}\index{include/resource\_manager.hpp@{include/resource\_manager.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <SDL3/SDL.h>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <unordered\_map>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structTextureStruct}{TextureStruct}}\ \{}
+\DoxyCodeLine{00011\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structTextureStruct_a7be1400cbc4009502ebd97f8cee482b0}{w}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00012\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structTextureStruct_a3e531040f7eb1584d7e70f3f71fd0ea7}{h}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00013\ \ \ std::shared\_ptr<SDL\_Texture>\ \mbox{\hyperlink{structTextureStruct_a7df25a75b60063c25ca5018798840052}{texture}};\ }
+\DoxyCodeLine{00014\ \};}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classResourceManager}{ResourceManager}}\ \{}
+\DoxyCodeLine{00020\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00027\ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{static}\ \mbox{\hyperlink{classResourceManager}{ResourceManager}}\ \&\mbox{\hyperlink{classResourceManager_a48cd1c56c64af260a6ddb5fbd4daae54}{Instance}}()\ \{}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordflow}{if}\ (\_instance\ ==\ \textcolor{keyword}{nullptr})\ \{}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \_instance\ =\ std::make\_shared<ResourceManager>();}
+\DoxyCodeLine{00030\ \ \ \ \ \}}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordflow}{return}\ *\_instance;}
+\DoxyCodeLine{00033\ \ \ \}}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00038\ \ \ \mbox{\hyperlink{classResourceManager_a3b32babd2e81909bbd90d7f2d566fadb}{ResourceManager}}();}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00043\ \ \ \mbox{\hyperlink{classResourceManager_a671c186e4630599e7e36d000c53eaf80}{\string~ResourceManager}}();}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00052\ \ \ std::shared\_ptr<SDL\_Texture>\ \mbox{\hyperlink{classResourceManager_afc8dc26b9daeea53f9d062391d92970a}{LoadTexture}}(SDL\_Renderer\ *renderer,}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::string\ filepath);}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00061\ \ \ std::pair<int,\ int>\ \mbox{\hyperlink{classResourceManager_a07665c8bc89079df556e1a77d88392a6}{GetSize}}(std::string\ filepath);}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00064\ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{static}\ std::shared\_ptr<ResourceManager>}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \_instance;\ }
+\DoxyCodeLine{00066\ \ \ std::unordered\_map<std::string,\ TextureStruct>}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \_textureMap;\ }
+\DoxyCodeLine{00068\ \};}
+
+\end{DoxyCode}

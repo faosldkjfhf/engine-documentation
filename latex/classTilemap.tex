@@ -1,0 +1,207 @@
+\doxysection{Tilemap Class Reference}
+\hypertarget{classTilemap}{}\label{classTilemap}\index{Tilemap@{Tilemap}}
+
+
+{\ttfamily \#include $<$tilemap.\+hpp$>$}
+
+
+
+Collaboration diagram for Tilemap\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=165pt]{classTilemap__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTilemap_afbef01118f73b0e915e39e6f9e2c686e}{Tilemap}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer, int rows=20, int columns=16)
+\item 
+\mbox{\hyperlink{classTilemap_a55034b53884593f379f8475b38e46129}{\texorpdfstring{$\sim$}{\string~}\+Tilemap}} ()
+\item 
+void \mbox{\hyperlink{classTilemap_ac54437a3e9caf8c1225ba861c7c229c9}{Render\+Gui}} ()
+\item 
+void \mbox{\hyperlink{classTilemap_af41d542d17fe7cd04c8b2065d848b6ec}{Render}} ()
+\item 
+void \mbox{\hyperlink{classTilemap_a8dcf7d035b6596da0c4b5b9b65dbe120}{Reset}} ()
+\item 
+void \mbox{\hyperlink{classTilemap_ad2c23a1f13e013ca627d0bcb9cd51f00}{Add\+Tiles}} (int width, int height, std\+::string filepath)
+\item 
+void \mbox{\hyperlink{classTilemap_a48c2a8663d82638db546a9580861f6ab}{Set\+Tile}} (int x, int y, int tile)
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classTile}{Tile}} $>$ \mbox{\hyperlink{classTilemap_aa953bc7b76f6a3e2557bdd083437d046}{Get\+Tile}} (int index) const
+\item 
+int \mbox{\hyperlink{classTilemap_a9f61d3b18d7e660173f73cffb8b76145}{Get\+Tile}} (int x, int y) const
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classTile}{Tile}} $>$ \mbox{\hyperlink{classTilemap_addfc2e0ff0e6589f48695592e40d76bc}{Get\+Tile}} (SDL\+\_\+\+FRect rect, std\+::string filename)
+\item 
+std\+::string \mbox{\hyperlink{classTilemap_a948b33ee569ba4d5d387624d798dc744}{String}} () const
+\item 
+int \mbox{\hyperlink{classTilemap_a9e2c83a974b9a4ba33371c5e11123895}{Tile\+To\+Index}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classTile}{Tile}} $>$ tile)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Splits textures into tiles and holds those tiles 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classTilemap_afbef01118f73b0e915e39e6f9e2c686e}\label{classTilemap_afbef01118f73b0e915e39e6f9e2c686e} 
+\index{Tilemap@{Tilemap}!Tilemap@{Tilemap}}
+\index{Tilemap@{Tilemap}!Tilemap@{Tilemap}}
+\doxysubsubsection{\texorpdfstring{Tilemap()}{Tilemap()}}
+{\footnotesize\ttfamily Tilemap\+::\+Tilemap (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{renderer,  }\item[{int}]{rows = {\ttfamily 20},  }\item[{int}]{columns = {\ttfamily 16} }\end{DoxyParamCaption})}
+
+Creates a new tilemap with a default size of 20 x 16
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & The renderer to render with \\
+\hline
+{\em rows} & The number of rows, default 20 \\
+\hline
+{\em columns} & The number of columns, default 16 \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classTilemap_a55034b53884593f379f8475b38e46129}\label{classTilemap_a55034b53884593f379f8475b38e46129} 
+\index{Tilemap@{Tilemap}!````~Tilemap@{\texorpdfstring{$\sim$}{\string~}Tilemap}}
+\index{````~Tilemap@{\texorpdfstring{$\sim$}{\string~}Tilemap}!Tilemap@{Tilemap}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Tilemap()}{\string~Tilemap()}}
+{\footnotesize\ttfamily Tilemap\+::\texorpdfstring{$\sim$}{\string~}\+Tilemap (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Default destructor 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classTilemap_ad2c23a1f13e013ca627d0bcb9cd51f00}\label{classTilemap_ad2c23a1f13e013ca627d0bcb9cd51f00} 
+\index{Tilemap@{Tilemap}!AddTiles@{AddTiles}}
+\index{AddTiles@{AddTiles}!Tilemap@{Tilemap}}
+\doxysubsubsection{\texorpdfstring{AddTiles()}{AddTiles()}}
+{\footnotesize\ttfamily void Tilemap\+::\+Add\+Tiles (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height,  }\item[{std\+::string}]{filepath }\end{DoxyParamCaption})}
+
+Adds tiles to the tilemap with a size of width x height
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & Width of each tile to create \\
+\hline
+{\em height} & Height of each tile to create \\
+\hline
+{\em filepath} & File to take from \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classTilemap_aa953bc7b76f6a3e2557bdd083437d046}\label{classTilemap_aa953bc7b76f6a3e2557bdd083437d046} 
+\index{Tilemap@{Tilemap}!GetTile@{GetTile}}
+\index{GetTile@{GetTile}!Tilemap@{Tilemap}}
+\doxysubsubsection{\texorpdfstring{GetTile()}{GetTile()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classTile}{Tile}} $>$ Tilemap\+::\+Get\+Tile (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the tile at the index
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & The index to retrieve \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A shared pointer to the \doxylink{classTile}{Tile} 
+\end{DoxyReturn}
+\Hypertarget{classTilemap_a9f61d3b18d7e660173f73cffb8b76145}\label{classTilemap_a9f61d3b18d7e660173f73cffb8b76145} 
+\index{Tilemap@{Tilemap}!GetTile@{GetTile}}
+\index{GetTile@{GetTile}!Tilemap@{Tilemap}}
+\doxysubsubsection{\texorpdfstring{GetTile()}{GetTile()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily int Tilemap\+::\+Get\+Tile (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the index of the tile at position x, y in the map
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x position \\
+\hline
+{\em y} & The y position \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The index of the tile 
+\end{DoxyReturn}
+\Hypertarget{classTilemap_addfc2e0ff0e6589f48695592e40d76bc}\label{classTilemap_addfc2e0ff0e6589f48695592e40d76bc} 
+\index{Tilemap@{Tilemap}!GetTile@{GetTile}}
+\index{GetTile@{GetTile}!Tilemap@{Tilemap}}
+\doxysubsubsection{\texorpdfstring{GetTile()}{GetTile()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classTile}{Tile}} $>$ Tilemap\+::\+Get\+Tile (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+FRect}]{rect,  }\item[{std\+::string}]{filename }\end{DoxyParamCaption})}
+
+Gets a tile with the same SDL\+\_\+\+FRect and filename
+
+
+\begin{DoxyParams}{Parameters}
+{\em rect} & The position, w, and h of the tile to retrieve \\
+\hline
+{\em filename} & The filename of the texture \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A shared pointer to the \doxylink{classTile}{Tile} 
+\end{DoxyReturn}
+\Hypertarget{classTilemap_af41d542d17fe7cd04c8b2065d848b6ec}\label{classTilemap_af41d542d17fe7cd04c8b2065d848b6ec} 
+\index{Tilemap@{Tilemap}!Render@{Render}}
+\index{Render@{Render}!Tilemap@{Tilemap}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void Tilemap\+::\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Handles rendering the tilemap \Hypertarget{classTilemap_ac54437a3e9caf8c1225ba861c7c229c9}\label{classTilemap_ac54437a3e9caf8c1225ba861c7c229c9} 
+\index{Tilemap@{Tilemap}!RenderGui@{RenderGui}}
+\index{RenderGui@{RenderGui}!Tilemap@{Tilemap}}
+\doxysubsubsection{\texorpdfstring{RenderGui()}{RenderGui()}}
+{\footnotesize\ttfamily void Tilemap\+::\+Render\+Gui (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Handles rendering the GUI portion of the tilemap \Hypertarget{classTilemap_a8dcf7d035b6596da0c4b5b9b65dbe120}\label{classTilemap_a8dcf7d035b6596da0c4b5b9b65dbe120} 
+\index{Tilemap@{Tilemap}!Reset@{Reset}}
+\index{Reset@{Reset}!Tilemap@{Tilemap}}
+\doxysubsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily void Tilemap\+::\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Resets the tilemap to its default state \Hypertarget{classTilemap_a48c2a8663d82638db546a9580861f6ab}\label{classTilemap_a48c2a8663d82638db546a9580861f6ab} 
+\index{Tilemap@{Tilemap}!SetTile@{SetTile}}
+\index{SetTile@{SetTile}!Tilemap@{Tilemap}}
+\doxysubsubsection{\texorpdfstring{SetTile()}{SetTile()}}
+{\footnotesize\ttfamily void Tilemap\+::\+Set\+Tile (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{tile }\end{DoxyParamCaption})}
+
+Sets the tile at x, y to the index from the tilemap
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x position \\
+\hline
+{\em y} & The y position \\
+\hline
+{\em tile} & The index of the tile \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classTilemap_a948b33ee569ba4d5d387624d798dc744}\label{classTilemap_a948b33ee569ba4d5d387624d798dc744} 
+\index{Tilemap@{Tilemap}!String@{String}}
+\index{String@{String}!Tilemap@{Tilemap}}
+\doxysubsubsection{\texorpdfstring{String()}{String()}}
+{\footnotesize\ttfamily std\+::string Tilemap\+::\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Returns a string representation of the \doxylink{classTilemap}{Tilemap} for saving \Hypertarget{classTilemap_a9e2c83a974b9a4ba33371c5e11123895}\label{classTilemap_a9e2c83a974b9a4ba33371c5e11123895} 
+\index{Tilemap@{Tilemap}!TileToIndex@{TileToIndex}}
+\index{TileToIndex@{TileToIndex}!Tilemap@{Tilemap}}
+\doxysubsubsection{\texorpdfstring{TileToIndex()}{TileToIndex()}}
+{\footnotesize\ttfamily int Tilemap\+::\+Tile\+To\+Index (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classTile}{Tile}} $>$}]{tile }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the index of the given tile
+
+
+\begin{DoxyParams}{Parameters}
+{\em tile} & A shared pointer of the tile to get \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+index The index of that tile 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/tilemap.\+hpp\item 
+src/tilemap.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,359 @@
+\doxysection{Scene Class Reference}
+\hypertarget{classScene}{}\label{classScene}\index{Scene@{Scene}}
+
+
+{\ttfamily \#include $<$scene.\+hpp$>$}
+
+
+
+Collaboration diagram for Scene\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{classScene__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classScene_a3b8cec2e32546713915f8c6303c951f1}{\texorpdfstring{$\sim$}{\string~}\+Scene}} ()
+\item 
+void \mbox{\hyperlink{classScene_afe3148cfc731a8b258866314368208e7}{Start}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer, SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*}render\+Target)
+\item 
+void \mbox{\hyperlink{classScene_ae0faba71fd397e2bea5849784ee3d2fe}{Input}} (float delta\+Time)
+\item 
+void \mbox{\hyperlink{classScene_a7e2bf79699b0c05bd353fade7b380ad7}{Update}} (float delta\+Time)
+\item 
+void \mbox{\hyperlink{classScene_a91913b921d41d374e00eac347358dc14}{Render}} ()
+\item 
+void \mbox{\hyperlink{classScene_aa26fb8f3b636e19433ce1081de7da7a0}{Save}} (std\+::string file)
+\item 
+void \mbox{\hyperlink{classScene_a0edd1fabca8d13cb5cd63f2f3354750a}{Load}} (std\+::string file)
+\item 
+void \mbox{\hyperlink{classScene_afa74f810c18b1881a7642defaabea8d7}{Draw\+Grid}} ()
+\item 
+void \mbox{\hyperlink{classScene_ab42735e7a4dc40fdf64c84b2e54bd4ed}{Set\+Active}} (bool active)
+\item 
+bool \mbox{\hyperlink{classScene_ae56f7c034e11a65921328febfdc538ba}{Is\+Active}} ()
+\item 
+void \mbox{\hyperlink{classScene_a9e9a34dac332188ecf50165dc6f0af11}{Set\+Name}} (std\+::string name)
+\item 
+std\+::string \mbox{\hyperlink{classScene_aa36fd662c6892c992b1b958af21e8763}{Get\+Name}} () const
+\item 
+void \mbox{\hyperlink{classScene_a59b284ba235d2a52ce2e2e1f9f68b52d}{Set\+Is\+Moving\+Object}} (bool is\+Moving)
+\item 
+bool \mbox{\hyperlink{classScene_a430279251c71a20955cd4c4cfd44abf6}{Is\+Moving\+Object}} () const
+\item 
+void \mbox{\hyperlink{classScene_a8e5948623785660d40c5c4b702948840}{Set\+Mouse\+Point}} (SDL\+\_\+\+FPoint point)
+\item 
+SDL\+\_\+\+FPoint \mbox{\hyperlink{classScene_ad004f09151e0766d20ab1f1afb9299a8}{Get\+Mouse\+Point}} () const
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGameObject}{Game\+Object}} $>$ \mbox{\hyperlink{classScene_af81cb9cfb7c68ede02162caf2ef8a028}{Get\+Player}} () const
+\item 
+void \mbox{\hyperlink{classScene_af0b083ab402245275a3409fa0371a382}{Render\+Gui}} ()
+\item 
+void \mbox{\hyperlink{classScene_acdf88a9e1fb865ee81dc98fcadb45ba6}{Reset}} ()
+\item 
+void \mbox{\hyperlink{classScene_adf0f702bee80c2e767e914399b9b0518}{Set\+Selected\+Object}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGameObject}{Game\+Object}} $>$ selected)
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGameObject}{Game\+Object}} $>$ \mbox{\hyperlink{classScene_ae9c907858444f761d05baf985a322a1a}{Get\+Selected\+Object}} () const
+\item 
+void \mbox{\hyperlink{classScene_a2d3d058d43848cff6751ba0fd157940d}{Set\+Tile}} (int x, int y, int tile)
+\item 
+void \mbox{\hyperlink{classScene_a9dfaeb81fc8b48b1316f48930976af1d}{Set\+Mode}} (bool mode)
+\item 
+bool \mbox{\hyperlink{classScene_aa66b46583024fd68756195cd58a62135}{Get\+Mode}} () const
+\item 
+void \mbox{\hyperlink{classScene_ae2a3c3418cebf3516518dd48e71fa7bc}{Respawn}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A scene of the game 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classScene_a3b8cec2e32546713915f8c6303c951f1}\label{classScene_a3b8cec2e32546713915f8c6303c951f1} 
+\index{Scene@{Scene}!````~Scene@{\texorpdfstring{$\sim$}{\string~}Scene}}
+\index{````~Scene@{\texorpdfstring{$\sim$}{\string~}Scene}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Scene()}{\string~Scene()}}
+{\footnotesize\ttfamily Scene\+::\texorpdfstring{$\sim$}{\string~}\+Scene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Default destructor 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classScene_afa74f810c18b1881a7642defaabea8d7}\label{classScene_afa74f810c18b1881a7642defaabea8d7} 
+\index{Scene@{Scene}!DrawGrid@{DrawGrid}}
+\index{DrawGrid@{DrawGrid}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{DrawGrid()}{DrawGrid()}}
+{\footnotesize\ttfamily void Scene\+::\+Draw\+Grid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Draws a grid over the screen \Hypertarget{classScene_aa66b46583024fd68756195cd58a62135}\label{classScene_aa66b46583024fd68756195cd58a62135} 
+\index{Scene@{Scene}!GetMode@{GetMode}}
+\index{GetMode@{GetMode}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{GetMode()}{GetMode()}}
+{\footnotesize\ttfamily bool Scene\+::\+Get\+Mode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Gets the current mode
+
+\begin{DoxyReturn}{Returns}
+True if playing, false if editing 
+\end{DoxyReturn}
+\Hypertarget{classScene_ad004f09151e0766d20ab1f1afb9299a8}\label{classScene_ad004f09151e0766d20ab1f1afb9299a8} 
+\index{Scene@{Scene}!GetMousePoint@{GetMousePoint}}
+\index{GetMousePoint@{GetMousePoint}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{GetMousePoint()}{GetMousePoint()}}
+{\footnotesize\ttfamily SDL\+\_\+\+FPoint Scene\+::\+Get\+Mouse\+Point (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the relative position of the mouse
+
+\begin{DoxyReturn}{Returns}
+The relative position of the mouse 
+\end{DoxyReturn}
+\Hypertarget{classScene_aa36fd662c6892c992b1b958af21e8763}\label{classScene_aa36fd662c6892c992b1b958af21e8763} 
+\index{Scene@{Scene}!GetName@{GetName}}
+\index{GetName@{GetName}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{GetName()}{GetName()}}
+{\footnotesize\ttfamily std\+::string Scene\+::\+Get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the name of the scene
+
+\begin{DoxyReturn}{Returns}
+The name of the scene 
+\end{DoxyReturn}
+\Hypertarget{classScene_af81cb9cfb7c68ede02162caf2ef8a028}\label{classScene_af81cb9cfb7c68ede02162caf2ef8a028} 
+\index{Scene@{Scene}!GetPlayer@{GetPlayer}}
+\index{GetPlayer@{GetPlayer}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{GetPlayer()}{GetPlayer()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGameObject}{Game\+Object}} $>$ Scene\+::\+Get\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the player in the scene
+
+\begin{DoxyReturn}{Returns}
+A shared pointer to the player in the scene 
+\end{DoxyReturn}
+\Hypertarget{classScene_ae9c907858444f761d05baf985a322a1a}\label{classScene_ae9c907858444f761d05baf985a322a1a} 
+\index{Scene@{Scene}!GetSelectedObject@{GetSelectedObject}}
+\index{GetSelectedObject@{GetSelectedObject}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{GetSelectedObject()}{GetSelectedObject()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGameObject}{Game\+Object}} $>$ Scene\+::\+Get\+Selected\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the currently selected object
+
+\begin{DoxyReturn}{Returns}
+A shared pointer to the currently selected \doxylink{classGameObject}{Game\+Object} 
+\end{DoxyReturn}
+\Hypertarget{classScene_ae0faba71fd397e2bea5849784ee3d2fe}\label{classScene_ae0faba71fd397e2bea5849784ee3d2fe} 
+\index{Scene@{Scene}!Input@{Input}}
+\index{Input@{Input}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{Input()}{Input()}}
+{\footnotesize\ttfamily void Scene\+::\+Input (\begin{DoxyParamCaption}\item[{float}]{delta\+Time }\end{DoxyParamCaption})}
+
+Handles inputs for all objects in the scene
+
+
+\begin{DoxyParams}{Parameters}
+{\em delta\+Time} & The change in time since the last frame \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classScene_ae56f7c034e11a65921328febfdc538ba}\label{classScene_ae56f7c034e11a65921328febfdc538ba} 
+\index{Scene@{Scene}!IsActive@{IsActive}}
+\index{IsActive@{IsActive}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{IsActive()}{IsActive()}}
+{\footnotesize\ttfamily bool Scene\+::\+Is\+Active (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns true if the scene is active
+
+\begin{DoxyReturn}{Returns}
+True if the scene is active 
+\end{DoxyReturn}
+\Hypertarget{classScene_a430279251c71a20955cd4c4cfd44abf6}\label{classScene_a430279251c71a20955cd4c4cfd44abf6} 
+\index{Scene@{Scene}!IsMovingObject@{IsMovingObject}}
+\index{IsMovingObject@{IsMovingObject}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{IsMovingObject()}{IsMovingObject()}}
+{\footnotesize\ttfamily bool Scene\+::\+Is\+Moving\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns true if we are moving an object
+
+\begin{DoxyReturn}{Returns}
+True if we are moving an object 
+\end{DoxyReturn}
+\Hypertarget{classScene_a0edd1fabca8d13cb5cd63f2f3354750a}\label{classScene_a0edd1fabca8d13cb5cd63f2f3354750a} 
+\index{Scene@{Scene}!Load@{Load}}
+\index{Load@{Load}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{Load()}{Load()}}
+{\footnotesize\ttfamily void Scene\+::\+Load (\begin{DoxyParamCaption}\item[{std\+::string}]{file }\end{DoxyParamCaption})}
+
+Loads a scene from the disk
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & The file to load \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classScene_a91913b921d41d374e00eac347358dc14}\label{classScene_a91913b921d41d374e00eac347358dc14} 
+\index{Scene@{Scene}!Render@{Render}}
+\index{Render@{Render}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void Scene\+::\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Handles rendering all objects in the scene \Hypertarget{classScene_af0b083ab402245275a3409fa0371a382}\label{classScene_af0b083ab402245275a3409fa0371a382} 
+\index{Scene@{Scene}!RenderGui@{RenderGui}}
+\index{RenderGui@{RenderGui}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{RenderGui()}{RenderGui()}}
+{\footnotesize\ttfamily void Scene\+::\+Render\+Gui (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Handles rendering the GUI portion of all objects in the scene \Hypertarget{classScene_acdf88a9e1fb865ee81dc98fcadb45ba6}\label{classScene_acdf88a9e1fb865ee81dc98fcadb45ba6} 
+\index{Scene@{Scene}!Reset@{Reset}}
+\index{Reset@{Reset}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily void Scene\+::\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Resets the scene to default state \Hypertarget{classScene_ae2a3c3418cebf3516518dd48e71fa7bc}\label{classScene_ae2a3c3418cebf3516518dd48e71fa7bc} 
+\index{Scene@{Scene}!Respawn@{Respawn}}
+\index{Respawn@{Respawn}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{Respawn()}{Respawn()}}
+{\footnotesize\ttfamily void Scene\+::\+Respawn (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Respawns the player at the saved spawn point \Hypertarget{classScene_aa26fb8f3b636e19433ce1081de7da7a0}\label{classScene_aa26fb8f3b636e19433ce1081de7da7a0} 
+\index{Scene@{Scene}!Save@{Save}}
+\index{Save@{Save}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{Save()}{Save()}}
+{\footnotesize\ttfamily void Scene\+::\+Save (\begin{DoxyParamCaption}\item[{std\+::string}]{file }\end{DoxyParamCaption})}
+
+Saves the scene to the file
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & The file to save to \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classScene_ab42735e7a4dc40fdf64c84b2e54bd4ed}\label{classScene_ab42735e7a4dc40fdf64c84b2e54bd4ed} 
+\index{Scene@{Scene}!SetActive@{SetActive}}
+\index{SetActive@{SetActive}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{SetActive()}{SetActive()}}
+{\footnotesize\ttfamily void Scene\+::\+Set\+Active (\begin{DoxyParamCaption}\item[{bool}]{active }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the scene to active or inactive
+
+
+\begin{DoxyParams}{Parameters}
+{\em active} & Active if true \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classScene_a59b284ba235d2a52ce2e2e1f9f68b52d}\label{classScene_a59b284ba235d2a52ce2e2e1f9f68b52d} 
+\index{Scene@{Scene}!SetIsMovingObject@{SetIsMovingObject}}
+\index{SetIsMovingObject@{SetIsMovingObject}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{SetIsMovingObject()}{SetIsMovingObject()}}
+{\footnotesize\ttfamily void Scene\+::\+Set\+Is\+Moving\+Object (\begin{DoxyParamCaption}\item[{bool}]{is\+Moving }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets if we are moving an object
+
+
+\begin{DoxyParams}{Parameters}
+{\em is\+Moving} & Whether or not we are moving an object \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classScene_a9dfaeb81fc8b48b1316f48930976af1d}\label{classScene_a9dfaeb81fc8b48b1316f48930976af1d} 
+\index{Scene@{Scene}!SetMode@{SetMode}}
+\index{SetMode@{SetMode}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{SetMode()}{SetMode()}}
+{\footnotesize\ttfamily void Scene\+::\+Set\+Mode (\begin{DoxyParamCaption}\item[{bool}]{mode }\end{DoxyParamCaption})}
+
+Sets the mode to playing if true, editing if false
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & The mode to set to \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classScene_a8e5948623785660d40c5c4b702948840}\label{classScene_a8e5948623785660d40c5c4b702948840} 
+\index{Scene@{Scene}!SetMousePoint@{SetMousePoint}}
+\index{SetMousePoint@{SetMousePoint}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{SetMousePoint()}{SetMousePoint()}}
+{\footnotesize\ttfamily void Scene\+::\+Set\+Mouse\+Point (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+FPoint}]{point }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the relative position of the mouse
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & The location of the mouse \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classScene_a9e9a34dac332188ecf50165dc6f0af11}\label{classScene_a9e9a34dac332188ecf50165dc6f0af11} 
+\index{Scene@{Scene}!SetName@{SetName}}
+\index{SetName@{SetName}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{SetName()}{SetName()}}
+{\footnotesize\ttfamily void Scene\+::\+Set\+Name (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the name of the scene
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name to set to \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classScene_adf0f702bee80c2e767e914399b9b0518}\label{classScene_adf0f702bee80c2e767e914399b9b0518} 
+\index{Scene@{Scene}!SetSelectedObject@{SetSelectedObject}}
+\index{SetSelectedObject@{SetSelectedObject}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{SetSelectedObject()}{SetSelectedObject()}}
+{\footnotesize\ttfamily void Scene\+::\+Set\+Selected\+Object (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGameObject}{Game\+Object}} $>$}]{selected }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the currently selected object
+
+
+\begin{DoxyParams}{Parameters}
+{\em selected} & The selected object to set to \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classScene_a2d3d058d43848cff6751ba0fd157940d}\label{classScene_a2d3d058d43848cff6751ba0fd157940d} 
+\index{Scene@{Scene}!SetTile@{SetTile}}
+\index{SetTile@{SetTile}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{SetTile()}{SetTile()}}
+{\footnotesize\ttfamily void Scene\+::\+Set\+Tile (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{tile }\end{DoxyParamCaption})}
+
+Sets the tile at a location to a different tile
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x position in the grid \\
+\hline
+{\em y} & The y position in the grid \\
+\hline
+{\em tile} & The index of the tile in the tilemap \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classScene_afe3148cfc731a8b258866314368208e7}\label{classScene_afe3148cfc731a8b258866314368208e7} 
+\index{Scene@{Scene}!Start@{Start}}
+\index{Start@{Start}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Scene\+::\+Start (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{renderer,  }\item[{SDL\+\_\+\+Texture \texorpdfstring{$\ast$}{*}}]{render\+Target }\end{DoxyParamCaption})}
+
+Adds a renderer and render target for the scene
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & The renderer to render with \\
+\hline
+{\em render\+Target} & The target texture to render to \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classScene_a7e2bf79699b0c05bd353fade7b380ad7}\label{classScene_a7e2bf79699b0c05bd353fade7b380ad7} 
+\index{Scene@{Scene}!Update@{Update}}
+\index{Update@{Update}!Scene@{Scene}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Scene\+::\+Update (\begin{DoxyParamCaption}\item[{float}]{delta\+Time }\end{DoxyParamCaption})}
+
+Handles updates for all objects in the scene
+
+
+\begin{DoxyParams}{Parameters}
+{\em delta\+Time} & The change in time since the last frame \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/scene.\+hpp\item 
+src/scene.\+cpp\end{DoxyCompactItemize}

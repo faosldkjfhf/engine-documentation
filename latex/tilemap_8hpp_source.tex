@@ -1,0 +1,62 @@
+\doxysection{tilemap.\+hpp}
+\hypertarget{tilemap_8hpp_source}{}\label{tilemap_8hpp_source}\index{include/tilemap.hpp@{include/tilemap.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}tile.hpp"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <SDL3/SDL.h>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structLoadedTile}{LoadedTile}}\ \{}
+\DoxyCodeLine{00012\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structLoadedTile_aad75ea3b6483b4827e6c380a8f89fc42}{width}};\ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00013\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structLoadedTile_a2fb4ee3877d0dd76c5926c719474ae6d}{height}};\ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00014\ \ \ std::string\ \mbox{\hyperlink{structLoadedTile_a0d6d1d356b0f069e3213d8b4c6e1cb8f}{filepath}};\ }
+\DoxyCodeLine{00015\ \};}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classTilemap}{Tilemap}}\ \{}
+\DoxyCodeLine{00021\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00029\ \ \ \mbox{\hyperlink{classTilemap_afbef01118f73b0e915e39e6f9e2c686e}{Tilemap}}(SDL\_Renderer\ *renderer,\ \textcolor{keywordtype}{int}\ rows\ =\ 20,\ \textcolor{keywordtype}{int}\ columns\ =\ 16);}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00034\ \ \ \mbox{\hyperlink{classTilemap_a55034b53884593f379f8475b38e46129}{\string~Tilemap}}();}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00039\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTilemap_ac54437a3e9caf8c1225ba861c7c229c9}{RenderGui}}();}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00044\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTilemap_af41d542d17fe7cd04c8b2065d848b6ec}{Render}}();}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00049\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTilemap_a8dcf7d035b6596da0c4b5b9b65dbe120}{Reset}}();}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00058\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTilemap_ad2c23a1f13e013ca627d0bcb9cd51f00}{AddTiles}}(\textcolor{keywordtype}{int}\ width,\ \textcolor{keywordtype}{int}\ height,\ std::string\ filepath);}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00067\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTilemap_a48c2a8663d82638db546a9580861f6ab}{SetTile}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y,\ \textcolor{keywordtype}{int}\ tile);}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00075\ \ \ \textcolor{keyword}{inline}\ std::shared\_ptr<Tile>\ \mbox{\hyperlink{classTilemap_aa953bc7b76f6a3e2557bdd083437d046}{GetTile}}(\textcolor{keywordtype}{int}\ index)\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keywordflow}{return}\ \_tiles.at(index);}
+\DoxyCodeLine{00077\ \ \ \}}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00086\ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classTilemap_a9f61d3b18d7e660173f73cffb8b76145}{GetTile}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y)\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \_map[x][y];\ \}}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00095\ \ \ std::shared\_ptr<Tile>\ \mbox{\hyperlink{classTilemap_aa953bc7b76f6a3e2557bdd083437d046}{GetTile}}(SDL\_FRect\ rect,\ std::string\ filename);}
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00100\ \ \ std::string\ \mbox{\hyperlink{classTilemap_a948b33ee569ba4d5d387624d798dc744}{String}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00101\ }
+\DoxyCodeLine{00108\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classTilemap_a9e2c83a974b9a4ba33371c5e11123895}{TileToIndex}}(std::shared\_ptr<Tile>\ tile)\ \{}
+\DoxyCodeLine{00109\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ \_tiles.size();\ i++)\ \{}
+\DoxyCodeLine{00110\ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (tile\ ==\ \_tiles[i])\ \{}
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ i;}
+\DoxyCodeLine{00112\ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00113\ \ \ \ \ \}}
+\DoxyCodeLine{00114\ \ \ \ \ \textcolor{keywordflow}{return}\ -\/1;}
+\DoxyCodeLine{00115\ \ \ \}}
+\DoxyCodeLine{00116\ }
+\DoxyCodeLine{00117\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00118\ \ \ std::vector<std::vector<int>>\ \_map;\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00119\ \ \ std::vector<std::shared\_ptr<Tile>>\ \_tiles;\ }
+\DoxyCodeLine{00120\ \ \ std::vector<LoadedTile>}
+\DoxyCodeLine{00121\ \ \ \ \ \ \ \_loaded;\ }
+\DoxyCodeLine{00122\ \ \ std::vector<std::vector<SDL\_FRect>>\ \_visible;\ }
+\DoxyCodeLine{00123\ \ \ SDL\_Renderer\ *\_renderer;\ }
+\DoxyCodeLine{00124\ \};}
+
+\end{DoxyCode}

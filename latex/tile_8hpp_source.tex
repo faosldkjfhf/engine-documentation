@@ -1,0 +1,27 @@
+\doxysection{tile.\+hpp}
+\hypertarget{tile_8hpp_source}{}\label{tile_8hpp_source}\index{include/tile.hpp@{include/tile.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <SDL3/SDL.h>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classTile}{Tile}}\ \{}
+\DoxyCodeLine{00009\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00017\ \ \ \mbox{\hyperlink{classTile_a0f04158865bdad82dcd6876246c2556f}{Tile}}(SDL\_FRect\ rect,\ std::string\ filename,\ SDL\_Renderer\ *renderer);}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00022\ \ \ \mbox{\hyperlink{classTile_a98634abbd93fa13d0578d7103202d03d}{\string~Tile}}();}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00029\ \ \ SDL\_Texture\ *\mbox{\hyperlink{classTile_af8230987b03dc61c31581dfacbf2c246}{GetTexture}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00036\ \ \ SDL\_FRect\ \mbox{\hyperlink{classTile_ac036c41d17c6e77272e0373cdf740856}{GetRect}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00043\ \ \ \textcolor{keyword}{inline}\ std::string\ \mbox{\hyperlink{classTile_ae94e21ab6556d58bbf7a8779287c7f93}{GetFilename}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \_filename;\ \}}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00046\ \ \ SDL\_FRect\ \_rect;\ \ \ \ \ \ \ }
+\DoxyCodeLine{00047\ \ \ std::string\ \_filename;\ }
+\DoxyCodeLine{00048\ \ \ SDL\_Texture\ *\_texture;\ }
+\DoxyCodeLine{00049\ \};}
+
+\end{DoxyCode}

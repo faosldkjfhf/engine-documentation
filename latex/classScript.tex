@@ -1,0 +1,200 @@
+\doxysection{Script Class Reference}
+\hypertarget{classScript}{}\label{classScript}\index{Script@{Script}}
+
+
+{\ttfamily \#include $<$script.\+hpp$>$}
+
+
+
+Inheritance diagram for Script\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=187pt]{classScript__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Script\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=187pt]{classScript__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classScript_a10975b78b03162488c522f095fd7707f}{Script}} ()
+\item 
+virtual \mbox{\hyperlink{classScript_a3fa4508c1df661d12be4a8aeb2bcb230}{\texorpdfstring{$\sim$}{\string~}\+Script}} () override
+\item 
+virtual void \mbox{\hyperlink{classScript_ab985ea8124a3a6ffc6926781ce7a0fca}{Input}} (float delta\+Time) override
+\item 
+virtual void \mbox{\hyperlink{classScript_a5910cd415145fb00a918fe74abf08763}{Update}} (float delta\+Time) override
+\item 
+virtual void \mbox{\hyperlink{classScript_aa5291ca5321c4c5aa5fc36d03d9c73e1}{Render}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer) override
+\item 
+virtual void \mbox{\hyperlink{classScript_ac2b364ce0786bb98d2a3e525645f1472}{Render\+Gui}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer) override
+\item 
+virtual Component\+Type \mbox{\hyperlink{classScript_ac458d5493e6c49c5a66db881c18fe066}{Get\+Type}} () override
+\item 
+virtual std\+::string \mbox{\hyperlink{classScript_aeb00226570b2fc5b34d4428236e4a966}{String}} () override
+\item 
+void \mbox{\hyperlink{classScript_a6536e909c52163543d1cf4ad3f5a3cfc}{Load\+Script}} (const std\+::string filename)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classComponent}{Component}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classComponent_a8775db6d1a2c1afc2e77cd3c8f39da6f}{Component}} ()
+\item 
+virtual \mbox{\hyperlink{classComponent_ab8378fa275af98e568a7e91d33d867af}{\texorpdfstring{$\sim$}{\string~}\+Component}} ()
+\item 
+virtual void \mbox{\hyperlink{classComponent_a542f72dc58169fc8ee87ff5326d6b292}{Reset}} ()
+\item 
+void \mbox{\hyperlink{classComponent_a9522326d4cf71de20786cb5c068ab3b9}{Set\+Game\+Object}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGameObject}{Game\+Object}} $>$ g)
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGameObject}{Game\+Object}} $>$ \mbox{\hyperlink{classComponent_affa7e45459d9ac50b0db8b5c4e3e9af8}{Get\+Game\+Object}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A currently unused class for scripting
+
+A script component to add to Game\+Objects 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classScript_a10975b78b03162488c522f095fd7707f}\label{classScript_a10975b78b03162488c522f095fd7707f} 
+\index{Script@{Script}!Script@{Script}}
+\index{Script@{Script}!Script@{Script}}
+\doxysubsubsection{\texorpdfstring{Script()}{Script()}}
+{\footnotesize\ttfamily Script\+::\+Script (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Default constructor \Hypertarget{classScript_a3fa4508c1df661d12be4a8aeb2bcb230}\label{classScript_a3fa4508c1df661d12be4a8aeb2bcb230} 
+\index{Script@{Script}!````~Script@{\texorpdfstring{$\sim$}{\string~}Script}}
+\index{````~Script@{\texorpdfstring{$\sim$}{\string~}Script}!Script@{Script}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Script()}{\string~Script()}}
+{\footnotesize\ttfamily Script\+::\texorpdfstring{$\sim$}{\string~}\+Script (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Default destructor 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classScript_ac458d5493e6c49c5a66db881c18fe066}\label{classScript_ac458d5493e6c49c5a66db881c18fe066} 
+\index{Script@{Script}!GetType@{GetType}}
+\index{GetType@{GetType}!Script@{Script}}
+\doxysubsubsection{\texorpdfstring{GetType()}{GetType()}}
+{\footnotesize\ttfamily Component\+Type Script\+::\+Get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Gets the type of \doxylink{classComponent}{Component} that this component is
+
+\begin{DoxyReturn}{Returns}
+The type of \doxylink{classComponent}{Component} that this component is 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classComponent_a2e87d60cd7150786e51bfcda7129ed90}{Component}}.
+
+\Hypertarget{classScript_ab985ea8124a3a6ffc6926781ce7a0fca}\label{classScript_ab985ea8124a3a6ffc6926781ce7a0fca} 
+\index{Script@{Script}!Input@{Input}}
+\index{Input@{Input}!Script@{Script}}
+\doxysubsubsection{\texorpdfstring{Input()}{Input()}}
+{\footnotesize\ttfamily void Script\+::\+Input (\begin{DoxyParamCaption}\item[{float}]{delta\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Handles inputs for this component
+
+
+\begin{DoxyParams}{Parameters}
+{\em delta\+Time} & the change in time since the last frame \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classComponent_acc7790bf2ac32e5821bf22280c8261b0}{Component}}.
+
+\Hypertarget{classScript_a6536e909c52163543d1cf4ad3f5a3cfc}\label{classScript_a6536e909c52163543d1cf4ad3f5a3cfc} 
+\index{Script@{Script}!LoadScript@{LoadScript}}
+\index{LoadScript@{LoadScript}!Script@{Script}}
+\doxysubsubsection{\texorpdfstring{LoadScript()}{LoadScript()}}
+{\footnotesize\ttfamily void Script\+::\+Load\+Script (\begin{DoxyParamCaption}\item[{const std\+::string}]{filename }\end{DoxyParamCaption})}
+
+Loads an existing script or creates a new template file
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & The name of the file to create or load \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classScript_aa5291ca5321c4c5aa5fc36d03d9c73e1}\label{classScript_aa5291ca5321c4c5aa5fc36d03d9c73e1} 
+\index{Script@{Script}!Render@{Render}}
+\index{Render@{Render}!Script@{Script}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void Script\+::\+Render (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{renderer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Handles rendering this component
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & The renderer to render with \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classComponent_af6a2cca21e381bc248a36259c0faaf21}{Component}}.
+
+\Hypertarget{classScript_ac2b364ce0786bb98d2a3e525645f1472}\label{classScript_ac2b364ce0786bb98d2a3e525645f1472} 
+\index{Script@{Script}!RenderGui@{RenderGui}}
+\index{RenderGui@{RenderGui}!Script@{Script}}
+\doxysubsubsection{\texorpdfstring{RenderGui()}{RenderGui()}}
+{\footnotesize\ttfamily void Script\+::\+Render\+Gui (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{renderer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Handles rendering the GUI portion of this component
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & The renderer to render with \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classComponent_a53f77ef035b671d6b71e60c6386c8e85}{Component}}.
+
+\Hypertarget{classScript_aeb00226570b2fc5b34d4428236e4a966}\label{classScript_aeb00226570b2fc5b34d4428236e4a966} 
+\index{Script@{Script}!String@{String}}
+\index{String@{String}!Script@{Script}}
+\doxysubsubsection{\texorpdfstring{String()}{String()}}
+{\footnotesize\ttfamily std\+::string Script\+::\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Returns a string representation of this component for saving
+
+\begin{DoxyReturn}{Returns}
+The string representation 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classComponent_a3adeeda735af9eb804f7f4bc111fea54}{Component}}.
+
+\Hypertarget{classScript_a5910cd415145fb00a918fe74abf08763}\label{classScript_a5910cd415145fb00a918fe74abf08763} 
+\index{Script@{Script}!Update@{Update}}
+\index{Update@{Update}!Script@{Script}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Script\+::\+Update (\begin{DoxyParamCaption}\item[{float}]{delta\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Handles updates for this component
+
+
+\begin{DoxyParams}{Parameters}
+{\em delta\+Time} & The change in time since the last frame \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classComponent_a149d3c9b7d668eb4817dd84dc35bcfcc}{Component}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/script.\+hpp\item 
+src/script.\+cpp\end{DoxyCompactItemize}

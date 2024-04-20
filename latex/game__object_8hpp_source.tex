@@ -1,0 +1,51 @@
+\doxysection{game\+\_\+object.\+hpp}
+\hypertarget{game__object_8hpp_source}{}\label{game__object_8hpp_source}\index{include/game\_object.hpp@{include/game\_object.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}component.hpp"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}script.hpp"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <SDL3/SDL.h>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classGameObject}{GameObject}}\ :\ \textcolor{keyword}{public}\ std::enable\_shared\_from\_this<GameObject>\ \{}
+\DoxyCodeLine{00014\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00018\ \ \ \mbox{\hyperlink{classGameObject_a0348e3ee2e83d56eafca7a3547f432c4}{GameObject}}();}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00025\ \ \ \textcolor{keyword}{inline}\ std::shared\_ptr<GameObject>\ \mbox{\hyperlink{classGameObject_ab55dfea4e8ee898aa4a8bc09bde77e0b}{GetThisPtr}}()\ \{\ \textcolor{keywordflow}{return}\ shared\_from\_this();\ \}}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00030\ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classGameObject_ab82dfdb656f9051c0587e6593b2dda97}{\string~GameObject}}();}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00037\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGameObject_a6b12ad4a9624ec64eea7b777884a4c66}{Input}}(\textcolor{keywordtype}{float}\ deltaTime);}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00044\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGameObject_ab63d5908c6fb124b2564fba447b2867b}{Update}}(\textcolor{keywordtype}{float}\ deltaTime);}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00051\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGameObject_ab91cf838eb1a0aad70a489439cfbf215}{Render}}(SDL\_Renderer\ *renderer);}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00059\ \ \ \textcolor{keyword}{virtual}\ std::string\ \mbox{\hyperlink{classGameObject_ab6e423b5d7e75c3d097f93c5d8c9c92d}{String}}();}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00066\ \ \ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ T>\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGameObject_a68d31e2bdd3cc6c873c7ffec570a4a63}{AddComponent}}(std::shared\_ptr<T>\ c);}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00073\ \ \ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ T>\ std::shared\_ptr<T>\ \mbox{\hyperlink{classGameObject_aaa5717faae1b84b4a0a3898e8b7e1446}{GetComponent}}(ComponentType\ type);}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00080\ \ \ \textcolor{keyword}{inline}\ std::string\ \mbox{\hyperlink{classGameObject_a986731c4dfb08336dbf0731e6514bad9}{GetName}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \_name;\ \}}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00087\ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGameObject_a5cbd59eb3fd5c0a0600e1879d60236a4}{SetName}}(std::string\ name)\ \{\ \_name\ =\ name;\ \}}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00094\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGameObject_aee47fbb41c400cb1a02ed822a2c0e78b}{RenderGui}}(SDL\_Renderer\ *renderer);}
+\DoxyCodeLine{00095\ }
+\DoxyCodeLine{00100\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGameObject_aa4d0de92522810301ef98d9490104dcc}{Reset}}();}
+\DoxyCodeLine{00101\ }
+\DoxyCodeLine{00102\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00103\ \ \ std::string\ \_name;\ }
+\DoxyCodeLine{00104\ \ \ std::vector<std::shared\_ptr<Component>>}
+\DoxyCodeLine{00105\ \ \ \ \ \ \ \_components;\ }
+\DoxyCodeLine{00106\ \ \ std::shared\_ptr<Script>\ \_script;\ }
+\DoxyCodeLine{00107\ \ \ std::vector<std::shared\_ptr<GameObject>>}
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \_children;\ }
+\DoxyCodeLine{00109\ \};}
+
+\end{DoxyCode}

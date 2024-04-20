@@ -1,0 +1,33 @@
+\doxysection{script.\+hpp}
+\hypertarget{script_8hpp_source}{}\label{script_8hpp_source}\index{include/script.hpp@{include/script.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}component.hpp"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <SDL3/SDL.h>}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classScript}{Script}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classComponent}{Component}}\ \{}
+\DoxyCodeLine{00011\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00015\ \ \ \mbox{\hyperlink{classScript_a10975b78b03162488c522f095fd7707f}{Script}}();}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00020\ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classScript_a3fa4508c1df661d12be4a8aeb2bcb230}{\string~Script}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00027\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classScript_ab985ea8124a3a6ffc6926781ce7a0fca}{Input}}(\textcolor{keywordtype}{float}\ deltaTime)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00034\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classScript_a5910cd415145fb00a918fe74abf08763}{Update}}(\textcolor{keywordtype}{float}\ deltaTime)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00041\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classScript_aa5291ca5321c4c5aa5fc36d03d9c73e1}{Render}}(SDL\_Renderer\ *renderer)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00048\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classScript_ac2b364ce0786bb98d2a3e525645f1472}{RenderGui}}(SDL\_Renderer\ *renderer)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00055\ \ \ \textcolor{keyword}{virtual}\ ComponentType\ \mbox{\hyperlink{classScript_ac458d5493e6c49c5a66db881c18fe066}{GetType}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00062\ \ \ \textcolor{keyword}{virtual}\ std::string\ \mbox{\hyperlink{classScript_aeb00226570b2fc5b34d4428236e4a966}{String}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00069\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classScript_a6536e909c52163543d1cf4ad3f5a3cfc}{LoadScript}}(\textcolor{keyword}{const}\ std::string\ filename);}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00071\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00072\ \ \ std::string\ \_name;\ }
+\DoxyCodeLine{00073\ \};}
+
+\end{DoxyCode}

@@ -1,0 +1,183 @@
+\doxysection{Collectible Class Reference}
+\hypertarget{classCollectible}{}\label{classCollectible}\index{Collectible@{Collectible}}
+
+
+{\ttfamily \#include $<$collectible.\+hpp$>$}
+
+
+
+Inheritance diagram for Collectible\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=187pt]{classCollectible__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Collectible\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=187pt]{classCollectible__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCollectible_a7f6efd3f99946b8f2593527afabfa6a8}{Collectible}} ()
+\item 
+virtual \mbox{\hyperlink{classCollectible_a0552d4ff1e68297293f5fbe390371ea0}{\texorpdfstring{$\sim$}{\string~}\+Collectible}} () override
+\item 
+virtual void \mbox{\hyperlink{classCollectible_abbc97b1500b82c3161773f244fd5569e}{Input}} (float delta\+Time) override
+\item 
+virtual void \mbox{\hyperlink{classCollectible_accb308e39c2cc1a2eb372793d9b2b7ee}{Update}} (float delta\+Time) override
+\item 
+virtual void \mbox{\hyperlink{classCollectible_a99157094e9019deecf85cf5fecc2b0d3}{Render}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer) override
+\item 
+virtual void \mbox{\hyperlink{classCollectible_a497670a6704571dbddc6379c03ad3277}{Render\+Gui}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer) override
+\item 
+virtual std\+::string \mbox{\hyperlink{classCollectible_a7de0f2d78270873abed4009f91c38c8e}{String}} () override
+\item 
+virtual Component\+Type \mbox{\hyperlink{classCollectible_abf221dc2c3152cdab228f082a50d2cf8}{Get\+Type}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classComponent}{Component}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classComponent_a8775db6d1a2c1afc2e77cd3c8f39da6f}{Component}} ()
+\item 
+virtual \mbox{\hyperlink{classComponent_ab8378fa275af98e568a7e91d33d867af}{\texorpdfstring{$\sim$}{\string~}\+Component}} ()
+\item 
+virtual void \mbox{\hyperlink{classComponent_a542f72dc58169fc8ee87ff5326d6b292}{Reset}} ()
+\item 
+void \mbox{\hyperlink{classComponent_a9522326d4cf71de20786cb5c068ab3b9}{Set\+Game\+Object}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGameObject}{Game\+Object}} $>$ g)
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGameObject}{Game\+Object}} $>$ \mbox{\hyperlink{classComponent_affa7e45459d9ac50b0db8b5c4e3e9af8}{Get\+Game\+Object}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A collectible component to add to Game\+Objects 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classCollectible_a7f6efd3f99946b8f2593527afabfa6a8}\label{classCollectible_a7f6efd3f99946b8f2593527afabfa6a8} 
+\index{Collectible@{Collectible}!Collectible@{Collectible}}
+\index{Collectible@{Collectible}!Collectible@{Collectible}}
+\doxysubsubsection{\texorpdfstring{Collectible()}{Collectible()}}
+{\footnotesize\ttfamily Collectible\+::\+Collectible (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Default constructor \Hypertarget{classCollectible_a0552d4ff1e68297293f5fbe390371ea0}\label{classCollectible_a0552d4ff1e68297293f5fbe390371ea0} 
+\index{Collectible@{Collectible}!````~Collectible@{\texorpdfstring{$\sim$}{\string~}Collectible}}
+\index{````~Collectible@{\texorpdfstring{$\sim$}{\string~}Collectible}!Collectible@{Collectible}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Collectible()}{\string~Collectible()}}
+{\footnotesize\ttfamily Collectible\+::\texorpdfstring{$\sim$}{\string~}\+Collectible (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Default destructor 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classCollectible_abf221dc2c3152cdab228f082a50d2cf8}\label{classCollectible_abf221dc2c3152cdab228f082a50d2cf8} 
+\index{Collectible@{Collectible}!GetType@{GetType}}
+\index{GetType@{GetType}!Collectible@{Collectible}}
+\doxysubsubsection{\texorpdfstring{GetType()}{GetType()}}
+{\footnotesize\ttfamily Component\+Type Collectible\+::\+Get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Returns the type of Component\+Type that this component is
+
+\begin{DoxyReturn}{Returns}
+The corresponding Component\+Type of this component 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classComponent_a2e87d60cd7150786e51bfcda7129ed90}{Component}}.
+
+\Hypertarget{classCollectible_abbc97b1500b82c3161773f244fd5569e}\label{classCollectible_abbc97b1500b82c3161773f244fd5569e} 
+\index{Collectible@{Collectible}!Input@{Input}}
+\index{Input@{Input}!Collectible@{Collectible}}
+\doxysubsubsection{\texorpdfstring{Input()}{Input()}}
+{\footnotesize\ttfamily void Collectible\+::\+Input (\begin{DoxyParamCaption}\item[{float}]{delta\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Handles inputs for this component
+
+
+\begin{DoxyParams}{Parameters}
+{\em delta\+Time} & The change in time since the last frame \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classComponent_acc7790bf2ac32e5821bf22280c8261b0}{Component}}.
+
+\Hypertarget{classCollectible_a99157094e9019deecf85cf5fecc2b0d3}\label{classCollectible_a99157094e9019deecf85cf5fecc2b0d3} 
+\index{Collectible@{Collectible}!Render@{Render}}
+\index{Render@{Render}!Collectible@{Collectible}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void Collectible\+::\+Render (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{renderer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Handles rendering the component
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & The renderer to render with \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classComponent_af6a2cca21e381bc248a36259c0faaf21}{Component}}.
+
+\Hypertarget{classCollectible_a497670a6704571dbddc6379c03ad3277}\label{classCollectible_a497670a6704571dbddc6379c03ad3277} 
+\index{Collectible@{Collectible}!RenderGui@{RenderGui}}
+\index{RenderGui@{RenderGui}!Collectible@{Collectible}}
+\doxysubsubsection{\texorpdfstring{RenderGui()}{RenderGui()}}
+{\footnotesize\ttfamily void Collectible\+::\+Render\+Gui (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{renderer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Handles rendering the GUI portion of this component
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & The renderer to render with \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classComponent_a53f77ef035b671d6b71e60c6386c8e85}{Component}}.
+
+\Hypertarget{classCollectible_a7de0f2d78270873abed4009f91c38c8e}\label{classCollectible_a7de0f2d78270873abed4009f91c38c8e} 
+\index{Collectible@{Collectible}!String@{String}}
+\index{String@{String}!Collectible@{Collectible}}
+\doxysubsubsection{\texorpdfstring{String()}{String()}}
+{\footnotesize\ttfamily std\+::string Collectible\+::\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Returns a string representation of this component for saving
+
+\begin{DoxyReturn}{Returns}
+The string representation 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classComponent_a3adeeda735af9eb804f7f4bc111fea54}{Component}}.
+
+\Hypertarget{classCollectible_accb308e39c2cc1a2eb372793d9b2b7ee}\label{classCollectible_accb308e39c2cc1a2eb372793d9b2b7ee} 
+\index{Collectible@{Collectible}!Update@{Update}}
+\index{Update@{Update}!Collectible@{Collectible}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Collectible\+::\+Update (\begin{DoxyParamCaption}\item[{float}]{delta\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Handles updates for this component
+
+
+\begin{DoxyParams}{Parameters}
+{\em delta\+Time} & The change in time since the last frame \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classComponent_a149d3c9b7d668eb4817dd84dc35bcfcc}{Component}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/collectible.\+hpp\item 
+src/collectible.\+cpp\end{DoxyCompactItemize}

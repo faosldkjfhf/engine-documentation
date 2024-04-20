@@ -1,0 +1,212 @@
+\doxysection{Game\+Object Class Reference}
+\hypertarget{classGameObject}{}\label{classGameObject}\index{GameObject@{GameObject}}
+
+
+{\ttfamily \#include $<$game\+\_\+object.\+hpp$>$}
+
+
+
+Inheritance diagram for Game\+Object\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{classGameObject__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Game\+Object\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{classGameObject__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGameObject_a0348e3ee2e83d56eafca7a3547f432c4}{Game\+Object}} ()
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGameObject}{Game\+Object}} $>$ \mbox{\hyperlink{classGameObject_ab55dfea4e8ee898aa4a8bc09bde77e0b}{Get\+This\+Ptr}} ()
+\item 
+virtual \mbox{\hyperlink{classGameObject_ab82dfdb656f9051c0587e6593b2dda97}{\texorpdfstring{$\sim$}{\string~}\+Game\+Object}} ()
+\item 
+virtual void \mbox{\hyperlink{classGameObject_a6b12ad4a9624ec64eea7b777884a4c66}{Input}} (float delta\+Time)
+\item 
+virtual void \mbox{\hyperlink{classGameObject_ab63d5908c6fb124b2564fba447b2867b}{Update}} (float delta\+Time)
+\item 
+virtual void \mbox{\hyperlink{classGameObject_ab91cf838eb1a0aad70a489439cfbf215}{Render}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer)
+\item 
+virtual std\+::string \mbox{\hyperlink{classGameObject_ab6e423b5d7e75c3d097f93c5d8c9c92d}{String}} ()
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{classGameObject_a68d31e2bdd3cc6c873c7ffec570a4a63}{Add\+Component}} (std\+::shared\+\_\+ptr$<$ T $>$ c)
+\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::shared\+\_\+ptr$<$ T $>$ \mbox{\hyperlink{classGameObject_aaa5717faae1b84b4a0a3898e8b7e1446}{Get\+Component}} (Component\+Type type)
+\item 
+std\+::string \mbox{\hyperlink{classGameObject_a986731c4dfb08336dbf0731e6514bad9}{Get\+Name}} () const
+\item 
+void \mbox{\hyperlink{classGameObject_a5cbd59eb3fd5c0a0600e1879d60236a4}{Set\+Name}} (std\+::string name)
+\item 
+void \mbox{\hyperlink{classGameObject_aee47fbb41c400cb1a02ed822a2c0e78b}{Render\+Gui}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer)
+\item 
+void \mbox{\hyperlink{classGameObject_aa4d0de92522810301ef98d9490104dcc}{Reset}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A default \doxylink{classGameObject}{Game\+Object} 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classGameObject_a0348e3ee2e83d56eafca7a3547f432c4}\label{classGameObject_a0348e3ee2e83d56eafca7a3547f432c4} 
+\index{GameObject@{GameObject}!GameObject@{GameObject}}
+\index{GameObject@{GameObject}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{GameObject()}{GameObject()}}
+{\footnotesize\ttfamily Game\+Object\+::\+Game\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Default constructor \Hypertarget{classGameObject_ab82dfdb656f9051c0587e6593b2dda97}\label{classGameObject_ab82dfdb656f9051c0587e6593b2dda97} 
+\index{GameObject@{GameObject}!````~GameObject@{\texorpdfstring{$\sim$}{\string~}GameObject}}
+\index{````~GameObject@{\texorpdfstring{$\sim$}{\string~}GameObject}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}GameObject()}{\string~GameObject()}}
+{\footnotesize\ttfamily Game\+Object\+::\texorpdfstring{$\sim$}{\string~}\+Game\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Default destructor 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classGameObject_a68d31e2bdd3cc6c873c7ffec570a4a63}\label{classGameObject_a68d31e2bdd3cc6c873c7ffec570a4a63} 
+\index{GameObject@{GameObject}!AddComponent@{AddComponent}}
+\index{AddComponent@{AddComponent}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{AddComponent()}{AddComponent()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+template void Game\+Object\+::\+Add\+Component (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ T $>$}]{c }\end{DoxyParamCaption})}
+
+Adds a new \doxylink{classComponent}{Component} to this \doxylink{classGameObject}{Game\+Object}
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & The shared pointer to the \doxylink{classComponent}{Component} to add \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classGameObject_aaa5717faae1b84b4a0a3898e8b7e1446}\label{classGameObject_aaa5717faae1b84b4a0a3898e8b7e1446} 
+\index{GameObject@{GameObject}!GetComponent@{GetComponent}}
+\index{GetComponent@{GetComponent}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{GetComponent()}{GetComponent()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+template std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classCollectible}{Collectible}} $>$ Game\+Object\+::\+Get\+Component (\begin{DoxyParamCaption}\item[{Component\+Type}]{type }\end{DoxyParamCaption})}
+
+Gets a component of type Component\+Type
+
+\begin{DoxyReturn}{Returns}
+The component if found or nullptr 
+\end{DoxyReturn}
+\Hypertarget{classGameObject_a986731c4dfb08336dbf0731e6514bad9}\label{classGameObject_a986731c4dfb08336dbf0731e6514bad9} 
+\index{GameObject@{GameObject}!GetName@{GetName}}
+\index{GetName@{GetName}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{GetName()}{GetName()}}
+{\footnotesize\ttfamily std\+::string Game\+Object\+::\+Get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the name of this \doxylink{classGameObject}{Game\+Object}
+
+\begin{DoxyReturn}{Returns}
+The name 
+\end{DoxyReturn}
+\Hypertarget{classGameObject_ab55dfea4e8ee898aa4a8bc09bde77e0b}\label{classGameObject_ab55dfea4e8ee898aa4a8bc09bde77e0b} 
+\index{GameObject@{GameObject}!GetThisPtr@{GetThisPtr}}
+\index{GetThisPtr@{GetThisPtr}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{GetThisPtr()}{GetThisPtr()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGameObject}{Game\+Object}} $>$ Game\+Object\+::\+Get\+This\+Ptr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets a pointer to this \doxylink{classGameObject}{Game\+Object}
+
+\begin{DoxyReturn}{Returns}
+A shared pointer to this \doxylink{classGameObject}{Game\+Object} 
+\end{DoxyReturn}
+\Hypertarget{classGameObject_a6b12ad4a9624ec64eea7b777884a4c66}\label{classGameObject_a6b12ad4a9624ec64eea7b777884a4c66} 
+\index{GameObject@{GameObject}!Input@{Input}}
+\index{Input@{Input}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{Input()}{Input()}}
+{\footnotesize\ttfamily void Game\+Object\+::\+Input (\begin{DoxyParamCaption}\item[{float}]{delta\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Handles inputs of this Game\+Objects children and components
+
+
+\begin{DoxyParams}{Parameters}
+{\em delta\+Time} & The change in time since the last frame \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classGameObject_ab91cf838eb1a0aad70a489439cfbf215}\label{classGameObject_ab91cf838eb1a0aad70a489439cfbf215} 
+\index{GameObject@{GameObject}!Render@{Render}}
+\index{Render@{Render}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void Game\+Object\+::\+Render (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{renderer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Handles rendering this Game\+Objects children and components
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & The renderer to render with \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classGameObject_aee47fbb41c400cb1a02ed822a2c0e78b}\label{classGameObject_aee47fbb41c400cb1a02ed822a2c0e78b} 
+\index{GameObject@{GameObject}!RenderGui@{RenderGui}}
+\index{RenderGui@{RenderGui}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{RenderGui()}{RenderGui()}}
+{\footnotesize\ttfamily void Game\+Object\+::\+Render\+Gui (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{renderer }\end{DoxyParamCaption})}
+
+Renders the GUI portion of this \doxylink{classGameObject}{Game\+Object} and its children and components
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & The renderer to render with \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classGameObject_aa4d0de92522810301ef98d9490104dcc}\label{classGameObject_aa4d0de92522810301ef98d9490104dcc} 
+\index{GameObject@{GameObject}!Reset@{Reset}}
+\index{Reset@{Reset}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily void Game\+Object\+::\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Resets this \doxylink{classGameObject}{Game\+Object} and its components and children to their default states \Hypertarget{classGameObject_a5cbd59eb3fd5c0a0600e1879d60236a4}\label{classGameObject_a5cbd59eb3fd5c0a0600e1879d60236a4} 
+\index{GameObject@{GameObject}!SetName@{SetName}}
+\index{SetName@{SetName}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{SetName()}{SetName()}}
+{\footnotesize\ttfamily void Game\+Object\+::\+Set\+Name (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the name of this \doxylink{classGameObject}{Game\+Object}
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name to set to \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classGameObject_ab6e423b5d7e75c3d097f93c5d8c9c92d}\label{classGameObject_ab6e423b5d7e75c3d097f93c5d8c9c92d} 
+\index{GameObject@{GameObject}!String@{String}}
+\index{String@{String}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{String()}{String()}}
+{\footnotesize\ttfamily std\+::string Game\+Object\+::\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Returns a string representation of this \doxylink{classGameObject}{Game\+Object} and its children and components
+
+\begin{DoxyReturn}{Returns}
+The string representation 
+\end{DoxyReturn}
+\Hypertarget{classGameObject_ab63d5908c6fb124b2564fba447b2867b}\label{classGameObject_ab63d5908c6fb124b2564fba447b2867b} 
+\index{GameObject@{GameObject}!Update@{Update}}
+\index{Update@{Update}!GameObject@{GameObject}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Game\+Object\+::\+Update (\begin{DoxyParamCaption}\item[{float}]{delta\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Handles updates of this Game\+Objects children and components
+
+
+\begin{DoxyParams}{Parameters}
+{\em delta\+Time} & The change in time since the last frame \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/game\+\_\+object.\+hpp\item 
+src/game\+\_\+object.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,69 @@
+\doxysection{keyboard\+\_\+controller.\+hpp}
+\hypertarget{keyboard__controller_8hpp_source}{}\label{keyboard__controller_8hpp_source}\index{include/keyboard\_controller.hpp@{include/keyboard\_controller.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}component.hpp"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <SDL3/SDL.h>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structVelocity}{Velocity}}\ \{}
+\DoxyCodeLine{00010\ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{structVelocity_a187e49dd195f35d9566d87e75c2bd43d}{x}};\ }
+\DoxyCodeLine{00011\ \ \ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{structVelocity_adf369bfba58dde57499b342b5e7b77f8}{y}};\ }
+\DoxyCodeLine{00012\ \};}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classKeyboardController}{KeyboardController}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classComponent}{Component}}\ \{}
+\DoxyCodeLine{00018\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00022\ \ \ \mbox{\hyperlink{classKeyboardController_abb80b5bae04a1c3cf904924cbacb235c}{KeyboardController}}();}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00027\ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classKeyboardController_a872ecfa209373bd0c9fc68a1009fc69d}{\string~KeyboardController}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00034\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classKeyboardController_ab78c4c8c83d57e4050cbe0409f61dee1}{Input}}(\textcolor{keywordtype}{float}\ deltaTime)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00041\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classKeyboardController_a777c6a761655fd489dd8609223eb3adc}{Update}}(\textcolor{keywordtype}{float}\ deltaTime)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00048\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classKeyboardController_ab56158b97c745691e456e847674e1f7c}{Render}}(SDL\_Renderer\ *renderer)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00055\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classKeyboardController_a12e718330c07750d5cc1340f06f200f6}{RenderGui}}(SDL\_Renderer\ *renderer)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00060\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classKeyboardController_a786c9398e1d87a1cd9b14827005c7b2d}{Reset}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00067\ \ \ \textcolor{keyword}{virtual}\ std::string\ \mbox{\hyperlink{classKeyboardController_a026f3df478a4317f83932fc46b4c3d8d}{String}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00074\ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{virtual}\ ComponentType\ \mbox{\hyperlink{classKeyboardController_acc948cc82fcbf7c042f03052fc80a94c}{GetType}}()\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{keywordflow}{return}\ ComponentType::KeyboardController;}
+\DoxyCodeLine{00076\ \ \ \}}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00083\ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classKeyboardController_a66fdc3249e6d875745193e0dfe0ef81f}{SetSpeed}}(\textcolor{keywordtype}{float}\ speed)\ \{\ \_speed\ =\ speed;\ \}}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00090\ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{classKeyboardController_a6c95c9401c880b9a6bb9dc276057c58a}{GetSpeed}}()\ \{\ \textcolor{keywordflow}{return}\ \_speed;\ \}}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00097\ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classKeyboardController_a7c6791632947acd0e13b999d4e3911fd}{SetGravity}}(\textcolor{keywordtype}{float}\ gravity)\ \{\ \_gravity\ =\ gravity;\ \}}
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00104\ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{classKeyboardController_ac20945d88687ed4638f87eeead5f5ac9}{GetGravity}}()\ \{\ \textcolor{keywordflow}{return}\ \_gravity;\ \}}
+\DoxyCodeLine{00105\ }
+\DoxyCodeLine{00111\ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classKeyboardController_acb04762e529e9b316f4131bdbd563857}{SetJump}}(\textcolor{keywordtype}{float}\ jump)\ \{\ \_jump\ =\ jump;\ \}}
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00118\ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{classKeyboardController_a950fc8ac278cb7217a2fcda0cf55add5}{GetJump}}()\ \{\ \textcolor{keywordflow}{return}\ \_jump;\ \}}
+\DoxyCodeLine{00119\ }
+\DoxyCodeLine{00125\ \ \ \textcolor{keyword}{inline}\ \mbox{\hyperlink{structVelocity}{Velocity}}\ \mbox{\hyperlink{classKeyboardController_a31b87c3c44374066bf7b6fb8915feed9}{GetVelocity}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \_velocity;\ \}}
+\DoxyCodeLine{00126\ }
+\DoxyCodeLine{00132\ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classKeyboardController_aa234cafeb70d4b0693cbc519c9a7e9da}{SetVelocity}}(\mbox{\hyperlink{structVelocity}{Velocity}}\ v)\ \{\ \_velocity\ =\ v;\ \}}
+\DoxyCodeLine{00133\ }
+\DoxyCodeLine{00139\ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classKeyboardController_a4a209dda323bbb869752156c03189534}{Left}}(\textcolor{keywordtype}{float}\ left)\ \{\ \_left\ =\ left;\ \}}
+\DoxyCodeLine{00140\ }
+\DoxyCodeLine{00146\ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classKeyboardController_aba3831feb8edabe09948eb5ca69d2672}{Right}}(\textcolor{keywordtype}{float}\ right)\ \{\ \_right\ =\ right;\ \}}
+\DoxyCodeLine{00147\ }
+\DoxyCodeLine{00153\ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classKeyboardController_a328038a19d020ad457ab75fb1282fc10}{Up}}(\textcolor{keywordtype}{float}\ up)\ \{\ \_up\ =\ up;\ \}}
+\DoxyCodeLine{00154\ }
+\DoxyCodeLine{00155\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00156\ \ \ \textcolor{keywordtype}{float}\ \_speed;\ \ \ \ \ \ \ }
+\DoxyCodeLine{00157\ \ \ \textcolor{keywordtype}{float}\ \_gravity;\ \ \ \ \ }
+\DoxyCodeLine{00158\ \ \ \mbox{\hyperlink{structVelocity}{Velocity}}\ \_velocity;\ }
+\DoxyCodeLine{00159\ \ \ \textcolor{keywordtype}{float}\ \_left;\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00160\ \ \ \textcolor{keywordtype}{float}\ \_right;\ \ \ \ \ \ \ }
+\DoxyCodeLine{00161\ \ \ \textcolor{keywordtype}{float}\ \_up;\ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00162\ \ \ \textcolor{keywordtype}{float}\ \_jump;\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00163\ \};}
+
+\end{DoxyCode}

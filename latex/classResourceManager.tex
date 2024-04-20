@@ -1,0 +1,104 @@
+\doxysection{Resource\+Manager Class Reference}
+\hypertarget{classResourceManager}{}\label{classResourceManager}\index{ResourceManager@{ResourceManager}}
+
+
+{\ttfamily \#include $<$resource\+\_\+manager.\+hpp$>$}
+
+
+
+Collaboration diagram for Resource\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{classResourceManager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classResourceManager_a3b32babd2e81909bbd90d7f2d566fadb}{Resource\+Manager}} ()
+\item 
+\mbox{\hyperlink{classResourceManager_a671c186e4630599e7e36d000c53eaf80}{\texorpdfstring{$\sim$}{\string~}\+Resource\+Manager}} ()
+\item 
+std\+::shared\+\_\+ptr$<$ SDL\+\_\+\+Texture $>$ \mbox{\hyperlink{classResourceManager_afc8dc26b9daeea53f9d062391d92970a}{Load\+Texture}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer, std\+::string filepath)
+\item 
+std\+::pair$<$ int, int $>$ \mbox{\hyperlink{classResourceManager_a07665c8bc89079df556e1a77d88392a6}{Get\+Size}} (std\+::string filepath)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classResourceManager}{Resource\+Manager}} \& \mbox{\hyperlink{classResourceManager_a48cd1c56c64af260a6ddb5fbd4daae54}{Instance}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A singleton class for managing texture loading and deleting 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classResourceManager_a3b32babd2e81909bbd90d7f2d566fadb}\label{classResourceManager_a3b32babd2e81909bbd90d7f2d566fadb} 
+\index{ResourceManager@{ResourceManager}!ResourceManager@{ResourceManager}}
+\index{ResourceManager@{ResourceManager}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{ResourceManager()}{ResourceManager()}}
+{\footnotesize\ttfamily Resource\+Manager\+::\+Resource\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Default constructor \Hypertarget{classResourceManager_a671c186e4630599e7e36d000c53eaf80}\label{classResourceManager_a671c186e4630599e7e36d000c53eaf80} 
+\index{ResourceManager@{ResourceManager}!````~ResourceManager@{\texorpdfstring{$\sim$}{\string~}ResourceManager}}
+\index{````~ResourceManager@{\texorpdfstring{$\sim$}{\string~}ResourceManager}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}ResourceManager()}{\string~ResourceManager()}}
+{\footnotesize\ttfamily Resource\+Manager\+::\texorpdfstring{$\sim$}{\string~}\+Resource\+Manager (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Default destructor 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classResourceManager_a07665c8bc89079df556e1a77d88392a6}\label{classResourceManager_a07665c8bc89079df556e1a77d88392a6} 
+\index{ResourceManager@{ResourceManager}!GetSize@{GetSize}}
+\index{GetSize@{GetSize}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{GetSize()}{GetSize()}}
+{\footnotesize\ttfamily std\+::pair$<$ int, int $>$ Resource\+Manager\+::\+Get\+Size (\begin{DoxyParamCaption}\item[{std\+::string}]{filepath }\end{DoxyParamCaption})}
+
+Gets the size of the texture
+
+
+\begin{DoxyParams}{Parameters}
+{\em filepath} & The texture to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::pair$<$int, int$>$ holding the width and height 
+\end{DoxyReturn}
+\Hypertarget{classResourceManager_a48cd1c56c64af260a6ddb5fbd4daae54}\label{classResourceManager_a48cd1c56c64af260a6ddb5fbd4daae54} 
+\index{ResourceManager@{ResourceManager}!Instance@{Instance}}
+\index{Instance@{Instance}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{Instance()}{Instance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classResourceManager}{Resource\+Manager}} \& Resource\+Manager\+::\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Returns the instance of this \doxylink{classResourceManager}{Resource\+Manager}, or creates a new instance if none already exists
+
+\begin{DoxyReturn}{Returns}
+An instance of this \doxylink{classResourceManager}{Resource\+Manager} 
+\end{DoxyReturn}
+\Hypertarget{classResourceManager_afc8dc26b9daeea53f9d062391d92970a}\label{classResourceManager_afc8dc26b9daeea53f9d062391d92970a} 
+\index{ResourceManager@{ResourceManager}!LoadTexture@{LoadTexture}}
+\index{LoadTexture@{LoadTexture}!ResourceManager@{ResourceManager}}
+\doxysubsubsection{\texorpdfstring{LoadTexture()}{LoadTexture()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ SDL\+\_\+\+Texture $>$ Resource\+Manager\+::\+Load\+Texture (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{renderer,  }\item[{std\+::string}]{filepath }\end{DoxyParamCaption})}
+
+Loads a new texture or retrieves an existing stored texture
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & The renderer to render with \\
+\hline
+{\em filepath} & The texture to load \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a shared pointer to the loaded texture 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/resource\+\_\+manager.\+hpp\item 
+src/resource\+\_\+manager.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,67 @@
+\doxysection{collider.\+hpp}
+\hypertarget{collider_8hpp_source}{}\label{collider_8hpp_source}\index{include/collider.hpp@{include/collider.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}component.hpp"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <SDL3/SDL.h>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classCollider}{Collider}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classComponent}{Component}}\ \{}
+\DoxyCodeLine{00010\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00014\ \ \ \mbox{\hyperlink{classCollider_aa7186870221f868bbc74c3ae8609fa66}{Collider}}();}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00019\ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classCollider_ad06f9eccc0a37702f8cecedc6d1a7c4b}{\string~Collider}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00026\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCollider_ad9a2c653b8a64830a532979364c17418}{Input}}(\textcolor{keywordtype}{float}\ deltaTime)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00033\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCollider_abf0d30ba9de7565a450c05a149636493}{Update}}(\textcolor{keywordtype}{float}\ deltaTime)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00040\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCollider_ad6cd8fe1bcb313ba3cb7a9432afc6b01}{Render}}(SDL\_Renderer\ *renderer)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00047\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCollider_a2e1e9345b3de261cd76bab476c7dcf67}{RenderGui}}(SDL\_Renderer\ *renderer)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00054\ \ \ \textcolor{keyword}{virtual}\ std::string\ \mbox{\hyperlink{classCollider_aea07e3a32107d6115da633ee42d0f032}{String}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00061\ \ \ \textcolor{keyword}{inline}\ \textcolor{keyword}{virtual}\ ComponentType\ \mbox{\hyperlink{classCollider_afc5b2076192a5df6da4a37de8f194b0e}{GetType}}()\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keywordflow}{return}\ ComponentType::Collider;}
+\DoxyCodeLine{00063\ \ \ \}}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00071\ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCollider_a3a942c7923abf2127c4025d705c9b5f2}{SetWH}}(\textcolor{keywordtype}{float}\ w,\ \textcolor{keywordtype}{float}\ h)\ \{}
+\DoxyCodeLine{00072\ \ \ \ \ \mbox{\hyperlink{classCollider_a4ddbcebc48da5140daa2822b533e7fc8}{SetW}}(w);}
+\DoxyCodeLine{00073\ \ \ \ \ \mbox{\hyperlink{classCollider_ab06484fb32ab2926a2bf9c5aa2e14442}{SetH}}(h);}
+\DoxyCodeLine{00074\ \ \ \}}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00082\ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCollider_a75a020fbb8c3c28e0d1cd6d300576c2c}{SetXY}}(\textcolor{keywordtype}{float}\ x,\ \textcolor{keywordtype}{float}\ y)\ \{}
+\DoxyCodeLine{00083\ \ \ \ \ \mbox{\hyperlink{classCollider_a688b9473b9c3a0af0b6442c373b509d5}{SetX}}(x);}
+\DoxyCodeLine{00084\ \ \ \ \ \mbox{\hyperlink{classCollider_a90f1620532a799d9e8caacd3f23063ef}{SetY}}(y);}
+\DoxyCodeLine{00085\ \ \ \}}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00092\ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCollider_a688b9473b9c3a0af0b6442c373b509d5}{SetX}}(\textcolor{keywordtype}{float}\ x)\ \{\ \_rect.x\ =\ x;\ \}}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00099\ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCollider_a90f1620532a799d9e8caacd3f23063ef}{SetY}}(\textcolor{keywordtype}{float}\ y)\ \{\ \_rect.y\ =\ y;\ \}}
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00106\ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCollider_a4ddbcebc48da5140daa2822b533e7fc8}{SetW}}(\textcolor{keywordtype}{float}\ w)\ \{\ \_rect.w\ =\ w;\ \}}
+\DoxyCodeLine{00107\ }
+\DoxyCodeLine{00113\ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCollider_ab06484fb32ab2926a2bf9c5aa2e14442}{SetH}}(\textcolor{keywordtype}{float}\ h)\ \{\ \_rect.h\ =\ h;\ \}}
+\DoxyCodeLine{00114\ }
+\DoxyCodeLine{00120\ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{classCollider_a1bfd2f3938ab1f5797336113dd8b64f3}{GetX}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \_rect.x;\ \}}
+\DoxyCodeLine{00121\ }
+\DoxyCodeLine{00127\ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{classCollider_a4150265b4acba672d9f7512f3a414d14}{GetY}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \_rect.y;\ \}}
+\DoxyCodeLine{00128\ }
+\DoxyCodeLine{00134\ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{classCollider_aa312e32c9e1f4e1cdf29bb40913dcf80}{GetW}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \_rect.w;\ \}}
+\DoxyCodeLine{00135\ }
+\DoxyCodeLine{00141\ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{classCollider_a94e2df63fe0859933a60f45b8659b5c7}{GetH}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \_rect.h;\ \}}
+\DoxyCodeLine{00142\ }
+\DoxyCodeLine{00148\ \ \ \textcolor{keyword}{inline}\ SDL\_FRect\ \mbox{\hyperlink{classCollider_adda16a0c7371a276111b6a1de09bb589}{GetRect}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \_rect;\ \}}
+\DoxyCodeLine{00149\ }
+\DoxyCodeLine{00155\ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classCollider_a5be49759a85dec5bc7510876a3b2f72b}{SetGrounded}}(\textcolor{keywordtype}{bool}\ grounded)\ \{\ \_grounded\ =\ grounded;\ \}}
+\DoxyCodeLine{00156\ }
+\DoxyCodeLine{00162\ \ \ \textcolor{keyword}{inline}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classCollider_acc4d645d10f5811408b7f41addc131c4}{IsGrounded}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \_grounded;\ \}}
+\DoxyCodeLine{00163\ }
+\DoxyCodeLine{00164\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00165\ \ \ SDL\_FRect\ \_rect;\ }
+\DoxyCodeLine{00166\ \ \ \textcolor{keywordtype}{bool}\ \_grounded;\ \ }
+\DoxyCodeLine{00167\ \};}
+
+\end{DoxyCode}

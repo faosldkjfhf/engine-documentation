@@ -1,0 +1,370 @@
+\doxysection{Collider Class Reference}
+\hypertarget{classCollider}{}\label{classCollider}\index{Collider@{Collider}}
+
+
+{\ttfamily \#include $<$collider.\+hpp$>$}
+
+
+
+Inheritance diagram for Collider\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=187pt]{classCollider__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Collider\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=187pt]{classCollider__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCollider_aa7186870221f868bbc74c3ae8609fa66}{Collider}} ()
+\item 
+virtual \mbox{\hyperlink{classCollider_ad06f9eccc0a37702f8cecedc6d1a7c4b}{\texorpdfstring{$\sim$}{\string~}\+Collider}} () override
+\item 
+virtual void \mbox{\hyperlink{classCollider_ad9a2c653b8a64830a532979364c17418}{Input}} (float delta\+Time) override
+\item 
+virtual void \mbox{\hyperlink{classCollider_abf0d30ba9de7565a450c05a149636493}{Update}} (float delta\+Time) override
+\item 
+virtual void \mbox{\hyperlink{classCollider_ad6cd8fe1bcb313ba3cb7a9432afc6b01}{Render}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer) override
+\item 
+virtual void \mbox{\hyperlink{classCollider_a2e1e9345b3de261cd76bab476c7dcf67}{Render\+Gui}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer) override
+\item 
+virtual std\+::string \mbox{\hyperlink{classCollider_aea07e3a32107d6115da633ee42d0f032}{String}} () override
+\item 
+virtual Component\+Type \mbox{\hyperlink{classCollider_afc5b2076192a5df6da4a37de8f194b0e}{Get\+Type}} () override
+\item 
+void \mbox{\hyperlink{classCollider_a3a942c7923abf2127c4025d705c9b5f2}{Set\+WH}} (float w, float h)
+\item 
+void \mbox{\hyperlink{classCollider_a75a020fbb8c3c28e0d1cd6d300576c2c}{Set\+XY}} (float x, float y)
+\item 
+void \mbox{\hyperlink{classCollider_a688b9473b9c3a0af0b6442c373b509d5}{SetX}} (float x)
+\item 
+void \mbox{\hyperlink{classCollider_a90f1620532a799d9e8caacd3f23063ef}{SetY}} (float y)
+\item 
+void \mbox{\hyperlink{classCollider_a4ddbcebc48da5140daa2822b533e7fc8}{SetW}} (float w)
+\item 
+void \mbox{\hyperlink{classCollider_ab06484fb32ab2926a2bf9c5aa2e14442}{SetH}} (float h)
+\item 
+float \mbox{\hyperlink{classCollider_a1bfd2f3938ab1f5797336113dd8b64f3}{GetX}} () const
+\item 
+float \mbox{\hyperlink{classCollider_a4150265b4acba672d9f7512f3a414d14}{GetY}} () const
+\item 
+float \mbox{\hyperlink{classCollider_aa312e32c9e1f4e1cdf29bb40913dcf80}{GetW}} () const
+\item 
+float \mbox{\hyperlink{classCollider_a94e2df63fe0859933a60f45b8659b5c7}{GetH}} () const
+\item 
+SDL\+\_\+\+FRect \mbox{\hyperlink{classCollider_adda16a0c7371a276111b6a1de09bb589}{Get\+Rect}} () const
+\item 
+void \mbox{\hyperlink{classCollider_a5be49759a85dec5bc7510876a3b2f72b}{Set\+Grounded}} (bool grounded)
+\item 
+bool \mbox{\hyperlink{classCollider_acc4d645d10f5811408b7f41addc131c4}{Is\+Grounded}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classComponent}{Component}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classComponent_a8775db6d1a2c1afc2e77cd3c8f39da6f}{Component}} ()
+\item 
+virtual \mbox{\hyperlink{classComponent_ab8378fa275af98e568a7e91d33d867af}{\texorpdfstring{$\sim$}{\string~}\+Component}} ()
+\item 
+virtual void \mbox{\hyperlink{classComponent_a542f72dc58169fc8ee87ff5326d6b292}{Reset}} ()
+\item 
+void \mbox{\hyperlink{classComponent_a9522326d4cf71de20786cb5c068ab3b9}{Set\+Game\+Object}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGameObject}{Game\+Object}} $>$ g)
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGameObject}{Game\+Object}} $>$ \mbox{\hyperlink{classComponent_affa7e45459d9ac50b0db8b5c4e3e9af8}{Get\+Game\+Object}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A \doxylink{classCollider}{Collider} component to add onto a \doxylink{classGameObject}{Game\+Object} 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classCollider_aa7186870221f868bbc74c3ae8609fa66}\label{classCollider_aa7186870221f868bbc74c3ae8609fa66} 
+\index{Collider@{Collider}!Collider@{Collider}}
+\index{Collider@{Collider}!Collider@{Collider}}
+\doxysubsubsection{\texorpdfstring{Collider()}{Collider()}}
+{\footnotesize\ttfamily Collider\+::\+Collider (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+The default constructor for the \doxylink{classCollider}{Collider} \Hypertarget{classCollider_ad06f9eccc0a37702f8cecedc6d1a7c4b}\label{classCollider_ad06f9eccc0a37702f8cecedc6d1a7c4b} 
+\index{Collider@{Collider}!````~Collider@{\texorpdfstring{$\sim$}{\string~}Collider}}
+\index{````~Collider@{\texorpdfstring{$\sim$}{\string~}Collider}!Collider@{Collider}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Collider()}{\string~Collider()}}
+{\footnotesize\ttfamily Collider\+::\texorpdfstring{$\sim$}{\string~}\+Collider (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+The default destructor for the \doxylink{classCollider}{Collider} 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classCollider_a94e2df63fe0859933a60f45b8659b5c7}\label{classCollider_a94e2df63fe0859933a60f45b8659b5c7} 
+\index{Collider@{Collider}!GetH@{GetH}}
+\index{GetH@{GetH}!Collider@{Collider}}
+\doxysubsubsection{\texorpdfstring{GetH()}{GetH()}}
+{\footnotesize\ttfamily float Collider\+::\+GetH (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the height of this collider
+
+\begin{DoxyReturn}{Returns}
+The height 
+\end{DoxyReturn}
+\Hypertarget{classCollider_adda16a0c7371a276111b6a1de09bb589}\label{classCollider_adda16a0c7371a276111b6a1de09bb589} 
+\index{Collider@{Collider}!GetRect@{GetRect}}
+\index{GetRect@{GetRect}!Collider@{Collider}}
+\doxysubsubsection{\texorpdfstring{GetRect()}{GetRect()}}
+{\footnotesize\ttfamily SDL\+\_\+\+FRect Collider\+::\+Get\+Rect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the SDL\+\_\+\+FRect that this collider spans
+
+\begin{DoxyReturn}{Returns}
+The SDL\+\_\+\+FRect that this collider spans 
+\end{DoxyReturn}
+\Hypertarget{classCollider_afc5b2076192a5df6da4a37de8f194b0e}\label{classCollider_afc5b2076192a5df6da4a37de8f194b0e} 
+\index{Collider@{Collider}!GetType@{GetType}}
+\index{GetType@{GetType}!Collider@{Collider}}
+\doxysubsubsection{\texorpdfstring{GetType()}{GetType()}}
+{\footnotesize\ttfamily virtual Component\+Type Collider\+::\+Get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Returns the type of Component\+Type that this component is
+
+\begin{DoxyReturn}{Returns}
+The corresponding Component\+Type 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classComponent_a2e87d60cd7150786e51bfcda7129ed90}{Component}}.
+
+\Hypertarget{classCollider_aa312e32c9e1f4e1cdf29bb40913dcf80}\label{classCollider_aa312e32c9e1f4e1cdf29bb40913dcf80} 
+\index{Collider@{Collider}!GetW@{GetW}}
+\index{GetW@{GetW}!Collider@{Collider}}
+\doxysubsubsection{\texorpdfstring{GetW()}{GetW()}}
+{\footnotesize\ttfamily float Collider\+::\+GetW (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the width of this collider
+
+\begin{DoxyReturn}{Returns}
+The width 
+\end{DoxyReturn}
+\Hypertarget{classCollider_a1bfd2f3938ab1f5797336113dd8b64f3}\label{classCollider_a1bfd2f3938ab1f5797336113dd8b64f3} 
+\index{Collider@{Collider}!GetX@{GetX}}
+\index{GetX@{GetX}!Collider@{Collider}}
+\doxysubsubsection{\texorpdfstring{GetX()}{GetX()}}
+{\footnotesize\ttfamily float Collider\+::\+GetX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the x position of this collider
+
+\begin{DoxyReturn}{Returns}
+The x position 
+\end{DoxyReturn}
+\Hypertarget{classCollider_a4150265b4acba672d9f7512f3a414d14}\label{classCollider_a4150265b4acba672d9f7512f3a414d14} 
+\index{Collider@{Collider}!GetY@{GetY}}
+\index{GetY@{GetY}!Collider@{Collider}}
+\doxysubsubsection{\texorpdfstring{GetY()}{GetY()}}
+{\footnotesize\ttfamily float Collider\+::\+GetY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the y position of this collider
+
+\begin{DoxyReturn}{Returns}
+The y position 
+\end{DoxyReturn}
+\Hypertarget{classCollider_ad9a2c653b8a64830a532979364c17418}\label{classCollider_ad9a2c653b8a64830a532979364c17418} 
+\index{Collider@{Collider}!Input@{Input}}
+\index{Input@{Input}!Collider@{Collider}}
+\doxysubsubsection{\texorpdfstring{Input()}{Input()}}
+{\footnotesize\ttfamily void Collider\+::\+Input (\begin{DoxyParamCaption}\item[{float}]{delta\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Handles inputs for this component
+
+
+\begin{DoxyParams}{Parameters}
+{\em delta\+Time} & The change in time since the last frame \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classComponent_acc7790bf2ac32e5821bf22280c8261b0}{Component}}.
+
+\Hypertarget{classCollider_acc4d645d10f5811408b7f41addc131c4}\label{classCollider_acc4d645d10f5811408b7f41addc131c4} 
+\index{Collider@{Collider}!IsGrounded@{IsGrounded}}
+\index{IsGrounded@{IsGrounded}!Collider@{Collider}}
+\doxysubsubsection{\texorpdfstring{IsGrounded()}{IsGrounded()}}
+{\footnotesize\ttfamily bool Collider\+::\+Is\+Grounded (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns if the collider is grounded or not
+
+\begin{DoxyReturn}{Returns}
+The current grounded state 
+\end{DoxyReturn}
+\Hypertarget{classCollider_ad6cd8fe1bcb313ba3cb7a9432afc6b01}\label{classCollider_ad6cd8fe1bcb313ba3cb7a9432afc6b01} 
+\index{Collider@{Collider}!Render@{Render}}
+\index{Render@{Render}!Collider@{Collider}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void Collider\+::\+Render (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{renderer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Handles rendering this component
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & The renderer to render with \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classComponent_af6a2cca21e381bc248a36259c0faaf21}{Component}}.
+
+\Hypertarget{classCollider_a2e1e9345b3de261cd76bab476c7dcf67}\label{classCollider_a2e1e9345b3de261cd76bab476c7dcf67} 
+\index{Collider@{Collider}!RenderGui@{RenderGui}}
+\index{RenderGui@{RenderGui}!Collider@{Collider}}
+\doxysubsubsection{\texorpdfstring{RenderGui()}{RenderGui()}}
+{\footnotesize\ttfamily void Collider\+::\+Render\+Gui (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{renderer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Handles rendering the GUI portion of this component
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & The renderer to render with \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classComponent_a53f77ef035b671d6b71e60c6386c8e85}{Component}}.
+
+\Hypertarget{classCollider_a5be49759a85dec5bc7510876a3b2f72b}\label{classCollider_a5be49759a85dec5bc7510876a3b2f72b} 
+\index{Collider@{Collider}!SetGrounded@{SetGrounded}}
+\index{SetGrounded@{SetGrounded}!Collider@{Collider}}
+\doxysubsubsection{\texorpdfstring{SetGrounded()}{SetGrounded()}}
+{\footnotesize\ttfamily void Collider\+::\+Set\+Grounded (\begin{DoxyParamCaption}\item[{bool}]{grounded }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the collider to the grounded state
+
+
+\begin{DoxyParams}{Parameters}
+{\em grounded} & Whether or not this collider is grounded \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classCollider_ab06484fb32ab2926a2bf9c5aa2e14442}\label{classCollider_ab06484fb32ab2926a2bf9c5aa2e14442} 
+\index{Collider@{Collider}!SetH@{SetH}}
+\index{SetH@{SetH}!Collider@{Collider}}
+\doxysubsubsection{\texorpdfstring{SetH()}{SetH()}}
+{\footnotesize\ttfamily void Collider\+::\+SetH (\begin{DoxyParamCaption}\item[{float}]{h }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the height of this collider
+
+
+\begin{DoxyParams}{Parameters}
+{\em h} & The height to set to \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classCollider_a4ddbcebc48da5140daa2822b533e7fc8}\label{classCollider_a4ddbcebc48da5140daa2822b533e7fc8} 
+\index{Collider@{Collider}!SetW@{SetW}}
+\index{SetW@{SetW}!Collider@{Collider}}
+\doxysubsubsection{\texorpdfstring{SetW()}{SetW()}}
+{\footnotesize\ttfamily void Collider\+::\+SetW (\begin{DoxyParamCaption}\item[{float}]{w }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the width of this collider
+
+
+\begin{DoxyParams}{Parameters}
+{\em w} & The width to set to \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classCollider_a3a942c7923abf2127c4025d705c9b5f2}\label{classCollider_a3a942c7923abf2127c4025d705c9b5f2} 
+\index{Collider@{Collider}!SetWH@{SetWH}}
+\index{SetWH@{SetWH}!Collider@{Collider}}
+\doxysubsubsection{\texorpdfstring{SetWH()}{SetWH()}}
+{\footnotesize\ttfamily void Collider\+::\+Set\+WH (\begin{DoxyParamCaption}\item[{float}]{w,  }\item[{float}]{h }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the width and height of this collider
+
+
+\begin{DoxyParams}{Parameters}
+{\em w} & The width to set to \\
+\hline
+{\em h} & The height to set to \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classCollider_a688b9473b9c3a0af0b6442c373b509d5}\label{classCollider_a688b9473b9c3a0af0b6442c373b509d5} 
+\index{Collider@{Collider}!SetX@{SetX}}
+\index{SetX@{SetX}!Collider@{Collider}}
+\doxysubsubsection{\texorpdfstring{SetX()}{SetX()}}
+{\footnotesize\ttfamily void Collider\+::\+SetX (\begin{DoxyParamCaption}\item[{float}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the x position of this collider
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x position to set to \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classCollider_a75a020fbb8c3c28e0d1cd6d300576c2c}\label{classCollider_a75a020fbb8c3c28e0d1cd6d300576c2c} 
+\index{Collider@{Collider}!SetXY@{SetXY}}
+\index{SetXY@{SetXY}!Collider@{Collider}}
+\doxysubsubsection{\texorpdfstring{SetXY()}{SetXY()}}
+{\footnotesize\ttfamily void Collider\+::\+Set\+XY (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the x and y positions of this collider
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x position to set to \\
+\hline
+{\em y} & The y position to set to \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classCollider_a90f1620532a799d9e8caacd3f23063ef}\label{classCollider_a90f1620532a799d9e8caacd3f23063ef} 
+\index{Collider@{Collider}!SetY@{SetY}}
+\index{SetY@{SetY}!Collider@{Collider}}
+\doxysubsubsection{\texorpdfstring{SetY()}{SetY()}}
+{\footnotesize\ttfamily void Collider\+::\+SetY (\begin{DoxyParamCaption}\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the y position of this collider
+
+
+\begin{DoxyParams}{Parameters}
+{\em y} & The y position to set to \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classCollider_aea07e3a32107d6115da633ee42d0f032}\label{classCollider_aea07e3a32107d6115da633ee42d0f032} 
+\index{Collider@{Collider}!String@{String}}
+\index{String@{String}!Collider@{Collider}}
+\doxysubsubsection{\texorpdfstring{String()}{String()}}
+{\footnotesize\ttfamily std\+::string Collider\+::\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Returns a string representation of this component for saving
+
+\begin{DoxyReturn}{Returns}
+The string representation 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classComponent_a3adeeda735af9eb804f7f4bc111fea54}{Component}}.
+
+\Hypertarget{classCollider_abf0d30ba9de7565a450c05a149636493}\label{classCollider_abf0d30ba9de7565a450c05a149636493} 
+\index{Collider@{Collider}!Update@{Update}}
+\index{Update@{Update}!Collider@{Collider}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Collider\+::\+Update (\begin{DoxyParamCaption}\item[{float}]{delta\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Handles updates for this component
+
+
+\begin{DoxyParams}{Parameters}
+{\em delta\+Time} & The change in time since the last frame \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classComponent_a149d3c9b7d668eb4817dd84dc35bcfcc}{Component}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/collider.\+hpp\item 
+src/collider.\+cpp\end{DoxyCompactItemize}

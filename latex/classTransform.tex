@@ -1,0 +1,352 @@
+\doxysection{Transform Class Reference}
+\hypertarget{classTransform}{}\label{classTransform}\index{Transform@{Transform}}
+
+
+{\ttfamily \#include $<$transform.\+hpp$>$}
+
+
+
+Inheritance diagram for Transform\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=187pt]{classTransform__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Transform\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=187pt]{classTransform__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTransform_aa08ca4266efabc768973cdeea51945ab}{Transform}} ()
+\item 
+virtual \mbox{\hyperlink{classTransform_ae39edce132ad5a9bdac2edae7457fd14}{\texorpdfstring{$\sim$}{\string~}\+Transform}} () override
+\item 
+virtual void \mbox{\hyperlink{classTransform_a482773690b796ca75833539cf43067dc}{Input}} (float delta\+Time) override
+\item 
+virtual void \mbox{\hyperlink{classTransform_a278b139f49742499ce3238dfa3866ae4}{Update}} (float delta\+Time) override
+\item 
+virtual void \mbox{\hyperlink{classTransform_a853378db78ee89b056092d55d5e93ed4}{Render}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer) override
+\item 
+virtual void \mbox{\hyperlink{classTransform_ae1240320a1a35d03dd86c87d9ea2d1f1}{Render\+Gui}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer) override
+\item 
+virtual void \mbox{\hyperlink{classTransform_a031cc2e2412132a0e707e92b5d4c8d1f}{Reset}} () override
+\item 
+virtual std\+::string \mbox{\hyperlink{classTransform_a466799e7e9bd809fc40dcf8a8ed7262f}{String}} () override
+\item 
+void \mbox{\hyperlink{classTransform_a1140b7866aab90837050ce46352b102f}{Set\+WH}} (float w, float h)
+\item 
+void \mbox{\hyperlink{classTransform_a49ccd4032fe6f180b475c5b9c8339671}{Set\+XY}} (float x, float y)
+\item 
+void \mbox{\hyperlink{classTransform_a99dfeae7d8777507b0a6bcd59f4a92b9}{SetX}} (float x)
+\item 
+void \mbox{\hyperlink{classTransform_a7f02f38109ea0aba524b5b8e016da877}{SetY}} (float y)
+\item 
+void \mbox{\hyperlink{classTransform_a150a5d1385a1d2949f660175c6a16542}{SetW}} (float w)
+\item 
+void \mbox{\hyperlink{classTransform_a5da7f319a103f2e0ae398f2dab466625}{SetH}} (float h)
+\item 
+float \mbox{\hyperlink{classTransform_aae390a4ab5513af7b8a56543a1ce18cb}{GetX}} () const
+\item 
+float \mbox{\hyperlink{classTransform_ad49cecac08ee386ea754800683a8107c}{GetY}} () const
+\item 
+float \mbox{\hyperlink{classTransform_a8109a647e9a04234f40e2f69a0ef8b3b}{GetW}} () const
+\item 
+float \mbox{\hyperlink{classTransform_a40d578c28811057501284be33de6fa5b}{GetH}} () const
+\item 
+SDL\+\_\+\+FRect \mbox{\hyperlink{classTransform_acff05aa6f29d45875522bd0f0de324b4}{Get\+Rect}} () const
+\item 
+virtual Component\+Type \mbox{\hyperlink{classTransform_afe53d81aa0343323390a1a2395025d01}{Get\+Type}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classComponent}{Component}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classComponent_a8775db6d1a2c1afc2e77cd3c8f39da6f}{Component}} ()
+\item 
+virtual \mbox{\hyperlink{classComponent_ab8378fa275af98e568a7e91d33d867af}{\texorpdfstring{$\sim$}{\string~}\+Component}} ()
+\item 
+void \mbox{\hyperlink{classComponent_a9522326d4cf71de20786cb5c068ab3b9}{Set\+Game\+Object}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGameObject}{Game\+Object}} $>$ g)
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGameObject}{Game\+Object}} $>$ \mbox{\hyperlink{classComponent_affa7e45459d9ac50b0db8b5c4e3e9af8}{Get\+Game\+Object}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A transform component to add to Game\+Objects 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classTransform_aa08ca4266efabc768973cdeea51945ab}\label{classTransform_aa08ca4266efabc768973cdeea51945ab} 
+\index{Transform@{Transform}!Transform@{Transform}}
+\index{Transform@{Transform}!Transform@{Transform}}
+\doxysubsubsection{\texorpdfstring{Transform()}{Transform()}}
+{\footnotesize\ttfamily Transform\+::\+Transform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Default constructor \Hypertarget{classTransform_ae39edce132ad5a9bdac2edae7457fd14}\label{classTransform_ae39edce132ad5a9bdac2edae7457fd14} 
+\index{Transform@{Transform}!````~Transform@{\texorpdfstring{$\sim$}{\string~}Transform}}
+\index{````~Transform@{\texorpdfstring{$\sim$}{\string~}Transform}!Transform@{Transform}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Transform()}{\string~Transform()}}
+{\footnotesize\ttfamily Transform\+::\texorpdfstring{$\sim$}{\string~}\+Transform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Default destructor 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classTransform_a40d578c28811057501284be33de6fa5b}\label{classTransform_a40d578c28811057501284be33de6fa5b} 
+\index{Transform@{Transform}!GetH@{GetH}}
+\index{GetH@{GetH}!Transform@{Transform}}
+\doxysubsubsection{\texorpdfstring{GetH()}{GetH()}}
+{\footnotesize\ttfamily float Transform\+::\+GetH (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the height
+
+\begin{DoxyReturn}{Returns}
+the height 
+\end{DoxyReturn}
+\Hypertarget{classTransform_acff05aa6f29d45875522bd0f0de324b4}\label{classTransform_acff05aa6f29d45875522bd0f0de324b4} 
+\index{Transform@{Transform}!GetRect@{GetRect}}
+\index{GetRect@{GetRect}!Transform@{Transform}}
+\doxysubsubsection{\texorpdfstring{GetRect()}{GetRect()}}
+{\footnotesize\ttfamily SDL\+\_\+\+FRect Transform\+::\+Get\+Rect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the SDL\+\_\+\+FRect contained within this component
+
+\begin{DoxyReturn}{Returns}
+the SDL\+\_\+\+FRect where this component lies 
+\end{DoxyReturn}
+\Hypertarget{classTransform_afe53d81aa0343323390a1a2395025d01}\label{classTransform_afe53d81aa0343323390a1a2395025d01} 
+\index{Transform@{Transform}!GetType@{GetType}}
+\index{GetType@{GetType}!Transform@{Transform}}
+\doxysubsubsection{\texorpdfstring{GetType()}{GetType()}}
+{\footnotesize\ttfamily virtual Component\+Type Transform\+::\+Get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Gets the type of Component\+Type that this component is
+
+\begin{DoxyReturn}{Returns}
+The corresponding Component\+Type of this component 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classComponent_a2e87d60cd7150786e51bfcda7129ed90}{Component}}.
+
+\Hypertarget{classTransform_a8109a647e9a04234f40e2f69a0ef8b3b}\label{classTransform_a8109a647e9a04234f40e2f69a0ef8b3b} 
+\index{Transform@{Transform}!GetW@{GetW}}
+\index{GetW@{GetW}!Transform@{Transform}}
+\doxysubsubsection{\texorpdfstring{GetW()}{GetW()}}
+{\footnotesize\ttfamily float Transform\+::\+GetW (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the width
+
+\begin{DoxyReturn}{Returns}
+the width 
+\end{DoxyReturn}
+\Hypertarget{classTransform_aae390a4ab5513af7b8a56543a1ce18cb}\label{classTransform_aae390a4ab5513af7b8a56543a1ce18cb} 
+\index{Transform@{Transform}!GetX@{GetX}}
+\index{GetX@{GetX}!Transform@{Transform}}
+\doxysubsubsection{\texorpdfstring{GetX()}{GetX()}}
+{\footnotesize\ttfamily float Transform\+::\+GetX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the x position
+
+\begin{DoxyReturn}{Returns}
+the x position 
+\end{DoxyReturn}
+\Hypertarget{classTransform_ad49cecac08ee386ea754800683a8107c}\label{classTransform_ad49cecac08ee386ea754800683a8107c} 
+\index{Transform@{Transform}!GetY@{GetY}}
+\index{GetY@{GetY}!Transform@{Transform}}
+\doxysubsubsection{\texorpdfstring{GetY()}{GetY()}}
+{\footnotesize\ttfamily float Transform\+::\+GetY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the y position
+
+\begin{DoxyReturn}{Returns}
+the y position 
+\end{DoxyReturn}
+\Hypertarget{classTransform_a482773690b796ca75833539cf43067dc}\label{classTransform_a482773690b796ca75833539cf43067dc} 
+\index{Transform@{Transform}!Input@{Input}}
+\index{Input@{Input}!Transform@{Transform}}
+\doxysubsubsection{\texorpdfstring{Input()}{Input()}}
+{\footnotesize\ttfamily void Transform\+::\+Input (\begin{DoxyParamCaption}\item[{float}]{delta\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Handles inputs for this component
+
+
+\begin{DoxyParams}{Parameters}
+{\em delta\+Time} & The change in time since the last frame \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classComponent_acc7790bf2ac32e5821bf22280c8261b0}{Component}}.
+
+\Hypertarget{classTransform_a853378db78ee89b056092d55d5e93ed4}\label{classTransform_a853378db78ee89b056092d55d5e93ed4} 
+\index{Transform@{Transform}!Render@{Render}}
+\index{Render@{Render}!Transform@{Transform}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void Transform\+::\+Render (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{renderer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Handles rendering this component
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & The renderer to render with \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classComponent_af6a2cca21e381bc248a36259c0faaf21}{Component}}.
+
+\Hypertarget{classTransform_ae1240320a1a35d03dd86c87d9ea2d1f1}\label{classTransform_ae1240320a1a35d03dd86c87d9ea2d1f1} 
+\index{Transform@{Transform}!RenderGui@{RenderGui}}
+\index{RenderGui@{RenderGui}!Transform@{Transform}}
+\doxysubsubsection{\texorpdfstring{RenderGui()}{RenderGui()}}
+{\footnotesize\ttfamily void Transform\+::\+Render\+Gui (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{renderer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Handles rendering the GUI portion of this component
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & The renderer to render with \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classComponent_a53f77ef035b671d6b71e60c6386c8e85}{Component}}.
+
+\Hypertarget{classTransform_a031cc2e2412132a0e707e92b5d4c8d1f}\label{classTransform_a031cc2e2412132a0e707e92b5d4c8d1f} 
+\index{Transform@{Transform}!Reset@{Reset}}
+\index{Reset@{Reset}!Transform@{Transform}}
+\doxysubsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily void Transform\+::\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Resets this component to its default state 
+
+Reimplemented from \mbox{\hyperlink{classComponent_a542f72dc58169fc8ee87ff5326d6b292}{Component}}.
+
+\Hypertarget{classTransform_a5da7f319a103f2e0ae398f2dab466625}\label{classTransform_a5da7f319a103f2e0ae398f2dab466625} 
+\index{Transform@{Transform}!SetH@{SetH}}
+\index{SetH@{SetH}!Transform@{Transform}}
+\doxysubsubsection{\texorpdfstring{SetH()}{SetH()}}
+{\footnotesize\ttfamily void Transform\+::\+SetH (\begin{DoxyParamCaption}\item[{float}]{h }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the height
+
+
+\begin{DoxyParams}{Parameters}
+{\em h} & The height \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classTransform_a150a5d1385a1d2949f660175c6a16542}\label{classTransform_a150a5d1385a1d2949f660175c6a16542} 
+\index{Transform@{Transform}!SetW@{SetW}}
+\index{SetW@{SetW}!Transform@{Transform}}
+\doxysubsubsection{\texorpdfstring{SetW()}{SetW()}}
+{\footnotesize\ttfamily void Transform\+::\+SetW (\begin{DoxyParamCaption}\item[{float}]{w }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the width
+
+
+\begin{DoxyParams}{Parameters}
+{\em w} & The width \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classTransform_a1140b7866aab90837050ce46352b102f}\label{classTransform_a1140b7866aab90837050ce46352b102f} 
+\index{Transform@{Transform}!SetWH@{SetWH}}
+\index{SetWH@{SetWH}!Transform@{Transform}}
+\doxysubsubsection{\texorpdfstring{SetWH()}{SetWH()}}
+{\footnotesize\ttfamily void Transform\+::\+Set\+WH (\begin{DoxyParamCaption}\item[{float}]{w,  }\item[{float}]{h }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the width and height
+
+
+\begin{DoxyParams}{Parameters}
+{\em w} & The width to set to \\
+\hline
+{\em h} & The height to set to \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classTransform_a99dfeae7d8777507b0a6bcd59f4a92b9}\label{classTransform_a99dfeae7d8777507b0a6bcd59f4a92b9} 
+\index{Transform@{Transform}!SetX@{SetX}}
+\index{SetX@{SetX}!Transform@{Transform}}
+\doxysubsubsection{\texorpdfstring{SetX()}{SetX()}}
+{\footnotesize\ttfamily void Transform\+::\+SetX (\begin{DoxyParamCaption}\item[{float}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the x position
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x position \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classTransform_a49ccd4032fe6f180b475c5b9c8339671}\label{classTransform_a49ccd4032fe6f180b475c5b9c8339671} 
+\index{Transform@{Transform}!SetXY@{SetXY}}
+\index{SetXY@{SetXY}!Transform@{Transform}}
+\doxysubsubsection{\texorpdfstring{SetXY()}{SetXY()}}
+{\footnotesize\ttfamily void Transform\+::\+Set\+XY (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the x and y position
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x position \\
+\hline
+{\em y} & The y position \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classTransform_a7f02f38109ea0aba524b5b8e016da877}\label{classTransform_a7f02f38109ea0aba524b5b8e016da877} 
+\index{Transform@{Transform}!SetY@{SetY}}
+\index{SetY@{SetY}!Transform@{Transform}}
+\doxysubsubsection{\texorpdfstring{SetY()}{SetY()}}
+{\footnotesize\ttfamily void Transform\+::\+SetY (\begin{DoxyParamCaption}\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the y position
+
+
+\begin{DoxyParams}{Parameters}
+{\em y} & The y position \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classTransform_a466799e7e9bd809fc40dcf8a8ed7262f}\label{classTransform_a466799e7e9bd809fc40dcf8a8ed7262f} 
+\index{Transform@{Transform}!String@{String}}
+\index{String@{String}!Transform@{Transform}}
+\doxysubsubsection{\texorpdfstring{String()}{String()}}
+{\footnotesize\ttfamily std\+::string Transform\+::\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Returns a string representation of this component for saving
+
+\begin{DoxyReturn}{Returns}
+The string representation 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classComponent_a3adeeda735af9eb804f7f4bc111fea54}{Component}}.
+
+\Hypertarget{classTransform_a278b139f49742499ce3238dfa3866ae4}\label{classTransform_a278b139f49742499ce3238dfa3866ae4} 
+\index{Transform@{Transform}!Update@{Update}}
+\index{Update@{Update}!Transform@{Transform}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Transform\+::\+Update (\begin{DoxyParamCaption}\item[{float}]{delta\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Handles updates for this component
+
+
+\begin{DoxyParams}{Parameters}
+{\em delta\+Time} & The change in time since the last frame \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classComponent_a149d3c9b7d668eb4817dd84dc35bcfcc}{Component}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/transform.\+hpp\item 
+src/transform.\+cpp\end{DoxyCompactItemize}

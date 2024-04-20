@@ -1,0 +1,200 @@
+\doxysection{Component Class Reference}
+\hypertarget{classComponent}{}\label{classComponent}\index{Component@{Component}}
+
+
+{\ttfamily \#include $<$component.\+hpp$>$}
+
+
+
+Inheritance diagram for Component\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classComponent__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Component\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=187pt]{classComponent__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classComponent_a8775db6d1a2c1afc2e77cd3c8f39da6f}{Component}} ()
+\item 
+virtual \mbox{\hyperlink{classComponent_ab8378fa275af98e568a7e91d33d867af}{\texorpdfstring{$\sim$}{\string~}\+Component}} ()
+\item 
+virtual void \mbox{\hyperlink{classComponent_a149d3c9b7d668eb4817dd84dc35bcfcc}{Update}} (float delta\+Time)
+\item 
+virtual void \mbox{\hyperlink{classComponent_acc7790bf2ac32e5821bf22280c8261b0}{Input}} (float delta\+Time)
+\item 
+virtual void \mbox{\hyperlink{classComponent_af6a2cca21e381bc248a36259c0faaf21}{Render}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer)
+\item 
+virtual void \mbox{\hyperlink{classComponent_a53f77ef035b671d6b71e60c6386c8e85}{Render\+Gui}} (SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}renderer)
+\item 
+virtual void \mbox{\hyperlink{classComponent_a542f72dc58169fc8ee87ff5326d6b292}{Reset}} ()
+\item 
+virtual Component\+Type \mbox{\hyperlink{classComponent_a2e87d60cd7150786e51bfcda7129ed90}{Get\+Type}} ()=0
+\item 
+virtual std\+::string \mbox{\hyperlink{classComponent_a3adeeda735af9eb804f7f4bc111fea54}{String}} ()=0
+\item 
+void \mbox{\hyperlink{classComponent_a9522326d4cf71de20786cb5c068ab3b9}{Set\+Game\+Object}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGameObject}{Game\+Object}} $>$ g)
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGameObject}{Game\+Object}} $>$ \mbox{\hyperlink{classComponent_affa7e45459d9ac50b0db8b5c4e3e9af8}{Get\+Game\+Object}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A component abstract class for adding to Game\+Objects 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classComponent_a8775db6d1a2c1afc2e77cd3c8f39da6f}\label{classComponent_a8775db6d1a2c1afc2e77cd3c8f39da6f} 
+\index{Component@{Component}!Component@{Component}}
+\index{Component@{Component}!Component@{Component}}
+\doxysubsubsection{\texorpdfstring{Component()}{Component()}}
+{\footnotesize\ttfamily Component\+::\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Default constructor \Hypertarget{classComponent_ab8378fa275af98e568a7e91d33d867af}\label{classComponent_ab8378fa275af98e568a7e91d33d867af} 
+\index{Component@{Component}!````~Component@{\texorpdfstring{$\sim$}{\string~}Component}}
+\index{````~Component@{\texorpdfstring{$\sim$}{\string~}Component}!Component@{Component}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Component()}{\string~Component()}}
+{\footnotesize\ttfamily Component\+::\texorpdfstring{$\sim$}{\string~}\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Default destructor 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classComponent_affa7e45459d9ac50b0db8b5c4e3e9af8}\label{classComponent_affa7e45459d9ac50b0db8b5c4e3e9af8} 
+\index{Component@{Component}!GetGameObject@{GetGameObject}}
+\index{GetGameObject@{GetGameObject}!Component@{Component}}
+\doxysubsubsection{\texorpdfstring{GetGameObject()}{GetGameObject()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGameObject}{Game\+Object}} $>$ Component\+::\+Get\+Game\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the \doxylink{classGameObject}{Game\+Object} that this component is attached to
+
+\begin{DoxyReturn}{Returns}
+A shared pointer to the \doxylink{classGameObject}{Game\+Object} 
+\end{DoxyReturn}
+\Hypertarget{classComponent_a2e87d60cd7150786e51bfcda7129ed90}\label{classComponent_a2e87d60cd7150786e51bfcda7129ed90} 
+\index{Component@{Component}!GetType@{GetType}}
+\index{GetType@{GetType}!Component@{Component}}
+\doxysubsubsection{\texorpdfstring{GetType()}{GetType()}}
+{\footnotesize\ttfamily virtual Component\+Type Component\+::\+Get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns the type of component that this component is 
+
+Implemented in \mbox{\hyperlink{classAnimatedTexture_ab11f534c7e65a7f9e5764e4911bab9b0}{Animated\+Texture}}, \mbox{\hyperlink{classCollectible_abf221dc2c3152cdab228f082a50d2cf8}{Collectible}}, \mbox{\hyperlink{classCollider_afc5b2076192a5df6da4a37de8f194b0e}{Collider}}, \mbox{\hyperlink{classKeyboardController_acc948cc82fcbf7c042f03052fc80a94c}{Keyboard\+Controller}}, \mbox{\hyperlink{classSceneTransition_a54559fa578de968cb2ca0054fefab7a8}{Scene\+Transition}}, \mbox{\hyperlink{classScript_ac458d5493e6c49c5a66db881c18fe066}{Script}}, \mbox{\hyperlink{structTexture_ae03e1038b632e4a1e3752bf54021c238}{Texture}}, \mbox{\hyperlink{classTileTexture_a087c3743b6889b5b68ce772fb9c7868a}{Tile\+Texture}}, and \mbox{\hyperlink{classTransform_afe53d81aa0343323390a1a2395025d01}{Transform}}.
+
+\Hypertarget{classComponent_acc7790bf2ac32e5821bf22280c8261b0}\label{classComponent_acc7790bf2ac32e5821bf22280c8261b0} 
+\index{Component@{Component}!Input@{Input}}
+\index{Input@{Input}!Component@{Component}}
+\doxysubsubsection{\texorpdfstring{Input()}{Input()}}
+{\footnotesize\ttfamily void Component\+::\+Input (\begin{DoxyParamCaption}\item[{float}]{delta\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Handles inputs for this component
+
+
+\begin{DoxyParams}{Parameters}
+{\em delta\+Time} & The change in time since the last frame \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{classAnimatedTexture_afce7bf8b3bf237fa98e756883211bae3}{Animated\+Texture}}, \mbox{\hyperlink{classCollectible_abbc97b1500b82c3161773f244fd5569e}{Collectible}}, \mbox{\hyperlink{classCollider_ad9a2c653b8a64830a532979364c17418}{Collider}}, \mbox{\hyperlink{classKeyboardController_ab78c4c8c83d57e4050cbe0409f61dee1}{Keyboard\+Controller}}, \mbox{\hyperlink{classSceneTransition_a2752881077baf41983f9f5678fd2bcef}{Scene\+Transition}}, \mbox{\hyperlink{classScript_ab985ea8124a3a6ffc6926781ce7a0fca}{Script}}, \mbox{\hyperlink{structTexture_a0f2adb87220044be6fdecfbe11f67f70}{Texture}}, \mbox{\hyperlink{classTileTexture_a01db60cf503cce1828c3ff925e7c73e6}{Tile\+Texture}}, and \mbox{\hyperlink{classTransform_a482773690b796ca75833539cf43067dc}{Transform}}.
+
+\Hypertarget{classComponent_af6a2cca21e381bc248a36259c0faaf21}\label{classComponent_af6a2cca21e381bc248a36259c0faaf21} 
+\index{Component@{Component}!Render@{Render}}
+\index{Render@{Render}!Component@{Component}}
+\doxysubsubsection{\texorpdfstring{Render()}{Render()}}
+{\footnotesize\ttfamily void Component\+::\+Render (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{renderer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Handles rendering this component
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & The renderer to render with \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{classAnimatedTexture_a5ce306cac747e034ed45c7da49e92db2}{Animated\+Texture}}, \mbox{\hyperlink{classCollectible_a99157094e9019deecf85cf5fecc2b0d3}{Collectible}}, \mbox{\hyperlink{classCollider_ad6cd8fe1bcb313ba3cb7a9432afc6b01}{Collider}}, \mbox{\hyperlink{classKeyboardController_ab56158b97c745691e456e847674e1f7c}{Keyboard\+Controller}}, \mbox{\hyperlink{classSceneTransition_a61fcb8b70b3365dce2e65c273e5970af}{Scene\+Transition}}, \mbox{\hyperlink{classScript_aa5291ca5321c4c5aa5fc36d03d9c73e1}{Script}}, \mbox{\hyperlink{structTexture_a55aabe1782dc614f8b02493729d826f1}{Texture}}, \mbox{\hyperlink{classTileTexture_af62519137c7d8289458cc42ad7267290}{Tile\+Texture}}, and \mbox{\hyperlink{classTransform_a853378db78ee89b056092d55d5e93ed4}{Transform}}.
+
+\Hypertarget{classComponent_a53f77ef035b671d6b71e60c6386c8e85}\label{classComponent_a53f77ef035b671d6b71e60c6386c8e85} 
+\index{Component@{Component}!RenderGui@{RenderGui}}
+\index{RenderGui@{RenderGui}!Component@{Component}}
+\doxysubsubsection{\texorpdfstring{RenderGui()}{RenderGui()}}
+{\footnotesize\ttfamily void Component\+::\+Render\+Gui (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Renderer \texorpdfstring{$\ast$}{*}}]{renderer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Handles rendering the GUI portion of this component
+
+
+\begin{DoxyParams}{Parameters}
+{\em renderer} & The renderer to render with \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{classAnimatedTexture_a3946a9fa5ea32a67f3cbd9e755382cb7}{Animated\+Texture}}, \mbox{\hyperlink{classCollectible_a497670a6704571dbddc6379c03ad3277}{Collectible}}, \mbox{\hyperlink{classCollider_a2e1e9345b3de261cd76bab476c7dcf67}{Collider}}, \mbox{\hyperlink{classKeyboardController_a12e718330c07750d5cc1340f06f200f6}{Keyboard\+Controller}}, \mbox{\hyperlink{classSceneTransition_a3989be7b64fe615173b964f167881ada}{Scene\+Transition}}, \mbox{\hyperlink{classScript_ac2b364ce0786bb98d2a3e525645f1472}{Script}}, \mbox{\hyperlink{structTexture_a20e6e328147ee3dcabd219e4535dab03}{Texture}}, \mbox{\hyperlink{classTileTexture_a5ea15b8332e7ac5800bdf646f66df287}{Tile\+Texture}}, and \mbox{\hyperlink{classTransform_ae1240320a1a35d03dd86c87d9ea2d1f1}{Transform}}.
+
+\Hypertarget{classComponent_a542f72dc58169fc8ee87ff5326d6b292}\label{classComponent_a542f72dc58169fc8ee87ff5326d6b292} 
+\index{Component@{Component}!Reset@{Reset}}
+\index{Reset@{Reset}!Component@{Component}}
+\doxysubsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily void Component\+::\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Resets this component to its default state 
+
+Reimplemented in \mbox{\hyperlink{classAnimatedTexture_af54ddb4a7448752a35447436aaf00f8c}{Animated\+Texture}}, \mbox{\hyperlink{classKeyboardController_a786c9398e1d87a1cd9b14827005c7b2d}{Keyboard\+Controller}}, \mbox{\hyperlink{structTexture_a202d91776e89c7e16cc9ae381e147e75}{Texture}}, \mbox{\hyperlink{classTileTexture_a77ff8473349ea89cfc0acd97384b2360}{Tile\+Texture}}, and \mbox{\hyperlink{classTransform_a031cc2e2412132a0e707e92b5d4c8d1f}{Transform}}.
+
+\Hypertarget{classComponent_a9522326d4cf71de20786cb5c068ab3b9}\label{classComponent_a9522326d4cf71de20786cb5c068ab3b9} 
+\index{Component@{Component}!SetGameObject@{SetGameObject}}
+\index{SetGameObject@{SetGameObject}!Component@{Component}}
+\doxysubsubsection{\texorpdfstring{SetGameObject()}{SetGameObject()}}
+{\footnotesize\ttfamily void Component\+::\+Set\+Game\+Object (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGameObject}{Game\+Object}} $>$}]{g }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the \doxylink{classGameObject}{Game\+Object} that this component is attached to
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & The game\+Object to set \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classComponent_a3adeeda735af9eb804f7f4bc111fea54}\label{classComponent_a3adeeda735af9eb804f7f4bc111fea54} 
+\index{Component@{Component}!String@{String}}
+\index{String@{String}!Component@{Component}}
+\doxysubsubsection{\texorpdfstring{String()}{String()}}
+{\footnotesize\ttfamily virtual std\+::string Component\+::\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Returns a string representation of this component for saving 
+
+Implemented in \mbox{\hyperlink{classAnimatedTexture_a77daee987b0a3d0b315becef56edb82d}{Animated\+Texture}}, \mbox{\hyperlink{classCollectible_a7de0f2d78270873abed4009f91c38c8e}{Collectible}}, \mbox{\hyperlink{classCollider_aea07e3a32107d6115da633ee42d0f032}{Collider}}, \mbox{\hyperlink{classKeyboardController_a026f3df478a4317f83932fc46b4c3d8d}{Keyboard\+Controller}}, \mbox{\hyperlink{classSceneTransition_afc93b75bb9fa37830a08fcc1b69d9d3e}{Scene\+Transition}}, \mbox{\hyperlink{classScript_aeb00226570b2fc5b34d4428236e4a966}{Script}}, \mbox{\hyperlink{structTexture_a382a85d97ccf0794aa1fe6121a2e8995}{Texture}}, \mbox{\hyperlink{classTileTexture_a6bb8b6f61daf9e10dfabf8d4f221ff8d}{Tile\+Texture}}, and \mbox{\hyperlink{classTransform_a466799e7e9bd809fc40dcf8a8ed7262f}{Transform}}.
+
+\Hypertarget{classComponent_a149d3c9b7d668eb4817dd84dc35bcfcc}\label{classComponent_a149d3c9b7d668eb4817dd84dc35bcfcc} 
+\index{Component@{Component}!Update@{Update}}
+\index{Update@{Update}!Component@{Component}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Component\+::\+Update (\begin{DoxyParamCaption}\item[{float}]{delta\+Time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Handles updates for this component
+
+
+\begin{DoxyParams}{Parameters}
+{\em delta\+Time} & The change in time since the last frame \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{classAnimatedTexture_a931d4645ce44d24ae8961f241a02babb}{Animated\+Texture}}, \mbox{\hyperlink{classCollectible_accb308e39c2cc1a2eb372793d9b2b7ee}{Collectible}}, \mbox{\hyperlink{classCollider_abf0d30ba9de7565a450c05a149636493}{Collider}}, \mbox{\hyperlink{classKeyboardController_a777c6a761655fd489dd8609223eb3adc}{Keyboard\+Controller}}, \mbox{\hyperlink{classSceneTransition_a41b41af2fcd05daeb70e4c5de97eecdd}{Scene\+Transition}}, \mbox{\hyperlink{classScript_a5910cd415145fb00a918fe74abf08763}{Script}}, \mbox{\hyperlink{structTexture_a0fdbce4554d945fd858589bcd837c79e}{Texture}}, \mbox{\hyperlink{classTileTexture_a79735160ea032808c5a265749ee57439}{Tile\+Texture}}, and \mbox{\hyperlink{classTransform_a278b139f49742499ce3238dfa3866ae4}{Transform}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/component.\+hpp\item 
+src/component.\+cpp\end{DoxyCompactItemize}
